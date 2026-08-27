@@ -47,7 +47,7 @@ Paper Code/
 ### 1. Environment Setup
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/origami-tracking-detectors.git
+git clone https://github.com/Alphacodde/Origami-Particle-Detectors-Geometries.git
 cd origami-tracking-detectors
 
 # Create conda environment (recommended)

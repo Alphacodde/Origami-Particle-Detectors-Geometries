@@ -960,10 +960,19 @@ Yoshimura & 10.0 & 422,058 & 0.00372 & 0.00401 & 0.927 & 3.74\% & 3.041 & 58.37 
 Across all 20 points, $\sigma/\theta_{0,\text{Highland}} = 0.930 \pm 0.003$ (mean $\pm$ population standard deviation), ranging from 0.924 to 0.935; a weak downward trend against momentum does not reach conventional significance at this sample size (Section 2.6). The fitted tail index averages $\alpha = 2.999 \pm 0.046$ --- indistinguishable from the Rutherford-predicted value of 3 to within fit uncertainty --- while the tail's share of the total $\Sigma\theta^2$ averages 86.5\% (range 81.9--89.7\%) despite the tail itself comprising only 3.3--3.9\% of events at any given point. Both properties are visualized directly in Figure~\ref{fig:scattering_mixture_summary}.
 
 \FloatBarrier
-\section{Data Provenance}
+\section{Data and Code Availability}
 \label{sec:appendix_provenance}
 
-All headline and baseline simulation datasets were generated under the differentiated-mesh \textsc{Geant4} v11.x pipeline utilizing a nominal $3\text{ mm}$ 3D Gaussian vertex smear and $500{,}000$ primary $5\text{ GeV}/c\ \pi^+$ events per configuration at the fully deployed nominal state (fold parameter $= 1.00$). Parameter sweep evaluations systematically varied facet count $N$, fold angle $\theta$, and vertex smear $\sigma$ around these nominal settings. Replication studies (Tables~\ref{tab:multirun_results} and~\ref{tab:deadzone_multirun}) utilize five independent runs with distinct pseudo-random engine seeds.
+All baseline simulation datasets were generated under the differentiated-mesh \textsc{Geant4} v11.x pipeline utilizing a nominal $1.0\text{ mm}$ 3D Gaussian vertex smear and $500{,}000$ primary $500\text{ MeV}/c\ \pi^+$ events per configuration at the fully deployed nominal state. Parameter sweep evaluations systematically varied facet count $N$, fold angle $\theta$, and vertex smear $\sigma$ around these baseline settings. Replication studies (Tables~\ref{tab:multirun_results} and~\ref{tab:deadzone_multirun}) utilize five independent simulation runs with distinct pseudo-random engine seeds.
+
+The complete simulation source code, parametric geometry generators, automated pipelines, and figure reproduction scripts are openly available in the GitHub repository:
+\begin{center}
+\url{https://github.com/Alphacodde/Origami-Particle-Detectors-Geometries}
+\end{center}
+The raw \textsc{Geant4} ROOT ntuple datasets ($\approx 10.7\text{ GB}$ across all experiments and sweeps) are archived and accessible via Google Drive:
+\begin{center}
+\url{https://drive.google.com/drive/folders/1ZbLm0H2FCLPQepytwLGCHj7_VS4sdF78?usp=sharing}
+\end{center}
 
 \enlargethispage{2\baselineskip}
 \bibliographystyle{JHEP}
