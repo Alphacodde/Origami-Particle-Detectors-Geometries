@@ -1,0 +1,3 @@
+/origami/gun/mode isotropic4pi
+/origami/gun/momentumGeV 0.5
+/run/beamOn 500000

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the accompanying paper."
+title: "Origami-Folded Sensor Geometries for Cylindrical Tracking Detectors: A Geant4 Comparison"
+authors:
+  - family-names: Sharma
+    given-names: Kanishk
+type: software
+license: MIT
+repository-code: "https://github.com/<your-repo>"
+keywords:
+  - Geant4
+  - origami
+  - tracking detectors
+  - particle physics
+  - material budget
+  - silicon sensors

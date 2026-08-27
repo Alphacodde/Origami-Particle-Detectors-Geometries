@@ -1,0 +1,15 @@
+/run/initialize
+/origami/run/tag exp3
+/origami/gun/mode isotropic4pi
+/origami/gun/momentumGeV 5
+/origami/gun/vertexZOffsetMm 0
+/origami/gun/vertexSmearMm 0
+/run/beamOn 500000
+/origami/gun/vertexSmearMm 1
+/run/beamOn 500000
+/origami/gun/vertexSmearMm 5
+/run/beamOn 500000
+/origami/gun/vertexSmearMm 10
+/run/beamOn 500000
+/origami/gun/vertexSmearMm 20
+/run/beamOn 500000

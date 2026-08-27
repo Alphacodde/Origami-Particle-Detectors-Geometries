@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+*.egg-info/
+
+# ROOT data (provided separately via Google Drive)
+*.root
+
+# C++ build
+build/
+CMakeCache.txt
+CMakeFiles/
+*.make
+Makefile
+*.cmake
+origamiDet
+
+# LaTeX build artifacts
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+*.log
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scratch / temp
+*.bak
+*.tmp
+pdf_pages_preview/
+pdf_preview_new/
+inspect_zip/

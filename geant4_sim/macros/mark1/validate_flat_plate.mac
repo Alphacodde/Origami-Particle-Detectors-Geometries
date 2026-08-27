@@ -1,0 +1,14 @@
+/origami/stlFile geometry/plate_silicon.stl
+/origami/kaptonStlFile geometry/plate_kapton.stl
+/origami/sensorThickness 0.300 mm
+/origami/substrateThickness 0.050 mm
+/origami/foldState 1.0
+/origami/gun/fixedAngleDeg 0
+/origami/gun/momentumGeV 5.0
+/origami/gun/gunZmm 100
+/origami/gun/diskRadiusMm 20
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/run/initialize
+/run/beamOn 2000

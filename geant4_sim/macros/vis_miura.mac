@@ -1,0 +1,20 @@
+/origami/stlFile geometry/miura_deployed_silicon.gdml
+/origami/kaptonStlFile geometry/miura_deployed_kapton.gdml
+/origami/sensorThickness 0.300 mm
+/origami/substrateThickness 0.050 mm
+/origami/foldState 1.0
+/run/initialize
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/endOfEventAction accumulate 20
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/run/beamOn 10

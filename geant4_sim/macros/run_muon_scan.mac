@@ -1,0 +1,5 @@
+/control/verbose 2
+/run/verbose 2
+/run/initialize
+/gun/particle mu+
+/run/beamOn 1000

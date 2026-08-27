@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define>
+    <position name="miura_deployed_kapton_v0" x="40.1029002" y="0.0144355555" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v1" x="35.5026461" y="18.649529" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v2" x="31.8271894" y="24.3994366" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v3" x="40.0534208" y="0.0074942384" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v4" x="31.7858629" y="24.3713269" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v5" x="35.46206" y="18.6203886" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v6" x="39.5205603" y="6.81379573" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v7" x="39.4709042" y="6.80811121" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v8" x="22.7691636" y="33.0122402" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v9" x="16.8425931" y="36.3954606" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v10" x="16.8190635" y="36.3513653" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v11" x="22.7467687" y="32.9675763" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v12" x="4.81954015" y="39.8122449" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v13" x="-2.00043836" y="40.0537232" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v14" x="-2.00078065" y="40.003744" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v15" x="4.82046678" y="39.7622896" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v16" x="-14.2341819" y="37.4917441" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v17" x="-20.3851935" y="34.5361605" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v18" x="-20.3622701" y="34.491747" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v19" x="-14.210146" y="37.4479415" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v20" x="-30.0270244" y="26.5823366" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v21" x="-34.0999465" y="21.1067796" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v22" x="-34.0590088" y="21.0781065" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v23" x="-29.9853856" y="26.5547213" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v24" x="-38.9410375" y="9.58323612" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v25" x="-40.0028127" y="2.84208992" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v26" x="-39.9532391" y="2.83572579" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v27" x="-38.8913347" y="9.57813453" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v28" x="-38.9341281" y="-9.61126828" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v29" x="-36.7415165" y="-16.0736883" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v30" x="-36.6946638" y="-16.0562855" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v31" x="-38.8877477" y="-9.59268747" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v32" x="-30.0078793" y="-26.603947" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v33" x="-25.0631818" y="-31.3071783" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v34" x="-25.0297832" y="-31.2699953" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v35" x="-29.9754464" y="-26.5659404" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v36" x="-14.2071869" y="-37.501982" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v37" x="-7.64317412" y="-39.368571" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v38" x="-7.63088097" y="-39.3201261" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v39" x="-14.1961315" y="-37.4532565" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v40" x="4.84820076" y="-39.8087649" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v41" x="11.5277926" y="-38.4110986" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v42" x="11.5161642" y="-38.3624898" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v43" x="4.83534597" y="-39.7604829" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v44" x="22.7929241" y="-32.9958395" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v45" x="28.057881" y="-28.6541063" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v46" x="28.0249949" y="-28.6164694" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v47" x="22.759104" y="-32.9590619" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v48" x="35.5160632" y="-18.6239649" z="-59.9960513" unit="mm"/>
+    <position name="miura_deployed_kapton_v49" x="38.160247" y="-12.3328036" z="-40.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v50" x="38.113637" y="-12.3147607" z="-40.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v51" x="35.4690255" y="-18.6071169" z="-59.99795" unit="mm"/>
+    <position name="miura_deployed_kapton_v52" x="35.5072718" y="18.6423212" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v53" x="35.4644089" y="18.6166151" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v54" x="40.1036465" y="0.00590367888" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v55" x="40.053747" y="0.00306141594" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v56" x="22.7766091" y="33.0080077" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v57" x="22.7506021" y="32.9653266" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v58" x="4.82809978" y="39.8119573" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v59" x="4.8249066" y="39.7620791" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v60" x="-14.2264691" y="37.4954674" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v61" x="-14.2061169" y="37.4498184" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v62" x="-30.0219253" y="26.5892177" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v63" x="-29.9826902" y="26.5582557" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v64" x="-38.9397202" y="9.59169867" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v65" x="-38.8905905" y="9.58251661" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v66" x="-38.9368945" y="-9.60316292" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v67" x="-38.8891253" y="-9.58846152" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v68" x="-30.0140956" y="-26.5980556" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v69" x="-29.97863" y="-26.5628387" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v70" x="-14.215429" y="-37.4996543" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v71" x="-14.200392" y="-37.4519896" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v72" x="4.83982105" y="-39.8105341" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v73" x="4.83098479" y="-39.7613411" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v74" x="22.7863264" y="-33.0013003" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v75" x="22.7556411" y="-32.9618485" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v76" x="35.512759" y="-18.6318664" z="-19.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v77" x="35.4672543" y="-18.6111936" z="-19.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v78" x="31.8271894" y="24.3994366" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v79" x="31.7858629" y="24.3713269" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v80" x="39.5205603" y="6.81379573" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v81" x="39.4709042" y="6.80811121" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v82" x="16.8425931" y="36.3954606" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v83" x="16.8190635" y="36.3513653" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v84" x="-2.00043836" y="40.0537232" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v85" x="-2.00078065" y="40.003744" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v86" x="-20.3851935" y="34.5361605" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v87" x="-20.3622701" y="34.491747" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v88" x="-34.0999465" y="21.1067796" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v89" x="-34.0590088" y="21.0781065" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v90" x="-40.0028127" y="2.84208992" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v91" x="-39.9532391" y="2.83572579" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v92" x="-36.7415165" y="-16.0736883" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v93" x="-36.6946638" y="-16.0562855" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v94" x="-25.0631818" y="-31.3071783" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v95" x="-25.0297832" y="-31.2699953" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v96" x="-7.64317412" y="-39.368571" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v97" x="-7.63088097" y="-39.3201261" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v98" x="11.5277926" y="-38.4110986" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v99" x="11.5161642" y="-38.3624898" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v100" x="28.057881" y="-28.6541063" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v101" x="28.0249949" y="-28.6164694" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v102" x="38.160247" y="-12.3328036" z="-0.00291025231" unit="mm"/>
+    <position name="miura_deployed_kapton_v103" x="38.113637" y="-12.3147607" z="-0.00150914252" unit="mm"/>
+    <position name="miura_deployed_kapton_v104" x="35.5072718" y="18.6423212" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v105" x="35.4644089" y="18.6166151" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v106" x="40.1036465" y="0.00590367888" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v107" x="40.053747" y="0.00306141594" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v108" x="22.7766091" y="33.0080077" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v109" x="22.7506021" y="32.9653266" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v110" x="4.82809978" y="39.8119573" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v111" x="4.8249066" y="39.7620791" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v112" x="-14.2264691" y="37.4954674" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v113" x="-14.2061169" y="37.4498184" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v114" x="-30.0219253" y="26.5892177" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v115" x="-29.9826902" y="26.5582557" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v116" x="-38.9397202" y="9.59169867" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v117" x="-38.8905905" y="9.58251661" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v118" x="-38.9368945" y="-9.60316292" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v119" x="-38.8891253" y="-9.58846152" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v120" x="-30.0140956" y="-26.5980556" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v121" x="-29.97863" y="-26.5628387" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v122" x="-14.215429" y="-37.4996543" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v123" x="-14.200392" y="-37.4519896" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v124" x="4.83982105" y="-39.8105341" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v125" x="4.83098479" y="-39.7613411" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v126" x="22.7863264" y="-33.0013003" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v127" x="22.7556411" y="-32.9618485" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v128" x="35.512759" y="-18.6318664" z="20.0029103" unit="mm"/>
+    <position name="miura_deployed_kapton_v129" x="35.4672543" y="-18.6111936" z="20.0015091" unit="mm"/>
+    <position name="miura_deployed_kapton_v130" x="31.8271894" y="24.3994366" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v131" x="31.7858629" y="24.3713269" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v132" x="39.5205603" y="6.81379573" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v133" x="39.4709042" y="6.80811121" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v134" x="16.8425931" y="36.3954606" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v135" x="16.8190635" y="36.3513653" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v136" x="-2.00043836" y="40.0537232" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v137" x="-2.00078065" y="40.003744" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v138" x="-20.3851935" y="34.5361605" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v139" x="-20.3622701" y="34.491747" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v140" x="-34.0999465" y="21.1067796" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v141" x="-34.0590088" y="21.0781065" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v142" x="-40.0028127" y="2.84208992" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v143" x="-39.9532391" y="2.83572579" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v144" x="-36.7415165" y="-16.0736883" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v145" x="-36.6946638" y="-16.0562855" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v146" x="-25.0631818" y="-31.3071783" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v147" x="-25.0297832" y="-31.2699953" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v148" x="-7.64317412" y="-39.368571" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v149" x="-7.63088097" y="-39.3201261" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v150" x="11.5277926" y="-38.4110986" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v151" x="11.5161642" y="-38.3624898" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v152" x="28.057881" y="-28.6541063" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v153" x="28.0249949" y="-28.6164694" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v154" x="38.160247" y="-12.3328036" z="39.9970897" unit="mm"/>
+    <position name="miura_deployed_kapton_v155" x="38.113637" y="-12.3147607" z="39.9984909" unit="mm"/>
+    <position name="miura_deployed_kapton_v156" x="35.5095209" y="18.634068" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v157" x="35.4647093" y="18.6119071" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v158" x="40.1018025" y="-0.00244937763" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v159" x="40.0518251" y="-0.00124691676" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v160" x="22.7824361" y="33.001745" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v161" x="22.7530561" y="32.9612975" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v162" x="4.83616966" y="39.8091199" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v163" x="4.82895186" y="39.7596519" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v164" x="-14.2180049" y="37.4967052" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v165" x="-14.201407" y="37.4495492" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v166" x="-30.0150059" y="26.5942472" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v167" x="-29.9783947" y="26.560206" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v168" x="-38.9359308" y="9.5993677" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v169" x="-38.8876934" y="9.58623981" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v170" x="-38.9371031" y="-9.59461129" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v171" x="-38.8882902" y="-9.58381844" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v172" x="-30.0182544" y="-26.5905805" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v173" x="-29.9800484" y="-26.5583394" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v174" x="-14.2225853" y="-37.4949681" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v175" x="-14.2037388" y="-37.4486648" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v176" x="4.83130662" y="-39.8097104" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v177" x="4.82647621" y="-39.7599525" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v178" x="22.7784045" y="-33.0045278" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v179" x="22.7510037" y="-32.9627142" z="60.0009364" unit="mm"/>
+    <position name="miura_deployed_kapton_v180" x="35.5072443" y="-18.6384057" z="60.0018394" unit="mm"/>
+    <position name="miura_deployed_kapton_v181" x="35.4635504" y="-18.6141153" z="60.0009364" unit="mm"/>
+  </define>
+  <solids>
+    <tessellated name="miura_deployed_kapton_solid">
+      <triangular vertex1="miura_deployed_kapton_v0" vertex2="miura_deployed_kapton_v1" vertex3="miura_deployed_kapton_v2"/>
+      <triangular vertex1="miura_deployed_kapton_v3" vertex2="miura_deployed_kapton_v4" vertex3="miura_deployed_kapton_v5"/>
+      <triangular vertex1="miura_deployed_kapton_v0" vertex2="miura_deployed_kapton_v2" vertex3="miura_deployed_kapton_v6"/>
+      <triangular vertex1="miura_deployed_kapton_v3" vertex2="miura_deployed_kapton_v7" vertex3="miura_deployed_kapton_v4"/>
+      <triangular vertex1="miura_deployed_kapton_v1" vertex2="miura_deployed_kapton_v8" vertex3="miura_deployed_kapton_v9"/>
+      <triangular vertex1="miura_deployed_kapton_v5" vertex2="miura_deployed_kapton_v10" vertex3="miura_deployed_kapton_v11"/>
+      <triangular vertex1="miura_deployed_kapton_v1" vertex2="miura_deployed_kapton_v9" vertex3="miura_deployed_kapton_v2"/>
+      <triangular vertex1="miura_deployed_kapton_v5" vertex2="miura_deployed_kapton_v4" vertex3="miura_deployed_kapton_v10"/>
+      <triangular vertex1="miura_deployed_kapton_v8" vertex2="miura_deployed_kapton_v12" vertex3="miura_deployed_kapton_v13"/>
+      <triangular vertex1="miura_deployed_kapton_v11" vertex2="miura_deployed_kapton_v14" vertex3="miura_deployed_kapton_v15"/>
+      <triangular vertex1="miura_deployed_kapton_v8" vertex2="miura_deployed_kapton_v13" vertex3="miura_deployed_kapton_v9"/>
+      <triangular vertex1="miura_deployed_kapton_v11" vertex2="miura_deployed_kapton_v10" vertex3="miura_deployed_kapton_v14"/>
+      <triangular vertex1="miura_deployed_kapton_v12" vertex2="miura_deployed_kapton_v16" vertex3="miura_deployed_kapton_v17"/>
+      <triangular vertex1="miura_deployed_kapton_v15" vertex2="miura_deployed_kapton_v18" vertex3="miura_deployed_kapton_v19"/>
+      <triangular vertex1="miura_deployed_kapton_v12" vertex2="miura_deployed_kapton_v17" vertex3="miura_deployed_kapton_v13"/>
+      <triangular vertex1="miura_deployed_kapton_v15" vertex2="miura_deployed_kapton_v14" vertex3="miura_deployed_kapton_v18"/>
+      <triangular vertex1="miura_deployed_kapton_v16" vertex2="miura_deployed_kapton_v20" vertex3="miura_deployed_kapton_v21"/>
+      <triangular vertex1="miura_deployed_kapton_v19" vertex2="miura_deployed_kapton_v22" vertex3="miura_deployed_kapton_v23"/>
+      <triangular vertex1="miura_deployed_kapton_v16" vertex2="miura_deployed_kapton_v21" vertex3="miura_deployed_kapton_v17"/>
+      <triangular vertex1="miura_deployed_kapton_v19" vertex2="miura_deployed_kapton_v18" vertex3="miura_deployed_kapton_v22"/>
+      <triangular vertex1="miura_deployed_kapton_v20" vertex2="miura_deployed_kapton_v24" vertex3="miura_deployed_kapton_v25"/>
+      <triangular vertex1="miura_deployed_kapton_v23" vertex2="miura_deployed_kapton_v26" vertex3="miura_deployed_kapton_v27"/>
+      <triangular vertex1="miura_deployed_kapton_v20" vertex2="miura_deployed_kapton_v25" vertex3="miura_deployed_kapton_v21"/>
+      <triangular vertex1="miura_deployed_kapton_v23" vertex2="miura_deployed_kapton_v22" vertex3="miura_deployed_kapton_v26"/>
+      <triangular vertex1="miura_deployed_kapton_v24" vertex2="miura_deployed_kapton_v28" vertex3="miura_deployed_kapton_v29"/>
+      <triangular vertex1="miura_deployed_kapton_v27" vertex2="miura_deployed_kapton_v30" vertex3="miura_deployed_kapton_v31"/>
+      <triangular vertex1="miura_deployed_kapton_v24" vertex2="miura_deployed_kapton_v29" vertex3="miura_deployed_kapton_v25"/>
+      <triangular vertex1="miura_deployed_kapton_v27" vertex2="miura_deployed_kapton_v26" vertex3="miura_deployed_kapton_v30"/>
+      <triangular vertex1="miura_deployed_kapton_v28" vertex2="miura_deployed_kapton_v32" vertex3="miura_deployed_kapton_v33"/>
+      <triangular vertex1="miura_deployed_kapton_v31" vertex2="miura_deployed_kapton_v34" vertex3="miura_deployed_kapton_v35"/>
+      <triangular vertex1="miura_deployed_kapton_v28" vertex2="miura_deployed_kapton_v33" vertex3="miura_deployed_kapton_v29"/>
+      <triangular vertex1="miura_deployed_kapton_v31" vertex2="miura_deployed_kapton_v30" vertex3="miura_deployed_kapton_v34"/>
+      <triangular vertex1="miura_deployed_kapton_v32" vertex2="miura_deployed_kapton_v36" vertex3="miura_deployed_kapton_v37"/>
+      <triangular vertex1="miura_deployed_kapton_v35" vertex2="miura_deployed_kapton_v38" vertex3="miura_deployed_kapton_v39"/>
+      <triangular vertex1="miura_deployed_kapton_v32" vertex2="miura_deployed_kapton_v37" vertex3="miura_deployed_kapton_v33"/>
+      <triangular vertex1="miura_deployed_kapton_v35" vertex2="miura_deployed_kapton_v34" vertex3="miura_deployed_kapton_v38"/>
+      <triangular vertex1="miura_deployed_kapton_v36" vertex2="miura_deployed_kapton_v40" vertex3="miura_deployed_kapton_v41"/>
+      <triangular vertex1="miura_deployed_kapton_v39" vertex2="miura_deployed_kapton_v42" vertex3="miura_deployed_kapton_v43"/>
+      <triangular vertex1="miura_deployed_kapton_v36" vertex2="miura_deployed_kapton_v41" vertex3="miura_deployed_kapton_v37"/>
+      <triangular vertex1="miura_deployed_kapton_v39" vertex2="miura_deployed_kapton_v38" vertex3="miura_deployed_kapton_v42"/>
+      <triangular vertex1="miura_deployed_kapton_v40" vertex2="miura_deployed_kapton_v44" vertex3="miura_deployed_kapton_v45"/>
+      <triangular vertex1="miura_deployed_kapton_v43" vertex2="miura_deployed_kapton_v46" vertex3="miura_deployed_kapton_v47"/>
+      <triangular vertex1="miura_deployed_kapton_v40" vertex2="miura_deployed_kapton_v45" vertex3="miura_deployed_kapton_v41"/>
+      <triangular vertex1="miura_deployed_kapton_v43" vertex2="miura_deployed_kapton_v42" vertex3="miura_deployed_kapton_v46"/>
+      <triangular vertex1="miura_deployed_kapton_v44" vertex2="miura_deployed_kapton_v48" vertex3="miura_deployed_kapton_v49"/>
+      <triangular vertex1="miura_deployed_kapton_v47" vertex2="miura_deployed_kapton_v50" vertex3="miura_deployed_kapton_v51"/>
+      <triangular vertex1="miura_deployed_kapton_v44" vertex2="miura_deployed_kapton_v49" vertex3="miura_deployed_kapton_v45"/>
+      <triangular vertex1="miura_deployed_kapton_v47" vertex2="miura_deployed_kapton_v46" vertex3="miura_deployed_kapton_v50"/>
+      <triangular vertex1="miura_deployed_kapton_v48" vertex2="miura_deployed_kapton_v0" vertex3="miura_deployed_kapton_v6"/>
+      <triangular vertex1="miura_deployed_kapton_v51" vertex2="miura_deployed_kapton_v7" vertex3="miura_deployed_kapton_v3"/>
+      <triangular vertex1="miura_deployed_kapton_v48" vertex2="miura_deployed_kapton_v6" vertex3="miura_deployed_kapton_v49"/>
+      <triangular vertex1="miura_deployed_kapton_v51" vertex2="miura_deployed_kapton_v50" vertex3="miura_deployed_kapton_v7"/>
+      <triangular vertex1="miura_deployed_kapton_v6" vertex2="miura_deployed_kapton_v2" vertex3="miura_deployed_kapton_v52"/>
+      <triangular vertex1="miura_deployed_kapton_v7" vertex2="miura_deployed_kapton_v53" vertex3="miura_deployed_kapton_v4"/>
+      <triangular vertex1="miura_deployed_kapton_v6" vertex2="miura_deployed_kapton_v52" vertex3="miura_deployed_kapton_v54"/>
+      <triangular vertex1="miura_deployed_kapton_v7" vertex2="miura_deployed_kapton_v55" vertex3="miura_deployed_kapton_v53"/>
+      <triangular vertex1="miura_deployed_kapton_v2" vertex2="miura_deployed_kapton_v9" vertex3="miura_deployed_kapton_v56"/>
+      <triangular vertex1="miura_deployed_kapton_v4" vertex2="miura_deployed_kapton_v57" vertex3="miura_deployed_kapton_v10"/>
+      <triangular vertex1="miura_deployed_kapton_v2" vertex2="miura_deployed_kapton_v56" vertex3="miura_deployed_kapton_v52"/>
+      <triangular vertex1="miura_deployed_kapton_v4" vertex2="miura_deployed_kapton_v53" vertex3="miura_deployed_kapton_v57"/>
+      <triangular vertex1="miura_deployed_kapton_v9" vertex2="miura_deployed_kapton_v13" vertex3="miura_deployed_kapton_v58"/>
+      <triangular vertex1="miura_deployed_kapton_v10" vertex2="miura_deployed_kapton_v59" vertex3="miura_deployed_kapton_v14"/>
+      <triangular vertex1="miura_deployed_kapton_v9" vertex2="miura_deployed_kapton_v58" vertex3="miura_deployed_kapton_v56"/>
+      <triangular vertex1="miura_deployed_kapton_v10" vertex2="miura_deployed_kapton_v57" vertex3="miura_deployed_kapton_v59"/>
+      <triangular vertex1="miura_deployed_kapton_v13" vertex2="miura_deployed_kapton_v17" vertex3="miura_deployed_kapton_v60"/>
+      <triangular vertex1="miura_deployed_kapton_v14" vertex2="miura_deployed_kapton_v61" vertex3="miura_deployed_kapton_v18"/>
+      <triangular vertex1="miura_deployed_kapton_v13" vertex2="miura_deployed_kapton_v60" vertex3="miura_deployed_kapton_v58"/>
+      <triangular vertex1="miura_deployed_kapton_v14" vertex2="miura_deployed_kapton_v59" vertex3="miura_deployed_kapton_v61"/>
+      <triangular vertex1="miura_deployed_kapton_v17" vertex2="miura_deployed_kapton_v21" vertex3="miura_deployed_kapton_v62"/>
+      <triangular vertex1="miura_deployed_kapton_v18" vertex2="miura_deployed_kapton_v63" vertex3="miura_deployed_kapton_v22"/>
+      <triangular vertex1="miura_deployed_kapton_v17" vertex2="miura_deployed_kapton_v62" vertex3="miura_deployed_kapton_v60"/>
+      <triangular vertex1="miura_deployed_kapton_v18" vertex2="miura_deployed_kapton_v61" vertex3="miura_deployed_kapton_v63"/>
+      <triangular vertex1="miura_deployed_kapton_v21" vertex2="miura_deployed_kapton_v25" vertex3="miura_deployed_kapton_v64"/>
+      <triangular vertex1="miura_deployed_kapton_v22" vertex2="miura_deployed_kapton_v65" vertex3="miura_deployed_kapton_v26"/>
+      <triangular vertex1="miura_deployed_kapton_v21" vertex2="miura_deployed_kapton_v64" vertex3="miura_deployed_kapton_v62"/>
+      <triangular vertex1="miura_deployed_kapton_v22" vertex2="miura_deployed_kapton_v63" vertex3="miura_deployed_kapton_v65"/>
+      <triangular vertex1="miura_deployed_kapton_v25" vertex2="miura_deployed_kapton_v29" vertex3="miura_deployed_kapton_v66"/>
+      <triangular vertex1="miura_deployed_kapton_v26" vertex2="miura_deployed_kapton_v67" vertex3="miura_deployed_kapton_v30"/>
+      <triangular vertex1="miura_deployed_kapton_v25" vertex2="miura_deployed_kapton_v66" vertex3="miura_deployed_kapton_v64"/>
+      <triangular vertex1="miura_deployed_kapton_v26" vertex2="miura_deployed_kapton_v65" vertex3="miura_deployed_kapton_v67"/>
+      <triangular vertex1="miura_deployed_kapton_v29" vertex2="miura_deployed_kapton_v33" vertex3="miura_deployed_kapton_v68"/>
+      <triangular vertex1="miura_deployed_kapton_v30" vertex2="miura_deployed_kapton_v69" vertex3="miura_deployed_kapton_v34"/>
+      <triangular vertex1="miura_deployed_kapton_v29" vertex2="miura_deployed_kapton_v68" vertex3="miura_deployed_kapton_v66"/>
+      <triangular vertex1="miura_deployed_kapton_v30" vertex2="miura_deployed_kapton_v67" vertex3="miura_deployed_kapton_v69"/>
+      <triangular vertex1="miura_deployed_kapton_v33" vertex2="miura_deployed_kapton_v37" vertex3="miura_deployed_kapton_v70"/>
+      <triangular vertex1="miura_deployed_kapton_v34" vertex2="miura_deployed_kapton_v71" vertex3="miura_deployed_kapton_v38"/>
+      <triangular vertex1="miura_deployed_kapton_v33" vertex2="miura_deployed_kapton_v70" vertex3="miura_deployed_kapton_v68"/>
+      <triangular vertex1="miura_deployed_kapton_v34" vertex2="miura_deployed_kapton_v69" vertex3="miura_deployed_kapton_v71"/>
+      <triangular vertex1="miura_deployed_kapton_v37" vertex2="miura_deployed_kapton_v41" vertex3="miura_deployed_kapton_v72"/>
+      <triangular vertex1="miura_deployed_kapton_v38" vertex2="miura_deployed_kapton_v73" vertex3="miura_deployed_kapton_v42"/>
+      <triangular vertex1="miura_deployed_kapton_v37" vertex2="miura_deployed_kapton_v72" vertex3="miura_deployed_kapton_v70"/>
+      <triangular vertex1="miura_deployed_kapton_v38" vertex2="miura_deployed_kapton_v71" vertex3="miura_deployed_kapton_v73"/>
+      <triangular vertex1="miura_deployed_kapton_v41" vertex2="miura_deployed_kapton_v45" vertex3="miura_deployed_kapton_v74"/>
+      <triangular vertex1="miura_deployed_kapton_v42" vertex2="miura_deployed_kapton_v75" vertex3="miura_deployed_kapton_v46"/>
+      <triangular vertex1="miura_deployed_kapton_v41" vertex2="miura_deployed_kapton_v74" vertex3="miura_deployed_kapton_v72"/>
+      <triangular vertex1="miura_deployed_kapton_v42" vertex2="miura_deployed_kapton_v73" vertex3="miura_deployed_kapton_v75"/>
+      <triangular vertex1="miura_deployed_kapton_v45" vertex2="miura_deployed_kapton_v49" vertex3="miura_deployed_kapton_v76"/>
+      <triangular vertex1="miura_deployed_kapton_v46" vertex2="miura_deployed_kapton_v77" vertex3="miura_deployed_kapton_v50"/>
+      <triangular vertex1="miura_deployed_kapton_v45" vertex2="miura_deployed_kapton_v76" vertex3="miura_deployed_kapton_v74"/>
+      <triangular vertex1="miura_deployed_kapton_v46" vertex2="miura_deployed_kapton_v75" vertex3="miura_deployed_kapton_v77"/>
+      <triangular vertex1="miura_deployed_kapton_v49" vertex2="miura_deployed_kapton_v6" vertex3="miura_deployed_kapton_v54"/>
+      <triangular vertex1="miura_deployed_kapton_v50" vertex2="miura_deployed_kapton_v55" vertex3="miura_deployed_kapton_v7"/>
+      <triangular vertex1="miura_deployed_kapton_v49" vertex2="miura_deployed_kapton_v54" vertex3="miura_deployed_kapton_v76"/>
+      <triangular vertex1="miura_deployed_kapton_v50" vertex2="miura_deployed_kapton_v77" vertex3="miura_deployed_kapton_v55"/>
+      <triangular vertex1="miura_deployed_kapton_v54" vertex2="miura_deployed_kapton_v52" vertex3="miura_deployed_kapton_v78"/>
+      <triangular vertex1="miura_deployed_kapton_v55" vertex2="miura_deployed_kapton_v79" vertex3="miura_deployed_kapton_v53"/>
+      <triangular vertex1="miura_deployed_kapton_v54" vertex2="miura_deployed_kapton_v78" vertex3="miura_deployed_kapton_v80"/>
+      <triangular vertex1="miura_deployed_kapton_v55" vertex2="miura_deployed_kapton_v81" vertex3="miura_deployed_kapton_v79"/>
+      <triangular vertex1="miura_deployed_kapton_v52" vertex2="miura_deployed_kapton_v56" vertex3="miura_deployed_kapton_v82"/>
+      <triangular vertex1="miura_deployed_kapton_v53" vertex2="miura_deployed_kapton_v83" vertex3="miura_deployed_kapton_v57"/>
+      <triangular vertex1="miura_deployed_kapton_v52" vertex2="miura_deployed_kapton_v82" vertex3="miura_deployed_kapton_v78"/>
+      <triangular vertex1="miura_deployed_kapton_v53" vertex2="miura_deployed_kapton_v79" vertex3="miura_deployed_kapton_v83"/>
+      <triangular vertex1="miura_deployed_kapton_v56" vertex2="miura_deployed_kapton_v58" vertex3="miura_deployed_kapton_v84"/>
+      <triangular vertex1="miura_deployed_kapton_v57" vertex2="miura_deployed_kapton_v85" vertex3="miura_deployed_kapton_v59"/>
+      <triangular vertex1="miura_deployed_kapton_v56" vertex2="miura_deployed_kapton_v84" vertex3="miura_deployed_kapton_v82"/>
+      <triangular vertex1="miura_deployed_kapton_v57" vertex2="miura_deployed_kapton_v83" vertex3="miura_deployed_kapton_v85"/>
+      <triangular vertex1="miura_deployed_kapton_v58" vertex2="miura_deployed_kapton_v60" vertex3="miura_deployed_kapton_v86"/>
+      <triangular vertex1="miura_deployed_kapton_v59" vertex2="miura_deployed_kapton_v87" vertex3="miura_deployed_kapton_v61"/>
+      <triangular vertex1="miura_deployed_kapton_v58" vertex2="miura_deployed_kapton_v86" vertex3="miura_deployed_kapton_v84"/>
+      <triangular vertex1="miura_deployed_kapton_v59" vertex2="miura_deployed_kapton_v85" vertex3="miura_deployed_kapton_v87"/>
+      <triangular vertex1="miura_deployed_kapton_v60" vertex2="miura_deployed_kapton_v62" vertex3="miura_deployed_kapton_v88"/>
+      <triangular vertex1="miura_deployed_kapton_v61" vertex2="miura_deployed_kapton_v89" vertex3="miura_deployed_kapton_v63"/>
+      <triangular vertex1="miura_deployed_kapton_v60" vertex2="miura_deployed_kapton_v88" vertex3="miura_deployed_kapton_v86"/>
+      <triangular vertex1="miura_deployed_kapton_v61" vertex2="miura_deployed_kapton_v87" vertex3="miura_deployed_kapton_v89"/>
+      <triangular vertex1="miura_deployed_kapton_v62" vertex2="miura_deployed_kapton_v64" vertex3="miura_deployed_kapton_v90"/>
+      <triangular vertex1="miura_deployed_kapton_v63" vertex2="miura_deployed_kapton_v91" vertex3="miura_deployed_kapton_v65"/>
+      <triangular vertex1="miura_deployed_kapton_v62" vertex2="miura_deployed_kapton_v90" vertex3="miura_deployed_kapton_v88"/>
+      <triangular vertex1="miura_deployed_kapton_v63" vertex2="miura_deployed_kapton_v89" vertex3="miura_deployed_kapton_v91"/>
+      <triangular vertex1="miura_deployed_kapton_v64" vertex2="miura_deployed_kapton_v66" vertex3="miura_deployed_kapton_v92"/>
+      <triangular vertex1="miura_deployed_kapton_v65" vertex2="miura_deployed_kapton_v93" vertex3="miura_deployed_kapton_v67"/>
+      <triangular vertex1="miura_deployed_kapton_v64" vertex2="miura_deployed_kapton_v92" vertex3="miura_deployed_kapton_v90"/>
+      <triangular vertex1="miura_deployed_kapton_v65" vertex2="miura_deployed_kapton_v91" vertex3="miura_deployed_kapton_v93"/>
+      <triangular vertex1="miura_deployed_kapton_v66" vertex2="miura_deployed_kapton_v68" vertex3="miura_deployed_kapton_v94"/>
+      <triangular vertex1="miura_deployed_kapton_v67" vertex2="miura_deployed_kapton_v95" vertex3="miura_deployed_kapton_v69"/>
+      <triangular vertex1="miura_deployed_kapton_v66" vertex2="miura_deployed_kapton_v94" vertex3="miura_deployed_kapton_v92"/>
+      <triangular vertex1="miura_deployed_kapton_v67" vertex2="miura_deployed_kapton_v93" vertex3="miura_deployed_kapton_v95"/>
+      <triangular vertex1="miura_deployed_kapton_v68" vertex2="miura_deployed_kapton_v70" vertex3="miura_deployed_kapton_v96"/>
+      <triangular vertex1="miura_deployed_kapton_v69" vertex2="miura_deployed_kapton_v97" vertex3="miura_deployed_kapton_v71"/>
+      <triangular vertex1="miura_deployed_kapton_v68" vertex2="miura_deployed_kapton_v96" vertex3="miura_deployed_kapton_v94"/>
+      <triangular vertex1="miura_deployed_kapton_v69" vertex2="miura_deployed_kapton_v95" vertex3="miura_deployed_kapton_v97"/>
+      <triangular vertex1="miura_deployed_kapton_v70" vertex2="miura_deployed_kapton_v72" vertex3="miura_deployed_kapton_v98"/>
+      <triangular vertex1="miura_deployed_kapton_v71" vertex2="miura_deployed_kapton_v99" vertex3="miura_deployed_kapton_v73"/>
+      <triangular vertex1="miura_deployed_kapton_v70" vertex2="miura_deployed_kapton_v98" vertex3="miura_deployed_kapton_v96"/>
+      <triangular vertex1="miura_deployed_kapton_v71" vertex2="miura_deployed_kapton_v97" vertex3="miura_deployed_kapton_v99"/>
+      <triangular vertex1="miura_deployed_kapton_v72" vertex2="miura_deployed_kapton_v74" vertex3="miura_deployed_kapton_v100"/>
+      <triangular vertex1="miura_deployed_kapton_v73" vertex2="miura_deployed_kapton_v101" vertex3="miura_deployed_kapton_v75"/>
+      <triangular vertex1="miura_deployed_kapton_v72" vertex2="miura_deployed_kapton_v100" vertex3="miura_deployed_kapton_v98"/>
+      <triangular vertex1="miura_deployed_kapton_v73" vertex2="miura_deployed_kapton_v99" vertex3="miura_deployed_kapton_v101"/>
+      <triangular vertex1="miura_deployed_kapton_v74" vertex2="miura_deployed_kapton_v76" vertex3="miura_deployed_kapton_v102"/>
+      <triangular vertex1="miura_deployed_kapton_v75" vertex2="miura_deployed_kapton_v103" vertex3="miura_deployed_kapton_v77"/>
+      <triangular vertex1="miura_deployed_kapton_v74" vertex2="miura_deployed_kapton_v102" vertex3="miura_deployed_kapton_v100"/>
+      <triangular vertex1="miura_deployed_kapton_v75" vertex2="miura_deployed_kapton_v101" vertex3="miura_deployed_kapton_v103"/>
+      <triangular vertex1="miura_deployed_kapton_v76" vertex2="miura_deployed_kapton_v54" vertex3="miura_deployed_kapton_v80"/>
+      <triangular vertex1="miura_deployed_kapton_v77" vertex2="miura_deployed_kapton_v81" vertex3="miura_deployed_kapton_v55"/>
+      <triangular vertex1="miura_deployed_kapton_v76" vertex2="miura_deployed_kapton_v80" vertex3="miura_deployed_kapton_v102"/>
+      <triangular vertex1="miura_deployed_kapton_v77" vertex2="miura_deployed_kapton_v103" vertex3="miura_deployed_kapton_v81"/>
+      <triangular vertex1="miura_deployed_kapton_v80" vertex2="miura_deployed_kapton_v78" vertex3="miura_deployed_kapton_v104"/>
+      <triangular vertex1="miura_deployed_kapton_v81" vertex2="miura_deployed_kapton_v105" vertex3="miura_deployed_kapton_v79"/>
+      <triangular vertex1="miura_deployed_kapton_v80" vertex2="miura_deployed_kapton_v104" vertex3="miura_deployed_kapton_v106"/>
+      <triangular vertex1="miura_deployed_kapton_v81" vertex2="miura_deployed_kapton_v107" vertex3="miura_deployed_kapton_v105"/>
+      <triangular vertex1="miura_deployed_kapton_v78" vertex2="miura_deployed_kapton_v82" vertex3="miura_deployed_kapton_v108"/>
+      <triangular vertex1="miura_deployed_kapton_v79" vertex2="miura_deployed_kapton_v109" vertex3="miura_deployed_kapton_v83"/>
+      <triangular vertex1="miura_deployed_kapton_v78" vertex2="miura_deployed_kapton_v108" vertex3="miura_deployed_kapton_v104"/>
+      <triangular vertex1="miura_deployed_kapton_v79" vertex2="miura_deployed_kapton_v105" vertex3="miura_deployed_kapton_v109"/>
+      <triangular vertex1="miura_deployed_kapton_v82" vertex2="miura_deployed_kapton_v84" vertex3="miura_deployed_kapton_v110"/>
+      <triangular vertex1="miura_deployed_kapton_v83" vertex2="miura_deployed_kapton_v111" vertex3="miura_deployed_kapton_v85"/>
+      <triangular vertex1="miura_deployed_kapton_v82" vertex2="miura_deployed_kapton_v110" vertex3="miura_deployed_kapton_v108"/>
+      <triangular vertex1="miura_deployed_kapton_v83" vertex2="miura_deployed_kapton_v109" vertex3="miura_deployed_kapton_v111"/>
+      <triangular vertex1="miura_deployed_kapton_v84" vertex2="miura_deployed_kapton_v86" vertex3="miura_deployed_kapton_v112"/>
+      <triangular vertex1="miura_deployed_kapton_v85" vertex2="miura_deployed_kapton_v113" vertex3="miura_deployed_kapton_v87"/>
+      <triangular vertex1="miura_deployed_kapton_v84" vertex2="miura_deployed_kapton_v112" vertex3="miura_deployed_kapton_v110"/>
+      <triangular vertex1="miura_deployed_kapton_v85" vertex2="miura_deployed_kapton_v111" vertex3="miura_deployed_kapton_v113"/>
+      <triangular vertex1="miura_deployed_kapton_v86" vertex2="miura_deployed_kapton_v88" vertex3="miura_deployed_kapton_v114"/>
+      <triangular vertex1="miura_deployed_kapton_v87" vertex2="miura_deployed_kapton_v115" vertex3="miura_deployed_kapton_v89"/>
+      <triangular vertex1="miura_deployed_kapton_v86" vertex2="miura_deployed_kapton_v114" vertex3="miura_deployed_kapton_v112"/>
+      <triangular vertex1="miura_deployed_kapton_v87" vertex2="miura_deployed_kapton_v113" vertex3="miura_deployed_kapton_v115"/>
+      <triangular vertex1="miura_deployed_kapton_v88" vertex2="miura_deployed_kapton_v90" vertex3="miura_deployed_kapton_v116"/>
+      <triangular vertex1="miura_deployed_kapton_v89" vertex2="miura_deployed_kapton_v117" vertex3="miura_deployed_kapton_v91"/>
+      <triangular vertex1="miura_deployed_kapton_v88" vertex2="miura_deployed_kapton_v116" vertex3="miura_deployed_kapton_v114"/>
+      <triangular vertex1="miura_deployed_kapton_v89" vertex2="miura_deployed_kapton_v115" vertex3="miura_deployed_kapton_v117"/>
+      <triangular vertex1="miura_deployed_kapton_v90" vertex2="miura_deployed_kapton_v92" vertex3="miura_deployed_kapton_v118"/>
+      <triangular vertex1="miura_deployed_kapton_v91" vertex2="miura_deployed_kapton_v119" vertex3="miura_deployed_kapton_v93"/>
+      <triangular vertex1="miura_deployed_kapton_v90" vertex2="miura_deployed_kapton_v118" vertex3="miura_deployed_kapton_v116"/>
+      <triangular vertex1="miura_deployed_kapton_v91" vertex2="miura_deployed_kapton_v117" vertex3="miura_deployed_kapton_v119"/>
+      <triangular vertex1="miura_deployed_kapton_v92" vertex2="miura_deployed_kapton_v94" vertex3="miura_deployed_kapton_v120"/>
+      <triangular vertex1="miura_deployed_kapton_v93" vertex2="miura_deployed_kapton_v121" vertex3="miura_deployed_kapton_v95"/>
+      <triangular vertex1="miura_deployed_kapton_v92" vertex2="miura_deployed_kapton_v120" vertex3="miura_deployed_kapton_v118"/>
+      <triangular vertex1="miura_deployed_kapton_v93" vertex2="miura_deployed_kapton_v119" vertex3="miura_deployed_kapton_v121"/>
+      <triangular vertex1="miura_deployed_kapton_v94" vertex2="miura_deployed_kapton_v96" vertex3="miura_deployed_kapton_v122"/>
+      <triangular vertex1="miura_deployed_kapton_v95" vertex2="miura_deployed_kapton_v123" vertex3="miura_deployed_kapton_v97"/>
+      <triangular vertex1="miura_deployed_kapton_v94" vertex2="miura_deployed_kapton_v122" vertex3="miura_deployed_kapton_v120"/>
+      <triangular vertex1="miura_deployed_kapton_v95" vertex2="miura_deployed_kapton_v121" vertex3="miura_deployed_kapton_v123"/>
+      <triangular vertex1="miura_deployed_kapton_v96" vertex2="miura_deployed_kapton_v98" vertex3="miura_deployed_kapton_v124"/>
+      <triangular vertex1="miura_deployed_kapton_v97" vertex2="miura_deployed_kapton_v125" vertex3="miura_deployed_kapton_v99"/>
+      <triangular vertex1="miura_deployed_kapton_v96" vertex2="miura_deployed_kapton_v124" vertex3="miura_deployed_kapton_v122"/>
+      <triangular vertex1="miura_deployed_kapton_v97" vertex2="miura_deployed_kapton_v123" vertex3="miura_deployed_kapton_v125"/>
+      <triangular vertex1="miura_deployed_kapton_v98" vertex2="miura_deployed_kapton_v100" vertex3="miura_deployed_kapton_v126"/>
+      <triangular vertex1="miura_deployed_kapton_v99" vertex2="miura_deployed_kapton_v127" vertex3="miura_deployed_kapton_v101"/>
+      <triangular vertex1="miura_deployed_kapton_v98" vertex2="miura_deployed_kapton_v126" vertex3="miura_deployed_kapton_v124"/>
+      <triangular vertex1="miura_deployed_kapton_v99" vertex2="miura_deployed_kapton_v125" vertex3="miura_deployed_kapton_v127"/>
+      <triangular vertex1="miura_deployed_kapton_v100" vertex2="miura_deployed_kapton_v102" vertex3="miura_deployed_kapton_v128"/>
+      <triangular vertex1="miura_deployed_kapton_v101" vertex2="miura_deployed_kapton_v129" vertex3="miura_deployed_kapton_v103"/>
+      <triangular vertex1="miura_deployed_kapton_v100" vertex2="miura_deployed_kapton_v128" vertex3="miura_deployed_kapton_v126"/>
+      <triangular vertex1="miura_deployed_kapton_v101" vertex2="miura_deployed_kapton_v127" vertex3="miura_deployed_kapton_v129"/>
+      <triangular vertex1="miura_deployed_kapton_v102" vertex2="miura_deployed_kapton_v80" vertex3="miura_deployed_kapton_v106"/>
+      <triangular vertex1="miura_deployed_kapton_v103" vertex2="miura_deployed_kapton_v107" vertex3="miura_deployed_kapton_v81"/>
+      <triangular vertex1="miura_deployed_kapton_v102" vertex2="miura_deployed_kapton_v106" vertex3="miura_deployed_kapton_v128"/>
+      <triangular vertex1="miura_deployed_kapton_v103" vertex2="miura_deployed_kapton_v129" vertex3="miura_deployed_kapton_v107"/>
+      <triangular vertex1="miura_deployed_kapton_v106" vertex2="miura_deployed_kapton_v104" vertex3="miura_deployed_kapton_v130"/>
+      <triangular vertex1="miura_deployed_kapton_v107" vertex2="miura_deployed_kapton_v131" vertex3="miura_deployed_kapton_v105"/>
+      <triangular vertex1="miura_deployed_kapton_v106" vertex2="miura_deployed_kapton_v130" vertex3="miura_deployed_kapton_v132"/>
+      <triangular vertex1="miura_deployed_kapton_v107" vertex2="miura_deployed_kapton_v133" vertex3="miura_deployed_kapton_v131"/>
+      <triangular vertex1="miura_deployed_kapton_v104" vertex2="miura_deployed_kapton_v108" vertex3="miura_deployed_kapton_v134"/>
+      <triangular vertex1="miura_deployed_kapton_v105" vertex2="miura_deployed_kapton_v135" vertex3="miura_deployed_kapton_v109"/>
+      <triangular vertex1="miura_deployed_kapton_v104" vertex2="miura_deployed_kapton_v134" vertex3="miura_deployed_kapton_v130"/>
+      <triangular vertex1="miura_deployed_kapton_v105" vertex2="miura_deployed_kapton_v131" vertex3="miura_deployed_kapton_v135"/>
+      <triangular vertex1="miura_deployed_kapton_v108" vertex2="miura_deployed_kapton_v110" vertex3="miura_deployed_kapton_v136"/>
+      <triangular vertex1="miura_deployed_kapton_v109" vertex2="miura_deployed_kapton_v137" vertex3="miura_deployed_kapton_v111"/>
+      <triangular vertex1="miura_deployed_kapton_v108" vertex2="miura_deployed_kapton_v136" vertex3="miura_deployed_kapton_v134"/>
+      <triangular vertex1="miura_deployed_kapton_v109" vertex2="miura_deployed_kapton_v135" vertex3="miura_deployed_kapton_v137"/>
+      <triangular vertex1="miura_deployed_kapton_v110" vertex2="miura_deployed_kapton_v112" vertex3="miura_deployed_kapton_v138"/>
+      <triangular vertex1="miura_deployed_kapton_v111" vertex2="miura_deployed_kapton_v139" vertex3="miura_deployed_kapton_v113"/>
+      <triangular vertex1="miura_deployed_kapton_v110" vertex2="miura_deployed_kapton_v138" vertex3="miura_deployed_kapton_v136"/>
+      <triangular vertex1="miura_deployed_kapton_v111" vertex2="miura_deployed_kapton_v137" vertex3="miura_deployed_kapton_v139"/>
+      <triangular vertex1="miura_deployed_kapton_v112" vertex2="miura_deployed_kapton_v114" vertex3="miura_deployed_kapton_v140"/>
+      <triangular vertex1="miura_deployed_kapton_v113" vertex2="miura_deployed_kapton_v141" vertex3="miura_deployed_kapton_v115"/>
+      <triangular vertex1="miura_deployed_kapton_v112" vertex2="miura_deployed_kapton_v140" vertex3="miura_deployed_kapton_v138"/>
+      <triangular vertex1="miura_deployed_kapton_v113" vertex2="miura_deployed_kapton_v139" vertex3="miura_deployed_kapton_v141"/>
+      <triangular vertex1="miura_deployed_kapton_v114" vertex2="miura_deployed_kapton_v116" vertex3="miura_deployed_kapton_v142"/>
+      <triangular vertex1="miura_deployed_kapton_v115" vertex2="miura_deployed_kapton_v143" vertex3="miura_deployed_kapton_v117"/>
+      <triangular vertex1="miura_deployed_kapton_v114" vertex2="miura_deployed_kapton_v142" vertex3="miura_deployed_kapton_v140"/>
+      <triangular vertex1="miura_deployed_kapton_v115" vertex2="miura_deployed_kapton_v141" vertex3="miura_deployed_kapton_v143"/>
+      <triangular vertex1="miura_deployed_kapton_v116" vertex2="miura_deployed_kapton_v118" vertex3="miura_deployed_kapton_v144"/>
+      <triangular vertex1="miura_deployed_kapton_v117" vertex2="miura_deployed_kapton_v145" vertex3="miura_deployed_kapton_v119"/>
+      <triangular vertex1="miura_deployed_kapton_v116" vertex2="miura_deployed_kapton_v144" vertex3="miura_deployed_kapton_v142"/>
+      <triangular vertex1="miura_deployed_kapton_v117" vertex2="miura_deployed_kapton_v143" vertex3="miura_deployed_kapton_v145"/>
+      <triangular vertex1="miura_deployed_kapton_v118" vertex2="miura_deployed_kapton_v120" vertex3="miura_deployed_kapton_v146"/>
+      <triangular vertex1="miura_deployed_kapton_v119" vertex2="miura_deployed_kapton_v147" vertex3="miura_deployed_kapton_v121"/>
+      <triangular vertex1="miura_deployed_kapton_v118" vertex2="miura_deployed_kapton_v146" vertex3="miura_deployed_kapton_v144"/>
+      <triangular vertex1="miura_deployed_kapton_v119" vertex2="miura_deployed_kapton_v145" vertex3="miura_deployed_kapton_v147"/>
+      <triangular vertex1="miura_deployed_kapton_v120" vertex2="miura_deployed_kapton_v122" vertex3="miura_deployed_kapton_v148"/>
+      <triangular vertex1="miura_deployed_kapton_v121" vertex2="miura_deployed_kapton_v149" vertex3="miura_deployed_kapton_v123"/>
+      <triangular vertex1="miura_deployed_kapton_v120" vertex2="miura_deployed_kapton_v148" vertex3="miura_deployed_kapton_v146"/>
+      <triangular vertex1="miura_deployed_kapton_v121" vertex2="miura_deployed_kapton_v147" vertex3="miura_deployed_kapton_v149"/>
+      <triangular vertex1="miura_deployed_kapton_v122" vertex2="miura_deployed_kapton_v124" vertex3="miura_deployed_kapton_v150"/>
+      <triangular vertex1="miura_deployed_kapton_v123" vertex2="miura_deployed_kapton_v151" vertex3="miura_deployed_kapton_v125"/>
+      <triangular vertex1="miura_deployed_kapton_v122" vertex2="miura_deployed_kapton_v150" vertex3="miura_deployed_kapton_v148"/>
+      <triangular vertex1="miura_deployed_kapton_v123" vertex2="miura_deployed_kapton_v149" vertex3="miura_deployed_kapton_v151"/>
+      <triangular vertex1="miura_deployed_kapton_v124" vertex2="miura_deployed_kapton_v126" vertex3="miura_deployed_kapton_v152"/>
+      <triangular vertex1="miura_deployed_kapton_v125" vertex2="miura_deployed_kapton_v153" vertex3="miura_deployed_kapton_v127"/>
+      <triangular vertex1="miura_deployed_kapton_v124" vertex2="miura_deployed_kapton_v152" vertex3="miura_deployed_kapton_v150"/>
+      <triangular vertex1="miura_deployed_kapton_v125" vertex2="miura_deployed_kapton_v151" vertex3="miura_deployed_kapton_v153"/>
+      <triangular vertex1="miura_deployed_kapton_v126" vertex2="miura_deployed_kapton_v128" vertex3="miura_deployed_kapton_v154"/>
+      <triangular vertex1="miura_deployed_kapton_v127" vertex2="miura_deployed_kapton_v155" vertex3="miura_deployed_kapton_v129"/>
+      <triangular vertex1="miura_deployed_kapton_v126" vertex2="miura_deployed_kapton_v154" vertex3="miura_deployed_kapton_v152"/>
+      <triangular vertex1="miura_deployed_kapton_v127" vertex2="miura_deployed_kapton_v153" vertex3="miura_deployed_kapton_v155"/>
+      <triangular vertex1="miura_deployed_kapton_v128" vertex2="miura_deployed_kapton_v106" vertex3="miura_deployed_kapton_v132"/>
+      <triangular vertex1="miura_deployed_kapton_v129" vertex2="miura_deployed_kapton_v133" vertex3="miura_deployed_kapton_v107"/>
+      <triangular vertex1="miura_deployed_kapton_v128" vertex2="miura_deployed_kapton_v132" vertex3="miura_deployed_kapton_v154"/>
+      <triangular vertex1="miura_deployed_kapton_v129" vertex2="miura_deployed_kapton_v155" vertex3="miura_deployed_kapton_v133"/>
+      <triangular vertex1="miura_deployed_kapton_v132" vertex2="miura_deployed_kapton_v130" vertex3="miura_deployed_kapton_v156"/>
+      <triangular vertex1="miura_deployed_kapton_v133" vertex2="miura_deployed_kapton_v157" vertex3="miura_deployed_kapton_v131"/>
+      <triangular vertex1="miura_deployed_kapton_v132" vertex2="miura_deployed_kapton_v156" vertex3="miura_deployed_kapton_v158"/>
+      <triangular vertex1="miura_deployed_kapton_v133" vertex2="miura_deployed_kapton_v159" vertex3="miura_deployed_kapton_v157"/>
+      <triangular vertex1="miura_deployed_kapton_v130" vertex2="miura_deployed_kapton_v134" vertex3="miura_deployed_kapton_v160"/>
+      <triangular vertex1="miura_deployed_kapton_v131" vertex2="miura_deployed_kapton_v161" vertex3="miura_deployed_kapton_v135"/>
+      <triangular vertex1="miura_deployed_kapton_v130" vertex2="miura_deployed_kapton_v160" vertex3="miura_deployed_kapton_v156"/>
+      <triangular vertex1="miura_deployed_kapton_v131" vertex2="miura_deployed_kapton_v157" vertex3="miura_deployed_kapton_v161"/>
+      <triangular vertex1="miura_deployed_kapton_v134" vertex2="miura_deployed_kapton_v136" vertex3="miura_deployed_kapton_v162"/>
+      <triangular vertex1="miura_deployed_kapton_v135" vertex2="miura_deployed_kapton_v163" vertex3="miura_deployed_kapton_v137"/>
+      <triangular vertex1="miura_deployed_kapton_v134" vertex2="miura_deployed_kapton_v162" vertex3="miura_deployed_kapton_v160"/>
+      <triangular vertex1="miura_deployed_kapton_v135" vertex2="miura_deployed_kapton_v161" vertex3="miura_deployed_kapton_v163"/>
+      <triangular vertex1="miura_deployed_kapton_v136" vertex2="miura_deployed_kapton_v138" vertex3="miura_deployed_kapton_v164"/>
+      <triangular vertex1="miura_deployed_kapton_v137" vertex2="miura_deployed_kapton_v165" vertex3="miura_deployed_kapton_v139"/>
+      <triangular vertex1="miura_deployed_kapton_v136" vertex2="miura_deployed_kapton_v164" vertex3="miura_deployed_kapton_v162"/>
+      <triangular vertex1="miura_deployed_kapton_v137" vertex2="miura_deployed_kapton_v163" vertex3="miura_deployed_kapton_v165"/>
+      <triangular vertex1="miura_deployed_kapton_v138" vertex2="miura_deployed_kapton_v140" vertex3="miura_deployed_kapton_v166"/>
+      <triangular vertex1="miura_deployed_kapton_v139" vertex2="miura_deployed_kapton_v167" vertex3="miura_deployed_kapton_v141"/>
+      <triangular vertex1="miura_deployed_kapton_v138" vertex2="miura_deployed_kapton_v166" vertex3="miura_deployed_kapton_v164"/>
+      <triangular vertex1="miura_deployed_kapton_v139" vertex2="miura_deployed_kapton_v165" vertex3="miura_deployed_kapton_v167"/>
+      <triangular vertex1="miura_deployed_kapton_v140" vertex2="miura_deployed_kapton_v142" vertex3="miura_deployed_kapton_v168"/>
+      <triangular vertex1="miura_deployed_kapton_v141" vertex2="miura_deployed_kapton_v169" vertex3="miura_deployed_kapton_v143"/>
+      <triangular vertex1="miura_deployed_kapton_v140" vertex2="miura_deployed_kapton_v168" vertex3="miura_deployed_kapton_v166"/>
+      <triangular vertex1="miura_deployed_kapton_v141" vertex2="miura_deployed_kapton_v167" vertex3="miura_deployed_kapton_v169"/>
+      <triangular vertex1="miura_deployed_kapton_v142" vertex2="miura_deployed_kapton_v144" vertex3="miura_deployed_kapton_v170"/>
+      <triangular vertex1="miura_deployed_kapton_v143" vertex2="miura_deployed_kapton_v171" vertex3="miura_deployed_kapton_v145"/>
+      <triangular vertex1="miura_deployed_kapton_v142" vertex2="miura_deployed_kapton_v170" vertex3="miura_deployed_kapton_v168"/>
+      <triangular vertex1="miura_deployed_kapton_v143" vertex2="miura_deployed_kapton_v169" vertex3="miura_deployed_kapton_v171"/>
+      <triangular vertex1="miura_deployed_kapton_v144" vertex2="miura_deployed_kapton_v146" vertex3="miura_deployed_kapton_v172"/>
+      <triangular vertex1="miura_deployed_kapton_v145" vertex2="miura_deployed_kapton_v173" vertex3="miura_deployed_kapton_v147"/>
+      <triangular vertex1="miura_deployed_kapton_v144" vertex2="miura_deployed_kapton_v172" vertex3="miura_deployed_kapton_v170"/>
+      <triangular vertex1="miura_deployed_kapton_v145" vertex2="miura_deployed_kapton_v171" vertex3="miura_deployed_kapton_v173"/>
+      <triangular vertex1="miura_deployed_kapton_v146" vertex2="miura_deployed_kapton_v148" vertex3="miura_deployed_kapton_v174"/>
+      <triangular vertex1="miura_deployed_kapton_v147" vertex2="miura_deployed_kapton_v175" vertex3="miura_deployed_kapton_v149"/>
+      <triangular vertex1="miura_deployed_kapton_v146" vertex2="miura_deployed_kapton_v174" vertex3="miura_deployed_kapton_v172"/>
+      <triangular vertex1="miura_deployed_kapton_v147" vertex2="miura_deployed_kapton_v173" vertex3="miura_deployed_kapton_v175"/>
+      <triangular vertex1="miura_deployed_kapton_v148" vertex2="miura_deployed_kapton_v150" vertex3="miura_deployed_kapton_v176"/>
+      <triangular vertex1="miura_deployed_kapton_v149" vertex2="miura_deployed_kapton_v177" vertex3="miura_deployed_kapton_v151"/>
+      <triangular vertex1="miura_deployed_kapton_v148" vertex2="miura_deployed_kapton_v176" vertex3="miura_deployed_kapton_v174"/>
+      <triangular vertex1="miura_deployed_kapton_v149" vertex2="miura_deployed_kapton_v175" vertex3="miura_deployed_kapton_v177"/>
+      <triangular vertex1="miura_deployed_kapton_v150" vertex2="miura_deployed_kapton_v152" vertex3="miura_deployed_kapton_v178"/>
+      <triangular vertex1="miura_deployed_kapton_v151" vertex2="miura_deployed_kapton_v179" vertex3="miura_deployed_kapton_v153"/>
+      <triangular vertex1="miura_deployed_kapton_v150" vertex2="miura_deployed_kapton_v178" vertex3="miura_deployed_kapton_v176"/>
+      <triangular vertex1="miura_deployed_kapton_v151" vertex2="miura_deployed_kapton_v177" vertex3="miura_deployed_kapton_v179"/>
+      <triangular vertex1="miura_deployed_kapton_v152" vertex2="miura_deployed_kapton_v154" vertex3="miura_deployed_kapton_v180"/>
+      <triangular vertex1="miura_deployed_kapton_v153" vertex2="miura_deployed_kapton_v181" vertex3="miura_deployed_kapton_v155"/>
+      <triangular vertex1="miura_deployed_kapton_v152" vertex2="miura_deployed_kapton_v180" vertex3="miura_deployed_kapton_v178"/>
+      <triangular vertex1="miura_deployed_kapton_v153" vertex2="miura_deployed_kapton_v179" vertex3="miura_deployed_kapton_v181"/>
+      <triangular vertex1="miura_deployed_kapton_v154" vertex2="miura_deployed_kapton_v132" vertex3="miura_deployed_kapton_v158"/>
+      <triangular vertex1="miura_deployed_kapton_v155" vertex2="miura_deployed_kapton_v159" vertex3="miura_deployed_kapton_v133"/>
+      <triangular vertex1="miura_deployed_kapton_v154" vertex2="miura_deployed_kapton_v158" vertex3="miura_deployed_kapton_v180"/>
+      <triangular vertex1="miura_deployed_kapton_v155" vertex2="miura_deployed_kapton_v181" vertex3="miura_deployed_kapton_v159"/>
+      <triangular vertex1="miura_deployed_kapton_v3" vertex2="miura_deployed_kapton_v5" vertex3="miura_deployed_kapton_v1"/>
+      <triangular vertex1="miura_deployed_kapton_v3" vertex2="miura_deployed_kapton_v1" vertex3="miura_deployed_kapton_v0"/>
+      <triangular vertex1="miura_deployed_kapton_v5" vertex2="miura_deployed_kapton_v11" vertex3="miura_deployed_kapton_v8"/>
+      <triangular vertex1="miura_deployed_kapton_v5" vertex2="miura_deployed_kapton_v8" vertex3="miura_deployed_kapton_v1"/>
+      <triangular vertex1="miura_deployed_kapton_v11" vertex2="miura_deployed_kapton_v15" vertex3="miura_deployed_kapton_v12"/>
+      <triangular vertex1="miura_deployed_kapton_v11" vertex2="miura_deployed_kapton_v12" vertex3="miura_deployed_kapton_v8"/>
+      <triangular vertex1="miura_deployed_kapton_v15" vertex2="miura_deployed_kapton_v19" vertex3="miura_deployed_kapton_v16"/>
+      <triangular vertex1="miura_deployed_kapton_v15" vertex2="miura_deployed_kapton_v16" vertex3="miura_deployed_kapton_v12"/>
+      <triangular vertex1="miura_deployed_kapton_v19" vertex2="miura_deployed_kapton_v23" vertex3="miura_deployed_kapton_v20"/>
+      <triangular vertex1="miura_deployed_kapton_v19" vertex2="miura_deployed_kapton_v20" vertex3="miura_deployed_kapton_v16"/>
+      <triangular vertex1="miura_deployed_kapton_v23" vertex2="miura_deployed_kapton_v27" vertex3="miura_deployed_kapton_v24"/>
+      <triangular vertex1="miura_deployed_kapton_v23" vertex2="miura_deployed_kapton_v24" vertex3="miura_deployed_kapton_v20"/>
+      <triangular vertex1="miura_deployed_kapton_v27" vertex2="miura_deployed_kapton_v31" vertex3="miura_deployed_kapton_v28"/>
+      <triangular vertex1="miura_deployed_kapton_v27" vertex2="miura_deployed_kapton_v28" vertex3="miura_deployed_kapton_v24"/>
+      <triangular vertex1="miura_deployed_kapton_v31" vertex2="miura_deployed_kapton_v35" vertex3="miura_deployed_kapton_v32"/>
+      <triangular vertex1="miura_deployed_kapton_v31" vertex2="miura_deployed_kapton_v32" vertex3="miura_deployed_kapton_v28"/>
+      <triangular vertex1="miura_deployed_kapton_v35" vertex2="miura_deployed_kapton_v39" vertex3="miura_deployed_kapton_v36"/>
+      <triangular vertex1="miura_deployed_kapton_v35" vertex2="miura_deployed_kapton_v36" vertex3="miura_deployed_kapton_v32"/>
+      <triangular vertex1="miura_deployed_kapton_v39" vertex2="miura_deployed_kapton_v43" vertex3="miura_deployed_kapton_v40"/>
+      <triangular vertex1="miura_deployed_kapton_v39" vertex2="miura_deployed_kapton_v40" vertex3="miura_deployed_kapton_v36"/>
+      <triangular vertex1="miura_deployed_kapton_v43" vertex2="miura_deployed_kapton_v47" vertex3="miura_deployed_kapton_v44"/>
+      <triangular vertex1="miura_deployed_kapton_v43" vertex2="miura_deployed_kapton_v44" vertex3="miura_deployed_kapton_v40"/>
+      <triangular vertex1="miura_deployed_kapton_v47" vertex2="miura_deployed_kapton_v51" vertex3="miura_deployed_kapton_v48"/>
+      <triangular vertex1="miura_deployed_kapton_v47" vertex2="miura_deployed_kapton_v48" vertex3="miura_deployed_kapton_v44"/>
+      <triangular vertex1="miura_deployed_kapton_v51" vertex2="miura_deployed_kapton_v3" vertex3="miura_deployed_kapton_v0"/>
+      <triangular vertex1="miura_deployed_kapton_v51" vertex2="miura_deployed_kapton_v0" vertex3="miura_deployed_kapton_v48"/>
+      <triangular vertex1="miura_deployed_kapton_v157" vertex2="miura_deployed_kapton_v159" vertex3="miura_deployed_kapton_v158"/>
+      <triangular vertex1="miura_deployed_kapton_v157" vertex2="miura_deployed_kapton_v158" vertex3="miura_deployed_kapton_v156"/>
+      <triangular vertex1="miura_deployed_kapton_v161" vertex2="miura_deployed_kapton_v157" vertex3="miura_deployed_kapton_v156"/>
+      <triangular vertex1="miura_deployed_kapton_v161" vertex2="miura_deployed_kapton_v156" vertex3="miura_deployed_kapton_v160"/>
+      <triangular vertex1="miura_deployed_kapton_v163" vertex2="miura_deployed_kapton_v161" vertex3="miura_deployed_kapton_v160"/>
+      <triangular vertex1="miura_deployed_kapton_v163" vertex2="miura_deployed_kapton_v160" vertex3="miura_deployed_kapton_v162"/>
+      <triangular vertex1="miura_deployed_kapton_v165" vertex2="miura_deployed_kapton_v163" vertex3="miura_deployed_kapton_v162"/>
+      <triangular vertex1="miura_deployed_kapton_v165" vertex2="miura_deployed_kapton_v162" vertex3="miura_deployed_kapton_v164"/>
+      <triangular vertex1="miura_deployed_kapton_v167" vertex2="miura_deployed_kapton_v165" vertex3="miura_deployed_kapton_v164"/>
+      <triangular vertex1="miura_deployed_kapton_v167" vertex2="miura_deployed_kapton_v164" vertex3="miura_deployed_kapton_v166"/>
+      <triangular vertex1="miura_deployed_kapton_v169" vertex2="miura_deployed_kapton_v167" vertex3="miura_deployed_kapton_v166"/>
+      <triangular vertex1="miura_deployed_kapton_v169" vertex2="miura_deployed_kapton_v166" vertex3="miura_deployed_kapton_v168"/>
+      <triangular vertex1="miura_deployed_kapton_v171" vertex2="miura_deployed_kapton_v169" vertex3="miura_deployed_kapton_v168"/>
+      <triangular vertex1="miura_deployed_kapton_v171" vertex2="miura_deployed_kapton_v168" vertex3="miura_deployed_kapton_v170"/>
+      <triangular vertex1="miura_deployed_kapton_v173" vertex2="miura_deployed_kapton_v171" vertex3="miura_deployed_kapton_v170"/>
+      <triangular vertex1="miura_deployed_kapton_v173" vertex2="miura_deployed_kapton_v170" vertex3="miura_deployed_kapton_v172"/>
+      <triangular vertex1="miura_deployed_kapton_v175" vertex2="miura_deployed_kapton_v173" vertex3="miura_deployed_kapton_v172"/>
+      <triangular vertex1="miura_deployed_kapton_v175" vertex2="miura_deployed_kapton_v172" vertex3="miura_deployed_kapton_v174"/>
+      <triangular vertex1="miura_deployed_kapton_v177" vertex2="miura_deployed_kapton_v175" vertex3="miura_deployed_kapton_v174"/>
+      <triangular vertex1="miura_deployed_kapton_v177" vertex2="miura_deployed_kapton_v174" vertex3="miura_deployed_kapton_v176"/>
+      <triangular vertex1="miura_deployed_kapton_v179" vertex2="miura_deployed_kapton_v177" vertex3="miura_deployed_kapton_v176"/>
+      <triangular vertex1="miura_deployed_kapton_v179" vertex2="miura_deployed_kapton_v176" vertex3="miura_deployed_kapton_v178"/>
+      <triangular vertex1="miura_deployed_kapton_v181" vertex2="miura_deployed_kapton_v179" vertex3="miura_deployed_kapton_v178"/>
+      <triangular vertex1="miura_deployed_kapton_v181" vertex2="miura_deployed_kapton_v178" vertex3="miura_deployed_kapton_v180"/>
+      <triangular vertex1="miura_deployed_kapton_v159" vertex2="miura_deployed_kapton_v181" vertex3="miura_deployed_kapton_v180"/>
+      <triangular vertex1="miura_deployed_kapton_v159" vertex2="miura_deployed_kapton_v180" vertex3="miura_deployed_kapton_v158"/>
+    </tessellated>
+  </solids>
+  <structure>
+    <volume name="miura_deployed_kapton_volume">
+      <materialref ref="G4_KAPTON"/>
+      <solidref ref="miura_deployed_kapton_solid"/>
+    </volume>
+  </structure>
+  <setup name="Default" version="1.0">
+    <world ref="miura_deployed_kapton_volume"/>
+  </setup>
+</gdml>

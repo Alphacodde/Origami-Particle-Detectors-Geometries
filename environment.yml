@@ -1,0 +1,15 @@
+name: origami-tracker
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - scipy>=1.10
+  - matplotlib>=3.7
+  - pandas>=2.0
+  - tqdm>=4.65
+  - pip
+  - pip:
+    - uproot>=5.0
+    - awkward>=2.0

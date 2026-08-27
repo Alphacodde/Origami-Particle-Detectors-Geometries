@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define>
+    <position name="plate_kapton_v0" x="-25" y="-25" z="0.0500000007" unit="mm"/>
+    <position name="plate_kapton_v1" x="-25" y="-25" z="0.100000001" unit="mm"/>
+    <position name="plate_kapton_v2" x="-25" y="25" z="0.0500000007" unit="mm"/>
+    <position name="plate_kapton_v3" x="-25" y="25" z="0.100000001" unit="mm"/>
+    <position name="plate_kapton_v4" x="25" y="-25" z="0.0500000007" unit="mm"/>
+    <position name="plate_kapton_v5" x="25" y="-25" z="0.100000001" unit="mm"/>
+    <position name="plate_kapton_v6" x="25" y="25" z="0.0500000007" unit="mm"/>
+    <position name="plate_kapton_v7" x="25" y="25" z="0.100000001" unit="mm"/>
+  </define>
+  <solids>
+    <tessellated name="plate_kapton_solid">
+      <triangular vertex1="plate_kapton_v0" vertex2="plate_kapton_v5" vertex3="plate_kapton_v1"/>
+      <triangular vertex1="plate_kapton_v0" vertex2="plate_kapton_v4" vertex3="plate_kapton_v5"/>
+      <triangular vertex1="plate_kapton_v4" vertex2="plate_kapton_v0" vertex3="plate_kapton_v6"/>
+      <triangular vertex1="plate_kapton_v5" vertex2="plate_kapton_v7" vertex3="plate_kapton_v1"/>
+      <triangular vertex1="plate_kapton_v4" vertex2="plate_kapton_v7" vertex3="plate_kapton_v5"/>
+      <triangular vertex1="plate_kapton_v4" vertex2="plate_kapton_v6" vertex3="plate_kapton_v7"/>
+      <triangular vertex1="plate_kapton_v2" vertex2="plate_kapton_v0" vertex3="plate_kapton_v1"/>
+      <triangular vertex1="plate_kapton_v2" vertex2="plate_kapton_v6" vertex3="plate_kapton_v0"/>
+      <triangular vertex1="plate_kapton_v2" vertex2="plate_kapton_v3" vertex3="plate_kapton_v6"/>
+      <triangular vertex1="plate_kapton_v2" vertex2="plate_kapton_v1" vertex3="plate_kapton_v3"/>
+      <triangular vertex1="plate_kapton_v3" vertex2="plate_kapton_v1" vertex3="plate_kapton_v7"/>
+      <triangular vertex1="plate_kapton_v3" vertex2="plate_kapton_v7" vertex3="plate_kapton_v6"/>
+    </tessellated>
+  </solids>
+  <structure>
+    <volume name="plate_kapton_volume">
+      <materialref ref="G4_KAPTON"/>
+      <solidref ref="plate_kapton_solid"/>
+    </volume>
+  </structure>
+  <setup name="Default" version="1.0">
+    <world ref="plate_kapton_volume"/>
+  </setup>
+</gdml>

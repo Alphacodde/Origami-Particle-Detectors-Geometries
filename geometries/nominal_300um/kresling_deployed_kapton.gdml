@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define>
+    <position name="kresling_deployed_kapton_v0" x="40.3978293" y="2.58665353e-17" z="-60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v1" x="20.1989147" y="34.9855465" z="-60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v2" x="34.9949003" y="20.2043151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v3" x="40.3480681" y="2.26311001e-17" z="-60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v4" x="34.951599" y="20.1793151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v5" x="20.1740341" y="34.942452" z="-60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v6" x="2.55025503e-15" y="40.4086302" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v7" x="2.53790138e-15" y="40.3586302" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v8" x="-20.1989147" y="34.9855465" z="-60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v9" x="-20.1740341" y="34.942452" z="-60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v10" x="-34.9949003" y="20.2043151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v11" x="-34.951599" y="20.1793151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v12" x="-40.3978293" y="5.03309318e-15" z="-60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v13" x="-40.3480681" y="5.01626892e-15" z="-60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v14" x="-34.9949003" y="-20.2043151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v15" x="-34.951599" y="-20.1793151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v16" x="-20.1989147" y="-34.9855465" z="-60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v17" x="-20.1740341" y="-34.942452" z="-60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v18" x="-7.37444959e-15" y="-40.4086302" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v19" x="-7.37119863e-15" y="-40.3586302" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v20" x="20.1989147" y="-34.9855465" z="-60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v21" x="20.1740341" y="-34.942452" z="-60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v22" x="34.9949003" y="-20.2043151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v23" x="34.951599" y="-20.1793151" z="-40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v24" x="20.2043151" y="34.9949003" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v25" x="20.1793151" y="34.951599" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v26" x="-20.2043151" y="34.9949003" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v27" x="-20.1793151" y="34.951599" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v28" x="-40.4086302" y="5.0420587e-15" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v29" x="-40.3586302" y="5.02450352e-15" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v30" x="-20.2043151" y="-34.9949003" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v31" x="-20.1793151" y="-34.951599" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v32" x="20.2043151" y="-34.9949003" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v33" x="20.1793151" y="-34.951599" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v34" x="40.4086302" y="-9.91939086e-15" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v35" x="40.3586302" y="-9.90443645e-15" z="-20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v36" x="2.50508807e-15" y="40.4086302" z="-5.57944735e-17" unit="mm"/>
+    <position name="kresling_deployed_kapton_v37" x="2.49826106e-15" y="40.3586302" z="-4.89674604e-17" unit="mm"/>
+    <position name="kresling_deployed_kapton_v38" x="-34.9949003" y="20.2043151" z="0" unit="mm"/>
+    <position name="kresling_deployed_kapton_v39" x="-34.951599" y="20.1793151" z="0" unit="mm"/>
+    <position name="kresling_deployed_kapton_v40" x="-34.9949003" y="-20.2043151" z="-2.65687969e-18" unit="mm"/>
+    <position name="kresling_deployed_kapton_v41" x="-34.951599" y="-20.1793151" z="-2.33178383e-18" unit="mm"/>
+    <position name="kresling_deployed_kapton_v42" x="-7.53917613e-15" y="-40.4086302" z="0" unit="mm"/>
+    <position name="kresling_deployed_kapton_v43" x="-7.51576923e-15" y="-40.3586302" z="0" unit="mm"/>
+    <position name="kresling_deployed_kapton_v44" x="34.9949003" y="-20.2043151" z="-2.65687969e-18" unit="mm"/>
+    <position name="kresling_deployed_kapton_v45" x="34.951599" y="-20.1793151" z="-2.33178383e-18" unit="mm"/>
+    <position name="kresling_deployed_kapton_v46" x="34.9949003" y="20.2043151" z="-2.65687969e-18" unit="mm"/>
+    <position name="kresling_deployed_kapton_v47" x="34.951599" y="20.1793151" z="-2.33178383e-18" unit="mm"/>
+    <position name="kresling_deployed_kapton_v48" x="-20.2043151" y="34.9949003" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v49" x="-20.1793151" y="34.951599" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v50" x="-40.4086302" y="5.05799998e-15" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v51" x="-40.3586302" y="5.03849423e-15" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v52" x="-20.2043151" y="-34.9949003" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v53" x="-20.1793151" y="-34.951599" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v54" x="20.2043151" y="-34.9949003" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v55" x="20.1793151" y="-34.951599" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v56" x="40.4086302" y="-9.92470462e-15" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v57" x="40.3586302" y="-9.90910002e-15" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v58" x="20.2043151" y="34.9949003" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v59" x="20.1793151" y="34.951599" z="20" unit="mm"/>
+    <position name="kresling_deployed_kapton_v60" x="-34.9949003" y="20.2043151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v61" x="-34.951599" y="20.1793151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v62" x="-34.9949003" y="-20.2043151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v63" x="-34.951599" y="-20.1793151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v64" x="-7.60294125e-15" y="-40.4086302" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v65" x="-7.57173204e-15" y="-40.3586302" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v66" x="34.9949003" y="-20.2043151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v67" x="34.951599" y="-20.1793151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v68" x="34.9949003" y="20.2043151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v69" x="34.951599" y="20.1793151" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v70" x="1.23899395e-14" y="40.4086302" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v71" x="1.23723843e-14" y="40.3586302" z="40" unit="mm"/>
+    <position name="kresling_deployed_kapton_v72" x="-40.3978293" y="4.92962704e-15" z="60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v73" x="-40.3480681" y="4.92574452e-15" z="60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v74" x="-20.1989147" y="-34.9855465" z="60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v75" x="-20.1740341" y="-34.942452" z="60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v76" x="20.1989147" y="-34.9855465" z="60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v77" x="20.1740341" y="-34.942452" z="60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v78" x="40.3978293" y="-1.00661864e-14" z="60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v79" x="40.3480681" y="-1.00325378e-14" z="60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v80" x="20.1989147" y="34.9855465" z="60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v81" x="20.1740341" y="34.942452" z="60.0341372" unit="mm"/>
+    <position name="kresling_deployed_kapton_v82" x="-20.1989147" y="34.9855465" z="60.0390176" unit="mm"/>
+    <position name="kresling_deployed_kapton_v83" x="-20.1740341" y="34.942452" z="60.0341372" unit="mm"/>
+  </define>
+  <solids>
+    <tessellated name="kresling_deployed_kapton_solid">
+      <triangular vertex1="kresling_deployed_kapton_v0" vertex2="kresling_deployed_kapton_v1" vertex3="kresling_deployed_kapton_v2"/>
+      <triangular vertex1="kresling_deployed_kapton_v3" vertex2="kresling_deployed_kapton_v4" vertex3="kresling_deployed_kapton_v5"/>
+      <triangular vertex1="kresling_deployed_kapton_v1" vertex2="kresling_deployed_kapton_v6" vertex3="kresling_deployed_kapton_v2"/>
+      <triangular vertex1="kresling_deployed_kapton_v5" vertex2="kresling_deployed_kapton_v4" vertex3="kresling_deployed_kapton_v7"/>
+      <triangular vertex1="kresling_deployed_kapton_v1" vertex2="kresling_deployed_kapton_v8" vertex3="kresling_deployed_kapton_v6"/>
+      <triangular vertex1="kresling_deployed_kapton_v5" vertex2="kresling_deployed_kapton_v7" vertex3="kresling_deployed_kapton_v9"/>
+      <triangular vertex1="kresling_deployed_kapton_v8" vertex2="kresling_deployed_kapton_v10" vertex3="kresling_deployed_kapton_v6"/>
+      <triangular vertex1="kresling_deployed_kapton_v9" vertex2="kresling_deployed_kapton_v7" vertex3="kresling_deployed_kapton_v11"/>
+      <triangular vertex1="kresling_deployed_kapton_v8" vertex2="kresling_deployed_kapton_v12" vertex3="kresling_deployed_kapton_v10"/>
+      <triangular vertex1="kresling_deployed_kapton_v9" vertex2="kresling_deployed_kapton_v11" vertex3="kresling_deployed_kapton_v13"/>
+      <triangular vertex1="kresling_deployed_kapton_v12" vertex2="kresling_deployed_kapton_v14" vertex3="kresling_deployed_kapton_v10"/>
+      <triangular vertex1="kresling_deployed_kapton_v13" vertex2="kresling_deployed_kapton_v11" vertex3="kresling_deployed_kapton_v15"/>
+      <triangular vertex1="kresling_deployed_kapton_v12" vertex2="kresling_deployed_kapton_v16" vertex3="kresling_deployed_kapton_v14"/>
+      <triangular vertex1="kresling_deployed_kapton_v13" vertex2="kresling_deployed_kapton_v15" vertex3="kresling_deployed_kapton_v17"/>
+      <triangular vertex1="kresling_deployed_kapton_v16" vertex2="kresling_deployed_kapton_v18" vertex3="kresling_deployed_kapton_v14"/>
+      <triangular vertex1="kresling_deployed_kapton_v17" vertex2="kresling_deployed_kapton_v15" vertex3="kresling_deployed_kapton_v19"/>
+      <triangular vertex1="kresling_deployed_kapton_v16" vertex2="kresling_deployed_kapton_v20" vertex3="kresling_deployed_kapton_v18"/>
+      <triangular vertex1="kresling_deployed_kapton_v17" vertex2="kresling_deployed_kapton_v19" vertex3="kresling_deployed_kapton_v21"/>
+      <triangular vertex1="kresling_deployed_kapton_v20" vertex2="kresling_deployed_kapton_v22" vertex3="kresling_deployed_kapton_v18"/>
+      <triangular vertex1="kresling_deployed_kapton_v21" vertex2="kresling_deployed_kapton_v19" vertex3="kresling_deployed_kapton_v23"/>
+      <triangular vertex1="kresling_deployed_kapton_v20" vertex2="kresling_deployed_kapton_v0" vertex3="kresling_deployed_kapton_v22"/>
+      <triangular vertex1="kresling_deployed_kapton_v21" vertex2="kresling_deployed_kapton_v23" vertex3="kresling_deployed_kapton_v3"/>
+      <triangular vertex1="kresling_deployed_kapton_v0" vertex2="kresling_deployed_kapton_v2" vertex3="kresling_deployed_kapton_v22"/>
+      <triangular vertex1="kresling_deployed_kapton_v3" vertex2="kresling_deployed_kapton_v23" vertex3="kresling_deployed_kapton_v4"/>
+      <triangular vertex1="kresling_deployed_kapton_v2" vertex2="kresling_deployed_kapton_v6" vertex3="kresling_deployed_kapton_v24"/>
+      <triangular vertex1="kresling_deployed_kapton_v4" vertex2="kresling_deployed_kapton_v25" vertex3="kresling_deployed_kapton_v7"/>
+      <triangular vertex1="kresling_deployed_kapton_v6" vertex2="kresling_deployed_kapton_v26" vertex3="kresling_deployed_kapton_v24"/>
+      <triangular vertex1="kresling_deployed_kapton_v7" vertex2="kresling_deployed_kapton_v25" vertex3="kresling_deployed_kapton_v27"/>
+      <triangular vertex1="kresling_deployed_kapton_v6" vertex2="kresling_deployed_kapton_v10" vertex3="kresling_deployed_kapton_v26"/>
+      <triangular vertex1="kresling_deployed_kapton_v7" vertex2="kresling_deployed_kapton_v27" vertex3="kresling_deployed_kapton_v11"/>
+      <triangular vertex1="kresling_deployed_kapton_v10" vertex2="kresling_deployed_kapton_v28" vertex3="kresling_deployed_kapton_v26"/>
+      <triangular vertex1="kresling_deployed_kapton_v11" vertex2="kresling_deployed_kapton_v27" vertex3="kresling_deployed_kapton_v29"/>
+      <triangular vertex1="kresling_deployed_kapton_v10" vertex2="kresling_deployed_kapton_v14" vertex3="kresling_deployed_kapton_v28"/>
+      <triangular vertex1="kresling_deployed_kapton_v11" vertex2="kresling_deployed_kapton_v29" vertex3="kresling_deployed_kapton_v15"/>
+      <triangular vertex1="kresling_deployed_kapton_v14" vertex2="kresling_deployed_kapton_v30" vertex3="kresling_deployed_kapton_v28"/>
+      <triangular vertex1="kresling_deployed_kapton_v15" vertex2="kresling_deployed_kapton_v29" vertex3="kresling_deployed_kapton_v31"/>
+      <triangular vertex1="kresling_deployed_kapton_v14" vertex2="kresling_deployed_kapton_v18" vertex3="kresling_deployed_kapton_v30"/>
+      <triangular vertex1="kresling_deployed_kapton_v15" vertex2="kresling_deployed_kapton_v31" vertex3="kresling_deployed_kapton_v19"/>
+      <triangular vertex1="kresling_deployed_kapton_v18" vertex2="kresling_deployed_kapton_v32" vertex3="kresling_deployed_kapton_v30"/>
+      <triangular vertex1="kresling_deployed_kapton_v19" vertex2="kresling_deployed_kapton_v31" vertex3="kresling_deployed_kapton_v33"/>
+      <triangular vertex1="kresling_deployed_kapton_v18" vertex2="kresling_deployed_kapton_v22" vertex3="kresling_deployed_kapton_v32"/>
+      <triangular vertex1="kresling_deployed_kapton_v19" vertex2="kresling_deployed_kapton_v33" vertex3="kresling_deployed_kapton_v23"/>
+      <triangular vertex1="kresling_deployed_kapton_v22" vertex2="kresling_deployed_kapton_v34" vertex3="kresling_deployed_kapton_v32"/>
+      <triangular vertex1="kresling_deployed_kapton_v23" vertex2="kresling_deployed_kapton_v33" vertex3="kresling_deployed_kapton_v35"/>
+      <triangular vertex1="kresling_deployed_kapton_v22" vertex2="kresling_deployed_kapton_v2" vertex3="kresling_deployed_kapton_v34"/>
+      <triangular vertex1="kresling_deployed_kapton_v23" vertex2="kresling_deployed_kapton_v35" vertex3="kresling_deployed_kapton_v4"/>
+      <triangular vertex1="kresling_deployed_kapton_v2" vertex2="kresling_deployed_kapton_v24" vertex3="kresling_deployed_kapton_v34"/>
+      <triangular vertex1="kresling_deployed_kapton_v4" vertex2="kresling_deployed_kapton_v35" vertex3="kresling_deployed_kapton_v25"/>
+      <triangular vertex1="kresling_deployed_kapton_v24" vertex2="kresling_deployed_kapton_v26" vertex3="kresling_deployed_kapton_v36"/>
+      <triangular vertex1="kresling_deployed_kapton_v25" vertex2="kresling_deployed_kapton_v37" vertex3="kresling_deployed_kapton_v27"/>
+      <triangular vertex1="kresling_deployed_kapton_v26" vertex2="kresling_deployed_kapton_v38" vertex3="kresling_deployed_kapton_v36"/>
+      <triangular vertex1="kresling_deployed_kapton_v27" vertex2="kresling_deployed_kapton_v37" vertex3="kresling_deployed_kapton_v39"/>
+      <triangular vertex1="kresling_deployed_kapton_v26" vertex2="kresling_deployed_kapton_v28" vertex3="kresling_deployed_kapton_v38"/>
+      <triangular vertex1="kresling_deployed_kapton_v27" vertex2="kresling_deployed_kapton_v39" vertex3="kresling_deployed_kapton_v29"/>
+      <triangular vertex1="kresling_deployed_kapton_v28" vertex2="kresling_deployed_kapton_v40" vertex3="kresling_deployed_kapton_v38"/>
+      <triangular vertex1="kresling_deployed_kapton_v29" vertex2="kresling_deployed_kapton_v39" vertex3="kresling_deployed_kapton_v41"/>
+      <triangular vertex1="kresling_deployed_kapton_v28" vertex2="kresling_deployed_kapton_v30" vertex3="kresling_deployed_kapton_v40"/>
+      <triangular vertex1="kresling_deployed_kapton_v29" vertex2="kresling_deployed_kapton_v41" vertex3="kresling_deployed_kapton_v31"/>
+      <triangular vertex1="kresling_deployed_kapton_v30" vertex2="kresling_deployed_kapton_v42" vertex3="kresling_deployed_kapton_v40"/>
+      <triangular vertex1="kresling_deployed_kapton_v31" vertex2="kresling_deployed_kapton_v41" vertex3="kresling_deployed_kapton_v43"/>
+      <triangular vertex1="kresling_deployed_kapton_v30" vertex2="kresling_deployed_kapton_v32" vertex3="kresling_deployed_kapton_v42"/>
+      <triangular vertex1="kresling_deployed_kapton_v31" vertex2="kresling_deployed_kapton_v43" vertex3="kresling_deployed_kapton_v33"/>
+      <triangular vertex1="kresling_deployed_kapton_v32" vertex2="kresling_deployed_kapton_v44" vertex3="kresling_deployed_kapton_v42"/>
+      <triangular vertex1="kresling_deployed_kapton_v33" vertex2="kresling_deployed_kapton_v43" vertex3="kresling_deployed_kapton_v45"/>
+      <triangular vertex1="kresling_deployed_kapton_v32" vertex2="kresling_deployed_kapton_v34" vertex3="kresling_deployed_kapton_v44"/>
+      <triangular vertex1="kresling_deployed_kapton_v33" vertex2="kresling_deployed_kapton_v45" vertex3="kresling_deployed_kapton_v35"/>
+      <triangular vertex1="kresling_deployed_kapton_v34" vertex2="kresling_deployed_kapton_v46" vertex3="kresling_deployed_kapton_v44"/>
+      <triangular vertex1="kresling_deployed_kapton_v35" vertex2="kresling_deployed_kapton_v45" vertex3="kresling_deployed_kapton_v47"/>
+      <triangular vertex1="kresling_deployed_kapton_v34" vertex2="kresling_deployed_kapton_v24" vertex3="kresling_deployed_kapton_v46"/>
+      <triangular vertex1="kresling_deployed_kapton_v35" vertex2="kresling_deployed_kapton_v47" vertex3="kresling_deployed_kapton_v25"/>
+      <triangular vertex1="kresling_deployed_kapton_v24" vertex2="kresling_deployed_kapton_v36" vertex3="kresling_deployed_kapton_v46"/>
+      <triangular vertex1="kresling_deployed_kapton_v25" vertex2="kresling_deployed_kapton_v47" vertex3="kresling_deployed_kapton_v37"/>
+      <triangular vertex1="kresling_deployed_kapton_v36" vertex2="kresling_deployed_kapton_v38" vertex3="kresling_deployed_kapton_v48"/>
+      <triangular vertex1="kresling_deployed_kapton_v37" vertex2="kresling_deployed_kapton_v49" vertex3="kresling_deployed_kapton_v39"/>
+      <triangular vertex1="kresling_deployed_kapton_v38" vertex2="kresling_deployed_kapton_v50" vertex3="kresling_deployed_kapton_v48"/>
+      <triangular vertex1="kresling_deployed_kapton_v39" vertex2="kresling_deployed_kapton_v49" vertex3="kresling_deployed_kapton_v51"/>
+      <triangular vertex1="kresling_deployed_kapton_v38" vertex2="kresling_deployed_kapton_v40" vertex3="kresling_deployed_kapton_v50"/>
+      <triangular vertex1="kresling_deployed_kapton_v39" vertex2="kresling_deployed_kapton_v51" vertex3="kresling_deployed_kapton_v41"/>
+      <triangular vertex1="kresling_deployed_kapton_v40" vertex2="kresling_deployed_kapton_v52" vertex3="kresling_deployed_kapton_v50"/>
+      <triangular vertex1="kresling_deployed_kapton_v41" vertex2="kresling_deployed_kapton_v51" vertex3="kresling_deployed_kapton_v53"/>
+      <triangular vertex1="kresling_deployed_kapton_v40" vertex2="kresling_deployed_kapton_v42" vertex3="kresling_deployed_kapton_v52"/>
+      <triangular vertex1="kresling_deployed_kapton_v41" vertex2="kresling_deployed_kapton_v53" vertex3="kresling_deployed_kapton_v43"/>
+      <triangular vertex1="kresling_deployed_kapton_v42" vertex2="kresling_deployed_kapton_v54" vertex3="kresling_deployed_kapton_v52"/>
+      <triangular vertex1="kresling_deployed_kapton_v43" vertex2="kresling_deployed_kapton_v53" vertex3="kresling_deployed_kapton_v55"/>
+      <triangular vertex1="kresling_deployed_kapton_v42" vertex2="kresling_deployed_kapton_v44" vertex3="kresling_deployed_kapton_v54"/>
+      <triangular vertex1="kresling_deployed_kapton_v43" vertex2="kresling_deployed_kapton_v55" vertex3="kresling_deployed_kapton_v45"/>
+      <triangular vertex1="kresling_deployed_kapton_v44" vertex2="kresling_deployed_kapton_v56" vertex3="kresling_deployed_kapton_v54"/>
+      <triangular vertex1="kresling_deployed_kapton_v45" vertex2="kresling_deployed_kapton_v55" vertex3="kresling_deployed_kapton_v57"/>
+      <triangular vertex1="kresling_deployed_kapton_v44" vertex2="kresling_deployed_kapton_v46" vertex3="kresling_deployed_kapton_v56"/>
+      <triangular vertex1="kresling_deployed_kapton_v45" vertex2="kresling_deployed_kapton_v57" vertex3="kresling_deployed_kapton_v47"/>
+      <triangular vertex1="kresling_deployed_kapton_v46" vertex2="kresling_deployed_kapton_v58" vertex3="kresling_deployed_kapton_v56"/>
+      <triangular vertex1="kresling_deployed_kapton_v47" vertex2="kresling_deployed_kapton_v57" vertex3="kresling_deployed_kapton_v59"/>
+      <triangular vertex1="kresling_deployed_kapton_v46" vertex2="kresling_deployed_kapton_v36" vertex3="kresling_deployed_kapton_v58"/>
+      <triangular vertex1="kresling_deployed_kapton_v47" vertex2="kresling_deployed_kapton_v59" vertex3="kresling_deployed_kapton_v37"/>
+      <triangular vertex1="kresling_deployed_kapton_v36" vertex2="kresling_deployed_kapton_v48" vertex3="kresling_deployed_kapton_v58"/>
+      <triangular vertex1="kresling_deployed_kapton_v37" vertex2="kresling_deployed_kapton_v59" vertex3="kresling_deployed_kapton_v49"/>
+      <triangular vertex1="kresling_deployed_kapton_v48" vertex2="kresling_deployed_kapton_v50" vertex3="kresling_deployed_kapton_v60"/>
+      <triangular vertex1="kresling_deployed_kapton_v49" vertex2="kresling_deployed_kapton_v61" vertex3="kresling_deployed_kapton_v51"/>
+      <triangular vertex1="kresling_deployed_kapton_v50" vertex2="kresling_deployed_kapton_v62" vertex3="kresling_deployed_kapton_v60"/>
+      <triangular vertex1="kresling_deployed_kapton_v51" vertex2="kresling_deployed_kapton_v61" vertex3="kresling_deployed_kapton_v63"/>
+      <triangular vertex1="kresling_deployed_kapton_v50" vertex2="kresling_deployed_kapton_v52" vertex3="kresling_deployed_kapton_v62"/>
+      <triangular vertex1="kresling_deployed_kapton_v51" vertex2="kresling_deployed_kapton_v63" vertex3="kresling_deployed_kapton_v53"/>
+      <triangular vertex1="kresling_deployed_kapton_v52" vertex2="kresling_deployed_kapton_v64" vertex3="kresling_deployed_kapton_v62"/>
+      <triangular vertex1="kresling_deployed_kapton_v53" vertex2="kresling_deployed_kapton_v63" vertex3="kresling_deployed_kapton_v65"/>
+      <triangular vertex1="kresling_deployed_kapton_v52" vertex2="kresling_deployed_kapton_v54" vertex3="kresling_deployed_kapton_v64"/>
+      <triangular vertex1="kresling_deployed_kapton_v53" vertex2="kresling_deployed_kapton_v65" vertex3="kresling_deployed_kapton_v55"/>
+      <triangular vertex1="kresling_deployed_kapton_v54" vertex2="kresling_deployed_kapton_v66" vertex3="kresling_deployed_kapton_v64"/>
+      <triangular vertex1="kresling_deployed_kapton_v55" vertex2="kresling_deployed_kapton_v65" vertex3="kresling_deployed_kapton_v67"/>
+      <triangular vertex1="kresling_deployed_kapton_v54" vertex2="kresling_deployed_kapton_v56" vertex3="kresling_deployed_kapton_v66"/>
+      <triangular vertex1="kresling_deployed_kapton_v55" vertex2="kresling_deployed_kapton_v67" vertex3="kresling_deployed_kapton_v57"/>
+      <triangular vertex1="kresling_deployed_kapton_v56" vertex2="kresling_deployed_kapton_v68" vertex3="kresling_deployed_kapton_v66"/>
+      <triangular vertex1="kresling_deployed_kapton_v57" vertex2="kresling_deployed_kapton_v67" vertex3="kresling_deployed_kapton_v69"/>
+      <triangular vertex1="kresling_deployed_kapton_v56" vertex2="kresling_deployed_kapton_v58" vertex3="kresling_deployed_kapton_v68"/>
+      <triangular vertex1="kresling_deployed_kapton_v57" vertex2="kresling_deployed_kapton_v69" vertex3="kresling_deployed_kapton_v59"/>
+      <triangular vertex1="kresling_deployed_kapton_v58" vertex2="kresling_deployed_kapton_v70" vertex3="kresling_deployed_kapton_v68"/>
+      <triangular vertex1="kresling_deployed_kapton_v59" vertex2="kresling_deployed_kapton_v69" vertex3="kresling_deployed_kapton_v71"/>
+      <triangular vertex1="kresling_deployed_kapton_v58" vertex2="kresling_deployed_kapton_v48" vertex3="kresling_deployed_kapton_v70"/>
+      <triangular vertex1="kresling_deployed_kapton_v59" vertex2="kresling_deployed_kapton_v71" vertex3="kresling_deployed_kapton_v49"/>
+      <triangular vertex1="kresling_deployed_kapton_v48" vertex2="kresling_deployed_kapton_v60" vertex3="kresling_deployed_kapton_v70"/>
+      <triangular vertex1="kresling_deployed_kapton_v49" vertex2="kresling_deployed_kapton_v71" vertex3="kresling_deployed_kapton_v61"/>
+      <triangular vertex1="kresling_deployed_kapton_v60" vertex2="kresling_deployed_kapton_v62" vertex3="kresling_deployed_kapton_v72"/>
+      <triangular vertex1="kresling_deployed_kapton_v61" vertex2="kresling_deployed_kapton_v73" vertex3="kresling_deployed_kapton_v63"/>
+      <triangular vertex1="kresling_deployed_kapton_v62" vertex2="kresling_deployed_kapton_v74" vertex3="kresling_deployed_kapton_v72"/>
+      <triangular vertex1="kresling_deployed_kapton_v63" vertex2="kresling_deployed_kapton_v73" vertex3="kresling_deployed_kapton_v75"/>
+      <triangular vertex1="kresling_deployed_kapton_v62" vertex2="kresling_deployed_kapton_v64" vertex3="kresling_deployed_kapton_v74"/>
+      <triangular vertex1="kresling_deployed_kapton_v63" vertex2="kresling_deployed_kapton_v75" vertex3="kresling_deployed_kapton_v65"/>
+      <triangular vertex1="kresling_deployed_kapton_v64" vertex2="kresling_deployed_kapton_v76" vertex3="kresling_deployed_kapton_v74"/>
+      <triangular vertex1="kresling_deployed_kapton_v65" vertex2="kresling_deployed_kapton_v75" vertex3="kresling_deployed_kapton_v77"/>
+      <triangular vertex1="kresling_deployed_kapton_v64" vertex2="kresling_deployed_kapton_v66" vertex3="kresling_deployed_kapton_v76"/>
+      <triangular vertex1="kresling_deployed_kapton_v65" vertex2="kresling_deployed_kapton_v77" vertex3="kresling_deployed_kapton_v67"/>
+      <triangular vertex1="kresling_deployed_kapton_v66" vertex2="kresling_deployed_kapton_v78" vertex3="kresling_deployed_kapton_v76"/>
+      <triangular vertex1="kresling_deployed_kapton_v67" vertex2="kresling_deployed_kapton_v77" vertex3="kresling_deployed_kapton_v79"/>
+      <triangular vertex1="kresling_deployed_kapton_v66" vertex2="kresling_deployed_kapton_v68" vertex3="kresling_deployed_kapton_v78"/>
+      <triangular vertex1="kresling_deployed_kapton_v67" vertex2="kresling_deployed_kapton_v79" vertex3="kresling_deployed_kapton_v69"/>
+      <triangular vertex1="kresling_deployed_kapton_v68" vertex2="kresling_deployed_kapton_v80" vertex3="kresling_deployed_kapton_v78"/>
+      <triangular vertex1="kresling_deployed_kapton_v69" vertex2="kresling_deployed_kapton_v79" vertex3="kresling_deployed_kapton_v81"/>
+      <triangular vertex1="kresling_deployed_kapton_v68" vertex2="kresling_deployed_kapton_v70" vertex3="kresling_deployed_kapton_v80"/>
+      <triangular vertex1="kresling_deployed_kapton_v69" vertex2="kresling_deployed_kapton_v81" vertex3="kresling_deployed_kapton_v71"/>
+      <triangular vertex1="kresling_deployed_kapton_v70" vertex2="kresling_deployed_kapton_v82" vertex3="kresling_deployed_kapton_v80"/>
+      <triangular vertex1="kresling_deployed_kapton_v71" vertex2="kresling_deployed_kapton_v81" vertex3="kresling_deployed_kapton_v83"/>
+      <triangular vertex1="kresling_deployed_kapton_v70" vertex2="kresling_deployed_kapton_v60" vertex3="kresling_deployed_kapton_v82"/>
+      <triangular vertex1="kresling_deployed_kapton_v71" vertex2="kresling_deployed_kapton_v83" vertex3="kresling_deployed_kapton_v61"/>
+      <triangular vertex1="kresling_deployed_kapton_v60" vertex2="kresling_deployed_kapton_v72" vertex3="kresling_deployed_kapton_v82"/>
+      <triangular vertex1="kresling_deployed_kapton_v61" vertex2="kresling_deployed_kapton_v83" vertex3="kresling_deployed_kapton_v73"/>
+      <triangular vertex1="kresling_deployed_kapton_v3" vertex2="kresling_deployed_kapton_v5" vertex3="kresling_deployed_kapton_v1"/>
+      <triangular vertex1="kresling_deployed_kapton_v3" vertex2="kresling_deployed_kapton_v1" vertex3="kresling_deployed_kapton_v0"/>
+      <triangular vertex1="kresling_deployed_kapton_v5" vertex2="kresling_deployed_kapton_v9" vertex3="kresling_deployed_kapton_v8"/>
+      <triangular vertex1="kresling_deployed_kapton_v5" vertex2="kresling_deployed_kapton_v8" vertex3="kresling_deployed_kapton_v1"/>
+      <triangular vertex1="kresling_deployed_kapton_v9" vertex2="kresling_deployed_kapton_v13" vertex3="kresling_deployed_kapton_v12"/>
+      <triangular vertex1="kresling_deployed_kapton_v9" vertex2="kresling_deployed_kapton_v12" vertex3="kresling_deployed_kapton_v8"/>
+      <triangular vertex1="kresling_deployed_kapton_v13" vertex2="kresling_deployed_kapton_v17" vertex3="kresling_deployed_kapton_v16"/>
+      <triangular vertex1="kresling_deployed_kapton_v13" vertex2="kresling_deployed_kapton_v16" vertex3="kresling_deployed_kapton_v12"/>
+      <triangular vertex1="kresling_deployed_kapton_v17" vertex2="kresling_deployed_kapton_v21" vertex3="kresling_deployed_kapton_v20"/>
+      <triangular vertex1="kresling_deployed_kapton_v17" vertex2="kresling_deployed_kapton_v20" vertex3="kresling_deployed_kapton_v16"/>
+      <triangular vertex1="kresling_deployed_kapton_v21" vertex2="kresling_deployed_kapton_v3" vertex3="kresling_deployed_kapton_v0"/>
+      <triangular vertex1="kresling_deployed_kapton_v21" vertex2="kresling_deployed_kapton_v0" vertex3="kresling_deployed_kapton_v20"/>
+      <triangular vertex1="kresling_deployed_kapton_v75" vertex2="kresling_deployed_kapton_v73" vertex3="kresling_deployed_kapton_v72"/>
+      <triangular vertex1="kresling_deployed_kapton_v75" vertex2="kresling_deployed_kapton_v72" vertex3="kresling_deployed_kapton_v74"/>
+      <triangular vertex1="kresling_deployed_kapton_v77" vertex2="kresling_deployed_kapton_v75" vertex3="kresling_deployed_kapton_v74"/>
+      <triangular vertex1="kresling_deployed_kapton_v77" vertex2="kresling_deployed_kapton_v74" vertex3="kresling_deployed_kapton_v76"/>
+      <triangular vertex1="kresling_deployed_kapton_v79" vertex2="kresling_deployed_kapton_v77" vertex3="kresling_deployed_kapton_v76"/>
+      <triangular vertex1="kresling_deployed_kapton_v79" vertex2="kresling_deployed_kapton_v76" vertex3="kresling_deployed_kapton_v78"/>
+      <triangular vertex1="kresling_deployed_kapton_v81" vertex2="kresling_deployed_kapton_v79" vertex3="kresling_deployed_kapton_v78"/>
+      <triangular vertex1="kresling_deployed_kapton_v81" vertex2="kresling_deployed_kapton_v78" vertex3="kresling_deployed_kapton_v80"/>
+      <triangular vertex1="kresling_deployed_kapton_v83" vertex2="kresling_deployed_kapton_v81" vertex3="kresling_deployed_kapton_v80"/>
+      <triangular vertex1="kresling_deployed_kapton_v83" vertex2="kresling_deployed_kapton_v80" vertex3="kresling_deployed_kapton_v82"/>
+      <triangular vertex1="kresling_deployed_kapton_v73" vertex2="kresling_deployed_kapton_v83" vertex3="kresling_deployed_kapton_v82"/>
+      <triangular vertex1="kresling_deployed_kapton_v73" vertex2="kresling_deployed_kapton_v82" vertex3="kresling_deployed_kapton_v72"/>
+    </tessellated>
+  </solids>
+  <structure>
+    <volume name="kresling_deployed_kapton_volume">
+      <materialref ref="G4_KAPTON"/>
+      <solidref ref="kresling_deployed_kapton_solid"/>
+    </volume>
+  </structure>
+  <setup name="Default" version="1.0">
+    <world ref="kresling_deployed_kapton_volume"/>
+  </setup>
+</gdml>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define>
+    <position name="yoshimura_deployed_kapton_v0" x="40.1079783" y="-1.9601771e-17" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v1" x="28.3606235" y="28.3606235" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v2" x="32.0977346" y="13.295317" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v3" x="40.0583911" y="-1.0599982e-17" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v4" x="32.0515406" y="13.2761828" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v5" x="28.32556" y="28.32556" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v6" x="40.1083911" y="-2.10821738e-17" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v7" x="40.0583911" y="-1.13571235e-17" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v8" x="28.3609153" y="28.3609153" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v9" x="28.32556" y="28.32556" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v10" x="2.4492936e-15" y="40.1079783" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v11" x="13.295317" y="32.0977346" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v12" x="13.2761828" y="32.0515406" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v13" x="2.4492936e-15" y="40.0583911" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v14" x="2.4492936e-15" y="40.1083911" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v15" x="2.4492936e-15" y="40.0583911" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v16" x="-28.3606235" y="28.3606235" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v17" x="-13.295317" y="32.0977346" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v18" x="-13.2761828" y="32.0515406" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v19" x="-28.32556" y="28.32556" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v20" x="-28.3609153" y="28.3609153" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v21" x="-28.32556" y="28.32556" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v22" x="-40.1079783" y="4.90978821e-15" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v23" x="-32.0977346" y="13.295317" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v24" x="-32.0515406" y="13.2761828" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v25" x="-40.0583911" y="4.90464433e-15" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v26" x="-40.1083911" y="4.90983102e-15" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v27" x="-40.0583911" y="4.90464433e-15" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v28" x="-28.3606235" y="-28.3606235" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v29" x="-32.0977346" y="-13.295317" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v30" x="-32.0515406" y="-13.2761828" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v31" x="-28.32556" y="-28.32556" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v32" x="-28.3609153" y="-28.3609153" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v33" x="-28.32556" y="-28.32556" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v34" x="-7.35628155e-15" y="-40.1079783" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v35" x="-13.295317" y="-32.0977346" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v36" x="-13.2761828" y="-32.0515406" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v37" x="-7.35242364e-15" y="-40.0583911" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v38" x="-7.35771914e-15" y="-40.1083911" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v39" x="-7.35318079e-15" y="-40.0583911" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v40" x="28.3606235" y="-28.3606235" z="-59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v41" x="13.295317" y="-32.0977346" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v42" x="13.2761828" y="-32.0515406" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v43" x="28.32556" y="-28.32556" z="-59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v44" x="28.3609153" y="-28.3609153" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v45" x="28.32556" y="-28.32556" z="-40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v46" x="32.0977346" y="-13.295317" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v47" x="32.0515406" y="-13.2761828" z="-50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v48" x="32.0977346" y="13.295317" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v49" x="32.0515406" y="13.2761828" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v50" x="40.1083911" y="-2.10821738e-17" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v51" x="40.0583911" y="-1.13571235e-17" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v52" x="28.3609153" y="28.3609153" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v53" x="28.32556" y="28.32556" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v54" x="13.295317" y="32.0977346" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v55" x="13.2761828" y="32.0515406" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v56" x="2.4492936e-15" y="40.1083911" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v57" x="2.4492936e-15" y="40.0583911" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v58" x="-13.295317" y="32.0977346" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v59" x="-13.2761828" y="32.0515406" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v60" x="-28.3609153" y="28.3609153" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v61" x="-28.32556" y="28.32556" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v62" x="-32.0977346" y="13.295317" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v63" x="-32.0515406" y="13.2761828" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v64" x="-40.1083911" y="4.90983102e-15" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v65" x="-40.0583911" y="4.90464433e-15" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v66" x="-32.0977346" y="-13.295317" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v67" x="-32.0515406" y="-13.2761828" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v68" x="-28.3609153" y="-28.3609153" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v69" x="-28.32556" y="-28.32556" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v70" x="-13.295317" y="-32.0977346" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v71" x="-13.2761828" y="-32.0515406" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v72" x="-7.35771914e-15" y="-40.1083911" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v73" x="-7.35318079e-15" y="-40.0583911" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v74" x="13.295317" y="-32.0977346" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v75" x="13.2761828" y="-32.0515406" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v76" x="28.3609153" y="-28.3609153" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v77" x="28.32556" y="-28.32556" z="-20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v78" x="32.0977346" y="-13.295317" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v79" x="32.0515406" y="-13.2761828" z="-30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v80" x="32.0977346" y="13.295317" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v81" x="32.0515406" y="13.2761828" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v82" x="40.1083911" y="-2.10821738e-17" z="-7.02739126e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v83" x="40.0583911" y="-1.13571235e-17" z="-3.78570784e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v84" x="28.3609153" y="28.3609153" z="0" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v85" x="28.32556" y="28.32556" z="0" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v86" x="13.295317" y="32.0977346" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v87" x="13.2761828" y="32.0515406" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v88" x="2.4492936e-15" y="40.1083911" z="0" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v89" x="2.4492936e-15" y="40.0583911" z="0" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v90" x="-13.295317" y="32.0977346" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v91" x="-13.2761828" y="32.0515406" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v92" x="-28.3609153" y="28.3609153" z="-7.02739126e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v93" x="-28.32556" y="28.32556" z="-3.78570784e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v94" x="-32.0977346" y="13.295317" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v95" x="-32.0515406" y="13.2761828" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v96" x="-40.1083911" y="4.90983102e-15" z="-2.10821738e-18" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v97" x="-40.0583911" y="4.90464433e-15" z="-1.13571235e-18" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v98" x="-32.0977346" y="-13.295317" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v99" x="-32.0515406" y="-13.2761828" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v100" x="-28.3609153" y="-28.3609153" z="0" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v101" x="-28.32556" y="-28.32556" z="0" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v102" x="-13.295317" y="-32.0977346" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v103" x="-13.2761828" y="-32.0515406" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v104" x="-7.35771914e-15" y="-40.1083911" z="-1.40547825e-18" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v105" x="-7.35318079e-15" y="-40.0583911" z="-7.57141569e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v106" x="13.295317" y="-32.0977346" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v107" x="13.2761828" y="-32.0515406" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v108" x="28.3609153" y="-28.3609153" z="-7.02739126e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v109" x="28.32556" y="-28.32556" z="-3.78570784e-19" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v110" x="32.0977346" y="-13.295317" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v111" x="32.0515406" y="-13.2761828" z="-10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v112" x="32.0977346" y="13.295317" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v113" x="32.0515406" y="13.2761828" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v114" x="40.1083911" y="-2.10821738e-17" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v115" x="40.0583911" y="-1.13571235e-17" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v116" x="28.3609153" y="28.3609153" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v117" x="28.32556" y="28.32556" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v118" x="13.295317" y="32.0977346" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v119" x="13.2761828" y="32.0515406" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v120" x="2.4492936e-15" y="40.1083911" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v121" x="2.4492936e-15" y="40.0583911" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v122" x="-13.295317" y="32.0977346" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v123" x="-13.2761828" y="32.0515406" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v124" x="-28.3609153" y="28.3609153" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v125" x="-28.32556" y="28.32556" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v126" x="-32.0977346" y="13.295317" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v127" x="-32.0515406" y="13.2761828" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v128" x="-40.1083911" y="4.90983102e-15" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v129" x="-40.0583911" y="4.90464433e-15" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v130" x="-32.0977346" y="-13.295317" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v131" x="-32.0515406" y="-13.2761828" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v132" x="-28.3609153" y="-28.3609153" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v133" x="-28.32556" y="-28.32556" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v134" x="-13.295317" y="-32.0977346" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v135" x="-13.2761828" y="-32.0515406" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v136" x="-7.35771914e-15" y="-40.1083911" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v137" x="-7.35318079e-15" y="-40.0583911" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v138" x="13.295317" y="-32.0977346" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v139" x="13.2761828" y="-32.0515406" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v140" x="28.3609153" y="-28.3609153" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v141" x="28.32556" y="-28.32556" z="20" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v142" x="32.0977346" y="-13.295317" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v143" x="32.0515406" y="-13.2761828" z="10" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v144" x="32.0977346" y="13.295317" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v145" x="32.0515406" y="13.2761828" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v146" x="40.1083911" y="-2.10821738e-17" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v147" x="40.0583911" y="-1.13571235e-17" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v148" x="28.3609153" y="28.3609153" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v149" x="28.32556" y="28.32556" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v150" x="13.295317" y="32.0977346" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v151" x="13.2761828" y="32.0515406" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v152" x="2.4492936e-15" y="40.1083911" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v153" x="2.4492936e-15" y="40.0583911" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v154" x="-13.295317" y="32.0977346" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v155" x="-13.2761828" y="32.0515406" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v156" x="-28.3609153" y="28.3609153" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v157" x="-28.32556" y="28.32556" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v158" x="-32.0977346" y="13.295317" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v159" x="-32.0515406" y="13.2761828" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v160" x="-40.1083911" y="4.90983102e-15" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v161" x="-40.0583911" y="4.90464433e-15" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v162" x="-32.0977346" y="-13.295317" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v163" x="-32.0515406" y="-13.2761828" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v164" x="-28.3609153" y="-28.3609153" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v165" x="-28.32556" y="-28.32556" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v166" x="-13.295317" y="-32.0977346" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v167" x="-13.2761828" y="-32.0515406" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v168" x="-7.35771914e-15" y="-40.1083911" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v169" x="-7.35318079e-15" y="-40.0583911" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v170" x="13.295317" y="-32.0977346" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v171" x="13.2761828" y="-32.0515406" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v172" x="28.3609153" y="-28.3609153" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v173" x="28.32556" y="-28.32556" z="40" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v174" x="32.0977346" y="-13.295317" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v175" x="32.0515406" y="-13.2761828" z="30" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v176" x="32.0977346" y="13.295317" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v177" x="32.0515406" y="13.2761828" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v178" x="40.1079783" y="-2.10018975e-17" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v179" x="40.0583911" y="-1.13571235e-17" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v180" x="28.3606235" y="28.3606235" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v181" x="28.32556" y="28.32556" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v182" x="13.295317" y="32.0977346" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v183" x="13.2761828" y="32.0515406" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v184" x="2.4492936e-15" y="40.1079783" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v185" x="2.4492936e-15" y="40.0583911" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v186" x="-13.295317" y="32.0977346" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v187" x="-13.2761828" y="32.0515406" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v188" x="-28.3606235" y="28.3606235" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v189" x="-28.32556" y="28.32556" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v190" x="-32.0977346" y="13.295317" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v191" x="-32.0515406" y="13.2761828" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v192" x="-40.1079783" y="4.91118834e-15" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v193" x="-40.0583911" y="4.90540147e-15" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v194" x="-32.0977346" y="-13.295317" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v195" x="-32.0515406" y="-13.2761828" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v196" x="-28.3606235" y="-28.3606235" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v197" x="-28.32556" y="-28.32556" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v198" x="-13.295317" y="-32.0977346" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v199" x="-13.2761828" y="-32.0515406" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v200" x="-7.35768168e-15" y="-40.1079783" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v201" x="-7.35318079e-15" y="-40.0583911" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v202" x="13.295317" y="-32.0977346" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v203" x="13.2761828" y="-32.0515406" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v204" x="28.3606235" y="-28.3606235" z="59.9860395" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v205" x="28.32556" y="-28.32556" z="59.9924506" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v206" x="32.0977346" y="-13.295317" z="50" unit="mm"/>
+    <position name="yoshimura_deployed_kapton_v207" x="32.0515406" y="-13.2761828" z="50" unit="mm"/>
+  </define>
+  <solids>
+    <tessellated name="yoshimura_deployed_kapton_solid">
+      <triangular vertex1="yoshimura_deployed_kapton_v0" vertex2="yoshimura_deployed_kapton_v1" vertex3="yoshimura_deployed_kapton_v2"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v3" vertex2="yoshimura_deployed_kapton_v4" vertex3="yoshimura_deployed_kapton_v5"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v2" vertex2="yoshimura_deployed_kapton_v6" vertex3="yoshimura_deployed_kapton_v0"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v4" vertex2="yoshimura_deployed_kapton_v3" vertex3="yoshimura_deployed_kapton_v7"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v2" vertex2="yoshimura_deployed_kapton_v1" vertex3="yoshimura_deployed_kapton_v8"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v4" vertex2="yoshimura_deployed_kapton_v9" vertex3="yoshimura_deployed_kapton_v5"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v2" vertex2="yoshimura_deployed_kapton_v8" vertex3="yoshimura_deployed_kapton_v6"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v4" vertex2="yoshimura_deployed_kapton_v7" vertex3="yoshimura_deployed_kapton_v9"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v1" vertex2="yoshimura_deployed_kapton_v10" vertex3="yoshimura_deployed_kapton_v11"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v5" vertex2="yoshimura_deployed_kapton_v12" vertex3="yoshimura_deployed_kapton_v13"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v11" vertex2="yoshimura_deployed_kapton_v8" vertex3="yoshimura_deployed_kapton_v1"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v12" vertex2="yoshimura_deployed_kapton_v5" vertex3="yoshimura_deployed_kapton_v9"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v11" vertex2="yoshimura_deployed_kapton_v10" vertex3="yoshimura_deployed_kapton_v14"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v12" vertex2="yoshimura_deployed_kapton_v15" vertex3="yoshimura_deployed_kapton_v13"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v11" vertex2="yoshimura_deployed_kapton_v14" vertex3="yoshimura_deployed_kapton_v8"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v12" vertex2="yoshimura_deployed_kapton_v9" vertex3="yoshimura_deployed_kapton_v15"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v10" vertex2="yoshimura_deployed_kapton_v16" vertex3="yoshimura_deployed_kapton_v17"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v13" vertex2="yoshimura_deployed_kapton_v18" vertex3="yoshimura_deployed_kapton_v19"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v17" vertex2="yoshimura_deployed_kapton_v14" vertex3="yoshimura_deployed_kapton_v10"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v18" vertex2="yoshimura_deployed_kapton_v13" vertex3="yoshimura_deployed_kapton_v15"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v17" vertex2="yoshimura_deployed_kapton_v16" vertex3="yoshimura_deployed_kapton_v20"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v18" vertex2="yoshimura_deployed_kapton_v21" vertex3="yoshimura_deployed_kapton_v19"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v17" vertex2="yoshimura_deployed_kapton_v20" vertex3="yoshimura_deployed_kapton_v14"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v18" vertex2="yoshimura_deployed_kapton_v15" vertex3="yoshimura_deployed_kapton_v21"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v16" vertex2="yoshimura_deployed_kapton_v22" vertex3="yoshimura_deployed_kapton_v23"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v19" vertex2="yoshimura_deployed_kapton_v24" vertex3="yoshimura_deployed_kapton_v25"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v23" vertex2="yoshimura_deployed_kapton_v20" vertex3="yoshimura_deployed_kapton_v16"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v24" vertex2="yoshimura_deployed_kapton_v19" vertex3="yoshimura_deployed_kapton_v21"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v23" vertex2="yoshimura_deployed_kapton_v22" vertex3="yoshimura_deployed_kapton_v26"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v24" vertex2="yoshimura_deployed_kapton_v27" vertex3="yoshimura_deployed_kapton_v25"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v23" vertex2="yoshimura_deployed_kapton_v26" vertex3="yoshimura_deployed_kapton_v20"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v24" vertex2="yoshimura_deployed_kapton_v21" vertex3="yoshimura_deployed_kapton_v27"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v22" vertex2="yoshimura_deployed_kapton_v28" vertex3="yoshimura_deployed_kapton_v29"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v25" vertex2="yoshimura_deployed_kapton_v30" vertex3="yoshimura_deployed_kapton_v31"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v29" vertex2="yoshimura_deployed_kapton_v26" vertex3="yoshimura_deployed_kapton_v22"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v30" vertex2="yoshimura_deployed_kapton_v25" vertex3="yoshimura_deployed_kapton_v27"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v29" vertex2="yoshimura_deployed_kapton_v28" vertex3="yoshimura_deployed_kapton_v32"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v30" vertex2="yoshimura_deployed_kapton_v33" vertex3="yoshimura_deployed_kapton_v31"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v29" vertex2="yoshimura_deployed_kapton_v32" vertex3="yoshimura_deployed_kapton_v26"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v30" vertex2="yoshimura_deployed_kapton_v27" vertex3="yoshimura_deployed_kapton_v33"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v28" vertex2="yoshimura_deployed_kapton_v34" vertex3="yoshimura_deployed_kapton_v35"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v31" vertex2="yoshimura_deployed_kapton_v36" vertex3="yoshimura_deployed_kapton_v37"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v35" vertex2="yoshimura_deployed_kapton_v32" vertex3="yoshimura_deployed_kapton_v28"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v36" vertex2="yoshimura_deployed_kapton_v31" vertex3="yoshimura_deployed_kapton_v33"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v35" vertex2="yoshimura_deployed_kapton_v34" vertex3="yoshimura_deployed_kapton_v38"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v36" vertex2="yoshimura_deployed_kapton_v39" vertex3="yoshimura_deployed_kapton_v37"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v35" vertex2="yoshimura_deployed_kapton_v38" vertex3="yoshimura_deployed_kapton_v32"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v36" vertex2="yoshimura_deployed_kapton_v33" vertex3="yoshimura_deployed_kapton_v39"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v34" vertex2="yoshimura_deployed_kapton_v40" vertex3="yoshimura_deployed_kapton_v41"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v37" vertex2="yoshimura_deployed_kapton_v42" vertex3="yoshimura_deployed_kapton_v43"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v41" vertex2="yoshimura_deployed_kapton_v38" vertex3="yoshimura_deployed_kapton_v34"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v42" vertex2="yoshimura_deployed_kapton_v37" vertex3="yoshimura_deployed_kapton_v39"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v41" vertex2="yoshimura_deployed_kapton_v40" vertex3="yoshimura_deployed_kapton_v44"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v42" vertex2="yoshimura_deployed_kapton_v45" vertex3="yoshimura_deployed_kapton_v43"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v41" vertex2="yoshimura_deployed_kapton_v44" vertex3="yoshimura_deployed_kapton_v38"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v42" vertex2="yoshimura_deployed_kapton_v39" vertex3="yoshimura_deployed_kapton_v45"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v40" vertex2="yoshimura_deployed_kapton_v0" vertex3="yoshimura_deployed_kapton_v46"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v43" vertex2="yoshimura_deployed_kapton_v47" vertex3="yoshimura_deployed_kapton_v3"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v46" vertex2="yoshimura_deployed_kapton_v44" vertex3="yoshimura_deployed_kapton_v40"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v47" vertex2="yoshimura_deployed_kapton_v43" vertex3="yoshimura_deployed_kapton_v45"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v46" vertex2="yoshimura_deployed_kapton_v0" vertex3="yoshimura_deployed_kapton_v6"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v47" vertex2="yoshimura_deployed_kapton_v7" vertex3="yoshimura_deployed_kapton_v3"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v46" vertex2="yoshimura_deployed_kapton_v6" vertex3="yoshimura_deployed_kapton_v44"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v47" vertex2="yoshimura_deployed_kapton_v45" vertex3="yoshimura_deployed_kapton_v7"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v6" vertex2="yoshimura_deployed_kapton_v8" vertex3="yoshimura_deployed_kapton_v48"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v7" vertex2="yoshimura_deployed_kapton_v49" vertex3="yoshimura_deployed_kapton_v9"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v48" vertex2="yoshimura_deployed_kapton_v50" vertex3="yoshimura_deployed_kapton_v6"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v49" vertex2="yoshimura_deployed_kapton_v7" vertex3="yoshimura_deployed_kapton_v51"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v48" vertex2="yoshimura_deployed_kapton_v8" vertex3="yoshimura_deployed_kapton_v52"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v49" vertex2="yoshimura_deployed_kapton_v53" vertex3="yoshimura_deployed_kapton_v9"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v48" vertex2="yoshimura_deployed_kapton_v52" vertex3="yoshimura_deployed_kapton_v50"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v49" vertex2="yoshimura_deployed_kapton_v51" vertex3="yoshimura_deployed_kapton_v53"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v8" vertex2="yoshimura_deployed_kapton_v14" vertex3="yoshimura_deployed_kapton_v54"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v9" vertex2="yoshimura_deployed_kapton_v55" vertex3="yoshimura_deployed_kapton_v15"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v54" vertex2="yoshimura_deployed_kapton_v52" vertex3="yoshimura_deployed_kapton_v8"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v55" vertex2="yoshimura_deployed_kapton_v9" vertex3="yoshimura_deployed_kapton_v53"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v54" vertex2="yoshimura_deployed_kapton_v14" vertex3="yoshimura_deployed_kapton_v56"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v55" vertex2="yoshimura_deployed_kapton_v57" vertex3="yoshimura_deployed_kapton_v15"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v54" vertex2="yoshimura_deployed_kapton_v56" vertex3="yoshimura_deployed_kapton_v52"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v55" vertex2="yoshimura_deployed_kapton_v53" vertex3="yoshimura_deployed_kapton_v57"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v14" vertex2="yoshimura_deployed_kapton_v20" vertex3="yoshimura_deployed_kapton_v58"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v15" vertex2="yoshimura_deployed_kapton_v59" vertex3="yoshimura_deployed_kapton_v21"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v58" vertex2="yoshimura_deployed_kapton_v56" vertex3="yoshimura_deployed_kapton_v14"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v59" vertex2="yoshimura_deployed_kapton_v15" vertex3="yoshimura_deployed_kapton_v57"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v58" vertex2="yoshimura_deployed_kapton_v20" vertex3="yoshimura_deployed_kapton_v60"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v59" vertex2="yoshimura_deployed_kapton_v61" vertex3="yoshimura_deployed_kapton_v21"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v58" vertex2="yoshimura_deployed_kapton_v60" vertex3="yoshimura_deployed_kapton_v56"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v59" vertex2="yoshimura_deployed_kapton_v57" vertex3="yoshimura_deployed_kapton_v61"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v20" vertex2="yoshimura_deployed_kapton_v26" vertex3="yoshimura_deployed_kapton_v62"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v21" vertex2="yoshimura_deployed_kapton_v63" vertex3="yoshimura_deployed_kapton_v27"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v62" vertex2="yoshimura_deployed_kapton_v60" vertex3="yoshimura_deployed_kapton_v20"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v63" vertex2="yoshimura_deployed_kapton_v21" vertex3="yoshimura_deployed_kapton_v61"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v62" vertex2="yoshimura_deployed_kapton_v26" vertex3="yoshimura_deployed_kapton_v64"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v63" vertex2="yoshimura_deployed_kapton_v65" vertex3="yoshimura_deployed_kapton_v27"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v62" vertex2="yoshimura_deployed_kapton_v64" vertex3="yoshimura_deployed_kapton_v60"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v63" vertex2="yoshimura_deployed_kapton_v61" vertex3="yoshimura_deployed_kapton_v65"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v26" vertex2="yoshimura_deployed_kapton_v32" vertex3="yoshimura_deployed_kapton_v66"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v27" vertex2="yoshimura_deployed_kapton_v67" vertex3="yoshimura_deployed_kapton_v33"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v66" vertex2="yoshimura_deployed_kapton_v64" vertex3="yoshimura_deployed_kapton_v26"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v67" vertex2="yoshimura_deployed_kapton_v27" vertex3="yoshimura_deployed_kapton_v65"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v66" vertex2="yoshimura_deployed_kapton_v32" vertex3="yoshimura_deployed_kapton_v68"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v67" vertex2="yoshimura_deployed_kapton_v69" vertex3="yoshimura_deployed_kapton_v33"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v66" vertex2="yoshimura_deployed_kapton_v68" vertex3="yoshimura_deployed_kapton_v64"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v67" vertex2="yoshimura_deployed_kapton_v65" vertex3="yoshimura_deployed_kapton_v69"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v32" vertex2="yoshimura_deployed_kapton_v38" vertex3="yoshimura_deployed_kapton_v70"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v33" vertex2="yoshimura_deployed_kapton_v71" vertex3="yoshimura_deployed_kapton_v39"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v70" vertex2="yoshimura_deployed_kapton_v68" vertex3="yoshimura_deployed_kapton_v32"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v71" vertex2="yoshimura_deployed_kapton_v33" vertex3="yoshimura_deployed_kapton_v69"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v70" vertex2="yoshimura_deployed_kapton_v38" vertex3="yoshimura_deployed_kapton_v72"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v71" vertex2="yoshimura_deployed_kapton_v73" vertex3="yoshimura_deployed_kapton_v39"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v70" vertex2="yoshimura_deployed_kapton_v72" vertex3="yoshimura_deployed_kapton_v68"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v71" vertex2="yoshimura_deployed_kapton_v69" vertex3="yoshimura_deployed_kapton_v73"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v38" vertex2="yoshimura_deployed_kapton_v44" vertex3="yoshimura_deployed_kapton_v74"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v39" vertex2="yoshimura_deployed_kapton_v75" vertex3="yoshimura_deployed_kapton_v45"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v74" vertex2="yoshimura_deployed_kapton_v72" vertex3="yoshimura_deployed_kapton_v38"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v75" vertex2="yoshimura_deployed_kapton_v39" vertex3="yoshimura_deployed_kapton_v73"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v74" vertex2="yoshimura_deployed_kapton_v44" vertex3="yoshimura_deployed_kapton_v76"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v75" vertex2="yoshimura_deployed_kapton_v77" vertex3="yoshimura_deployed_kapton_v45"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v74" vertex2="yoshimura_deployed_kapton_v76" vertex3="yoshimura_deployed_kapton_v72"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v75" vertex2="yoshimura_deployed_kapton_v73" vertex3="yoshimura_deployed_kapton_v77"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v44" vertex2="yoshimura_deployed_kapton_v6" vertex3="yoshimura_deployed_kapton_v78"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v45" vertex2="yoshimura_deployed_kapton_v79" vertex3="yoshimura_deployed_kapton_v7"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v78" vertex2="yoshimura_deployed_kapton_v76" vertex3="yoshimura_deployed_kapton_v44"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v79" vertex2="yoshimura_deployed_kapton_v45" vertex3="yoshimura_deployed_kapton_v77"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v78" vertex2="yoshimura_deployed_kapton_v6" vertex3="yoshimura_deployed_kapton_v50"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v79" vertex2="yoshimura_deployed_kapton_v51" vertex3="yoshimura_deployed_kapton_v7"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v78" vertex2="yoshimura_deployed_kapton_v50" vertex3="yoshimura_deployed_kapton_v76"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v79" vertex2="yoshimura_deployed_kapton_v77" vertex3="yoshimura_deployed_kapton_v51"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v50" vertex2="yoshimura_deployed_kapton_v52" vertex3="yoshimura_deployed_kapton_v80"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v51" vertex2="yoshimura_deployed_kapton_v81" vertex3="yoshimura_deployed_kapton_v53"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v80" vertex2="yoshimura_deployed_kapton_v82" vertex3="yoshimura_deployed_kapton_v50"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v81" vertex2="yoshimura_deployed_kapton_v51" vertex3="yoshimura_deployed_kapton_v83"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v80" vertex2="yoshimura_deployed_kapton_v52" vertex3="yoshimura_deployed_kapton_v84"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v81" vertex2="yoshimura_deployed_kapton_v85" vertex3="yoshimura_deployed_kapton_v53"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v80" vertex2="yoshimura_deployed_kapton_v84" vertex3="yoshimura_deployed_kapton_v82"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v81" vertex2="yoshimura_deployed_kapton_v83" vertex3="yoshimura_deployed_kapton_v85"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v52" vertex2="yoshimura_deployed_kapton_v56" vertex3="yoshimura_deployed_kapton_v86"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v53" vertex2="yoshimura_deployed_kapton_v87" vertex3="yoshimura_deployed_kapton_v57"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v86" vertex2="yoshimura_deployed_kapton_v84" vertex3="yoshimura_deployed_kapton_v52"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v87" vertex2="yoshimura_deployed_kapton_v53" vertex3="yoshimura_deployed_kapton_v85"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v86" vertex2="yoshimura_deployed_kapton_v56" vertex3="yoshimura_deployed_kapton_v88"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v87" vertex2="yoshimura_deployed_kapton_v89" vertex3="yoshimura_deployed_kapton_v57"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v86" vertex2="yoshimura_deployed_kapton_v88" vertex3="yoshimura_deployed_kapton_v84"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v87" vertex2="yoshimura_deployed_kapton_v85" vertex3="yoshimura_deployed_kapton_v89"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v56" vertex2="yoshimura_deployed_kapton_v60" vertex3="yoshimura_deployed_kapton_v90"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v57" vertex2="yoshimura_deployed_kapton_v91" vertex3="yoshimura_deployed_kapton_v61"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v90" vertex2="yoshimura_deployed_kapton_v88" vertex3="yoshimura_deployed_kapton_v56"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v91" vertex2="yoshimura_deployed_kapton_v57" vertex3="yoshimura_deployed_kapton_v89"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v90" vertex2="yoshimura_deployed_kapton_v60" vertex3="yoshimura_deployed_kapton_v92"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v91" vertex2="yoshimura_deployed_kapton_v93" vertex3="yoshimura_deployed_kapton_v61"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v90" vertex2="yoshimura_deployed_kapton_v92" vertex3="yoshimura_deployed_kapton_v88"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v91" vertex2="yoshimura_deployed_kapton_v89" vertex3="yoshimura_deployed_kapton_v93"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v60" vertex2="yoshimura_deployed_kapton_v64" vertex3="yoshimura_deployed_kapton_v94"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v61" vertex2="yoshimura_deployed_kapton_v95" vertex3="yoshimura_deployed_kapton_v65"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v94" vertex2="yoshimura_deployed_kapton_v92" vertex3="yoshimura_deployed_kapton_v60"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v95" vertex2="yoshimura_deployed_kapton_v61" vertex3="yoshimura_deployed_kapton_v93"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v94" vertex2="yoshimura_deployed_kapton_v64" vertex3="yoshimura_deployed_kapton_v96"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v95" vertex2="yoshimura_deployed_kapton_v97" vertex3="yoshimura_deployed_kapton_v65"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v94" vertex2="yoshimura_deployed_kapton_v96" vertex3="yoshimura_deployed_kapton_v92"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v95" vertex2="yoshimura_deployed_kapton_v93" vertex3="yoshimura_deployed_kapton_v97"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v64" vertex2="yoshimura_deployed_kapton_v68" vertex3="yoshimura_deployed_kapton_v98"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v65" vertex2="yoshimura_deployed_kapton_v99" vertex3="yoshimura_deployed_kapton_v69"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v98" vertex2="yoshimura_deployed_kapton_v96" vertex3="yoshimura_deployed_kapton_v64"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v99" vertex2="yoshimura_deployed_kapton_v65" vertex3="yoshimura_deployed_kapton_v97"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v98" vertex2="yoshimura_deployed_kapton_v68" vertex3="yoshimura_deployed_kapton_v100"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v99" vertex2="yoshimura_deployed_kapton_v101" vertex3="yoshimura_deployed_kapton_v69"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v98" vertex2="yoshimura_deployed_kapton_v100" vertex3="yoshimura_deployed_kapton_v96"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v99" vertex2="yoshimura_deployed_kapton_v97" vertex3="yoshimura_deployed_kapton_v101"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v68" vertex2="yoshimura_deployed_kapton_v72" vertex3="yoshimura_deployed_kapton_v102"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v69" vertex2="yoshimura_deployed_kapton_v103" vertex3="yoshimura_deployed_kapton_v73"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v102" vertex2="yoshimura_deployed_kapton_v100" vertex3="yoshimura_deployed_kapton_v68"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v103" vertex2="yoshimura_deployed_kapton_v69" vertex3="yoshimura_deployed_kapton_v101"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v102" vertex2="yoshimura_deployed_kapton_v72" vertex3="yoshimura_deployed_kapton_v104"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v103" vertex2="yoshimura_deployed_kapton_v105" vertex3="yoshimura_deployed_kapton_v73"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v102" vertex2="yoshimura_deployed_kapton_v104" vertex3="yoshimura_deployed_kapton_v100"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v103" vertex2="yoshimura_deployed_kapton_v101" vertex3="yoshimura_deployed_kapton_v105"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v72" vertex2="yoshimura_deployed_kapton_v76" vertex3="yoshimura_deployed_kapton_v106"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v73" vertex2="yoshimura_deployed_kapton_v107" vertex3="yoshimura_deployed_kapton_v77"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v106" vertex2="yoshimura_deployed_kapton_v104" vertex3="yoshimura_deployed_kapton_v72"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v107" vertex2="yoshimura_deployed_kapton_v73" vertex3="yoshimura_deployed_kapton_v105"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v106" vertex2="yoshimura_deployed_kapton_v76" vertex3="yoshimura_deployed_kapton_v108"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v107" vertex2="yoshimura_deployed_kapton_v109" vertex3="yoshimura_deployed_kapton_v77"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v106" vertex2="yoshimura_deployed_kapton_v108" vertex3="yoshimura_deployed_kapton_v104"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v107" vertex2="yoshimura_deployed_kapton_v105" vertex3="yoshimura_deployed_kapton_v109"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v76" vertex2="yoshimura_deployed_kapton_v50" vertex3="yoshimura_deployed_kapton_v110"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v77" vertex2="yoshimura_deployed_kapton_v111" vertex3="yoshimura_deployed_kapton_v51"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v110" vertex2="yoshimura_deployed_kapton_v108" vertex3="yoshimura_deployed_kapton_v76"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v111" vertex2="yoshimura_deployed_kapton_v77" vertex3="yoshimura_deployed_kapton_v109"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v110" vertex2="yoshimura_deployed_kapton_v50" vertex3="yoshimura_deployed_kapton_v82"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v111" vertex2="yoshimura_deployed_kapton_v83" vertex3="yoshimura_deployed_kapton_v51"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v110" vertex2="yoshimura_deployed_kapton_v82" vertex3="yoshimura_deployed_kapton_v108"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v111" vertex2="yoshimura_deployed_kapton_v109" vertex3="yoshimura_deployed_kapton_v83"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v82" vertex2="yoshimura_deployed_kapton_v84" vertex3="yoshimura_deployed_kapton_v112"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v83" vertex2="yoshimura_deployed_kapton_v113" vertex3="yoshimura_deployed_kapton_v85"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v112" vertex2="yoshimura_deployed_kapton_v114" vertex3="yoshimura_deployed_kapton_v82"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v113" vertex2="yoshimura_deployed_kapton_v83" vertex3="yoshimura_deployed_kapton_v115"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v112" vertex2="yoshimura_deployed_kapton_v84" vertex3="yoshimura_deployed_kapton_v116"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v113" vertex2="yoshimura_deployed_kapton_v117" vertex3="yoshimura_deployed_kapton_v85"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v112" vertex2="yoshimura_deployed_kapton_v116" vertex3="yoshimura_deployed_kapton_v114"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v113" vertex2="yoshimura_deployed_kapton_v115" vertex3="yoshimura_deployed_kapton_v117"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v84" vertex2="yoshimura_deployed_kapton_v88" vertex3="yoshimura_deployed_kapton_v118"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v85" vertex2="yoshimura_deployed_kapton_v119" vertex3="yoshimura_deployed_kapton_v89"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v118" vertex2="yoshimura_deployed_kapton_v116" vertex3="yoshimura_deployed_kapton_v84"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v119" vertex2="yoshimura_deployed_kapton_v85" vertex3="yoshimura_deployed_kapton_v117"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v118" vertex2="yoshimura_deployed_kapton_v88" vertex3="yoshimura_deployed_kapton_v120"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v119" vertex2="yoshimura_deployed_kapton_v121" vertex3="yoshimura_deployed_kapton_v89"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v118" vertex2="yoshimura_deployed_kapton_v120" vertex3="yoshimura_deployed_kapton_v116"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v119" vertex2="yoshimura_deployed_kapton_v117" vertex3="yoshimura_deployed_kapton_v121"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v88" vertex2="yoshimura_deployed_kapton_v92" vertex3="yoshimura_deployed_kapton_v122"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v89" vertex2="yoshimura_deployed_kapton_v123" vertex3="yoshimura_deployed_kapton_v93"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v122" vertex2="yoshimura_deployed_kapton_v120" vertex3="yoshimura_deployed_kapton_v88"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v123" vertex2="yoshimura_deployed_kapton_v89" vertex3="yoshimura_deployed_kapton_v121"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v122" vertex2="yoshimura_deployed_kapton_v92" vertex3="yoshimura_deployed_kapton_v124"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v123" vertex2="yoshimura_deployed_kapton_v125" vertex3="yoshimura_deployed_kapton_v93"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v122" vertex2="yoshimura_deployed_kapton_v124" vertex3="yoshimura_deployed_kapton_v120"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v123" vertex2="yoshimura_deployed_kapton_v121" vertex3="yoshimura_deployed_kapton_v125"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v92" vertex2="yoshimura_deployed_kapton_v96" vertex3="yoshimura_deployed_kapton_v126"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v93" vertex2="yoshimura_deployed_kapton_v127" vertex3="yoshimura_deployed_kapton_v97"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v126" vertex2="yoshimura_deployed_kapton_v124" vertex3="yoshimura_deployed_kapton_v92"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v127" vertex2="yoshimura_deployed_kapton_v93" vertex3="yoshimura_deployed_kapton_v125"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v126" vertex2="yoshimura_deployed_kapton_v96" vertex3="yoshimura_deployed_kapton_v128"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v127" vertex2="yoshimura_deployed_kapton_v129" vertex3="yoshimura_deployed_kapton_v97"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v126" vertex2="yoshimura_deployed_kapton_v128" vertex3="yoshimura_deployed_kapton_v124"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v127" vertex2="yoshimura_deployed_kapton_v125" vertex3="yoshimura_deployed_kapton_v129"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v96" vertex2="yoshimura_deployed_kapton_v100" vertex3="yoshimura_deployed_kapton_v130"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v97" vertex2="yoshimura_deployed_kapton_v131" vertex3="yoshimura_deployed_kapton_v101"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v130" vertex2="yoshimura_deployed_kapton_v128" vertex3="yoshimura_deployed_kapton_v96"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v131" vertex2="yoshimura_deployed_kapton_v97" vertex3="yoshimura_deployed_kapton_v129"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v130" vertex2="yoshimura_deployed_kapton_v100" vertex3="yoshimura_deployed_kapton_v132"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v131" vertex2="yoshimura_deployed_kapton_v133" vertex3="yoshimura_deployed_kapton_v101"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v130" vertex2="yoshimura_deployed_kapton_v132" vertex3="yoshimura_deployed_kapton_v128"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v131" vertex2="yoshimura_deployed_kapton_v129" vertex3="yoshimura_deployed_kapton_v133"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v100" vertex2="yoshimura_deployed_kapton_v104" vertex3="yoshimura_deployed_kapton_v134"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v101" vertex2="yoshimura_deployed_kapton_v135" vertex3="yoshimura_deployed_kapton_v105"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v134" vertex2="yoshimura_deployed_kapton_v132" vertex3="yoshimura_deployed_kapton_v100"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v135" vertex2="yoshimura_deployed_kapton_v101" vertex3="yoshimura_deployed_kapton_v133"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v134" vertex2="yoshimura_deployed_kapton_v104" vertex3="yoshimura_deployed_kapton_v136"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v135" vertex2="yoshimura_deployed_kapton_v137" vertex3="yoshimura_deployed_kapton_v105"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v134" vertex2="yoshimura_deployed_kapton_v136" vertex3="yoshimura_deployed_kapton_v132"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v135" vertex2="yoshimura_deployed_kapton_v133" vertex3="yoshimura_deployed_kapton_v137"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v104" vertex2="yoshimura_deployed_kapton_v108" vertex3="yoshimura_deployed_kapton_v138"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v105" vertex2="yoshimura_deployed_kapton_v139" vertex3="yoshimura_deployed_kapton_v109"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v138" vertex2="yoshimura_deployed_kapton_v136" vertex3="yoshimura_deployed_kapton_v104"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v139" vertex2="yoshimura_deployed_kapton_v105" vertex3="yoshimura_deployed_kapton_v137"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v138" vertex2="yoshimura_deployed_kapton_v108" vertex3="yoshimura_deployed_kapton_v140"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v139" vertex2="yoshimura_deployed_kapton_v141" vertex3="yoshimura_deployed_kapton_v109"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v138" vertex2="yoshimura_deployed_kapton_v140" vertex3="yoshimura_deployed_kapton_v136"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v139" vertex2="yoshimura_deployed_kapton_v137" vertex3="yoshimura_deployed_kapton_v141"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v108" vertex2="yoshimura_deployed_kapton_v82" vertex3="yoshimura_deployed_kapton_v142"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v109" vertex2="yoshimura_deployed_kapton_v143" vertex3="yoshimura_deployed_kapton_v83"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v142" vertex2="yoshimura_deployed_kapton_v140" vertex3="yoshimura_deployed_kapton_v108"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v143" vertex2="yoshimura_deployed_kapton_v109" vertex3="yoshimura_deployed_kapton_v141"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v142" vertex2="yoshimura_deployed_kapton_v82" vertex3="yoshimura_deployed_kapton_v114"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v143" vertex2="yoshimura_deployed_kapton_v115" vertex3="yoshimura_deployed_kapton_v83"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v142" vertex2="yoshimura_deployed_kapton_v114" vertex3="yoshimura_deployed_kapton_v140"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v143" vertex2="yoshimura_deployed_kapton_v141" vertex3="yoshimura_deployed_kapton_v115"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v114" vertex2="yoshimura_deployed_kapton_v116" vertex3="yoshimura_deployed_kapton_v144"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v115" vertex2="yoshimura_deployed_kapton_v145" vertex3="yoshimura_deployed_kapton_v117"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v144" vertex2="yoshimura_deployed_kapton_v146" vertex3="yoshimura_deployed_kapton_v114"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v145" vertex2="yoshimura_deployed_kapton_v115" vertex3="yoshimura_deployed_kapton_v147"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v144" vertex2="yoshimura_deployed_kapton_v116" vertex3="yoshimura_deployed_kapton_v148"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v145" vertex2="yoshimura_deployed_kapton_v149" vertex3="yoshimura_deployed_kapton_v117"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v144" vertex2="yoshimura_deployed_kapton_v148" vertex3="yoshimura_deployed_kapton_v146"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v145" vertex2="yoshimura_deployed_kapton_v147" vertex3="yoshimura_deployed_kapton_v149"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v116" vertex2="yoshimura_deployed_kapton_v120" vertex3="yoshimura_deployed_kapton_v150"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v117" vertex2="yoshimura_deployed_kapton_v151" vertex3="yoshimura_deployed_kapton_v121"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v150" vertex2="yoshimura_deployed_kapton_v148" vertex3="yoshimura_deployed_kapton_v116"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v151" vertex2="yoshimura_deployed_kapton_v117" vertex3="yoshimura_deployed_kapton_v149"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v150" vertex2="yoshimura_deployed_kapton_v120" vertex3="yoshimura_deployed_kapton_v152"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v151" vertex2="yoshimura_deployed_kapton_v153" vertex3="yoshimura_deployed_kapton_v121"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v150" vertex2="yoshimura_deployed_kapton_v152" vertex3="yoshimura_deployed_kapton_v148"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v151" vertex2="yoshimura_deployed_kapton_v149" vertex3="yoshimura_deployed_kapton_v153"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v120" vertex2="yoshimura_deployed_kapton_v124" vertex3="yoshimura_deployed_kapton_v154"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v121" vertex2="yoshimura_deployed_kapton_v155" vertex3="yoshimura_deployed_kapton_v125"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v154" vertex2="yoshimura_deployed_kapton_v152" vertex3="yoshimura_deployed_kapton_v120"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v155" vertex2="yoshimura_deployed_kapton_v121" vertex3="yoshimura_deployed_kapton_v153"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v154" vertex2="yoshimura_deployed_kapton_v124" vertex3="yoshimura_deployed_kapton_v156"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v155" vertex2="yoshimura_deployed_kapton_v157" vertex3="yoshimura_deployed_kapton_v125"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v154" vertex2="yoshimura_deployed_kapton_v156" vertex3="yoshimura_deployed_kapton_v152"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v155" vertex2="yoshimura_deployed_kapton_v153" vertex3="yoshimura_deployed_kapton_v157"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v124" vertex2="yoshimura_deployed_kapton_v128" vertex3="yoshimura_deployed_kapton_v158"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v125" vertex2="yoshimura_deployed_kapton_v159" vertex3="yoshimura_deployed_kapton_v129"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v158" vertex2="yoshimura_deployed_kapton_v156" vertex3="yoshimura_deployed_kapton_v124"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v159" vertex2="yoshimura_deployed_kapton_v125" vertex3="yoshimura_deployed_kapton_v157"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v158" vertex2="yoshimura_deployed_kapton_v128" vertex3="yoshimura_deployed_kapton_v160"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v159" vertex2="yoshimura_deployed_kapton_v161" vertex3="yoshimura_deployed_kapton_v129"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v158" vertex2="yoshimura_deployed_kapton_v160" vertex3="yoshimura_deployed_kapton_v156"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v159" vertex2="yoshimura_deployed_kapton_v157" vertex3="yoshimura_deployed_kapton_v161"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v128" vertex2="yoshimura_deployed_kapton_v132" vertex3="yoshimura_deployed_kapton_v162"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v129" vertex2="yoshimura_deployed_kapton_v163" vertex3="yoshimura_deployed_kapton_v133"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v162" vertex2="yoshimura_deployed_kapton_v160" vertex3="yoshimura_deployed_kapton_v128"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v163" vertex2="yoshimura_deployed_kapton_v129" vertex3="yoshimura_deployed_kapton_v161"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v162" vertex2="yoshimura_deployed_kapton_v132" vertex3="yoshimura_deployed_kapton_v164"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v163" vertex2="yoshimura_deployed_kapton_v165" vertex3="yoshimura_deployed_kapton_v133"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v162" vertex2="yoshimura_deployed_kapton_v164" vertex3="yoshimura_deployed_kapton_v160"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v163" vertex2="yoshimura_deployed_kapton_v161" vertex3="yoshimura_deployed_kapton_v165"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v132" vertex2="yoshimura_deployed_kapton_v136" vertex3="yoshimura_deployed_kapton_v166"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v133" vertex2="yoshimura_deployed_kapton_v167" vertex3="yoshimura_deployed_kapton_v137"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v166" vertex2="yoshimura_deployed_kapton_v164" vertex3="yoshimura_deployed_kapton_v132"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v167" vertex2="yoshimura_deployed_kapton_v133" vertex3="yoshimura_deployed_kapton_v165"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v166" vertex2="yoshimura_deployed_kapton_v136" vertex3="yoshimura_deployed_kapton_v168"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v167" vertex2="yoshimura_deployed_kapton_v169" vertex3="yoshimura_deployed_kapton_v137"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v166" vertex2="yoshimura_deployed_kapton_v168" vertex3="yoshimura_deployed_kapton_v164"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v167" vertex2="yoshimura_deployed_kapton_v165" vertex3="yoshimura_deployed_kapton_v169"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v136" vertex2="yoshimura_deployed_kapton_v140" vertex3="yoshimura_deployed_kapton_v170"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v137" vertex2="yoshimura_deployed_kapton_v171" vertex3="yoshimura_deployed_kapton_v141"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v170" vertex2="yoshimura_deployed_kapton_v168" vertex3="yoshimura_deployed_kapton_v136"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v171" vertex2="yoshimura_deployed_kapton_v137" vertex3="yoshimura_deployed_kapton_v169"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v170" vertex2="yoshimura_deployed_kapton_v140" vertex3="yoshimura_deployed_kapton_v172"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v171" vertex2="yoshimura_deployed_kapton_v173" vertex3="yoshimura_deployed_kapton_v141"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v170" vertex2="yoshimura_deployed_kapton_v172" vertex3="yoshimura_deployed_kapton_v168"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v171" vertex2="yoshimura_deployed_kapton_v169" vertex3="yoshimura_deployed_kapton_v173"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v140" vertex2="yoshimura_deployed_kapton_v114" vertex3="yoshimura_deployed_kapton_v174"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v141" vertex2="yoshimura_deployed_kapton_v175" vertex3="yoshimura_deployed_kapton_v115"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v174" vertex2="yoshimura_deployed_kapton_v172" vertex3="yoshimura_deployed_kapton_v140"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v175" vertex2="yoshimura_deployed_kapton_v141" vertex3="yoshimura_deployed_kapton_v173"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v174" vertex2="yoshimura_deployed_kapton_v114" vertex3="yoshimura_deployed_kapton_v146"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v175" vertex2="yoshimura_deployed_kapton_v147" vertex3="yoshimura_deployed_kapton_v115"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v174" vertex2="yoshimura_deployed_kapton_v146" vertex3="yoshimura_deployed_kapton_v172"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v175" vertex2="yoshimura_deployed_kapton_v173" vertex3="yoshimura_deployed_kapton_v147"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v146" vertex2="yoshimura_deployed_kapton_v148" vertex3="yoshimura_deployed_kapton_v176"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v147" vertex2="yoshimura_deployed_kapton_v177" vertex3="yoshimura_deployed_kapton_v149"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v176" vertex2="yoshimura_deployed_kapton_v178" vertex3="yoshimura_deployed_kapton_v146"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v177" vertex2="yoshimura_deployed_kapton_v147" vertex3="yoshimura_deployed_kapton_v179"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v176" vertex2="yoshimura_deployed_kapton_v148" vertex3="yoshimura_deployed_kapton_v180"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v177" vertex2="yoshimura_deployed_kapton_v181" vertex3="yoshimura_deployed_kapton_v149"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v176" vertex2="yoshimura_deployed_kapton_v180" vertex3="yoshimura_deployed_kapton_v178"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v177" vertex2="yoshimura_deployed_kapton_v179" vertex3="yoshimura_deployed_kapton_v181"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v148" vertex2="yoshimura_deployed_kapton_v152" vertex3="yoshimura_deployed_kapton_v182"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v149" vertex2="yoshimura_deployed_kapton_v183" vertex3="yoshimura_deployed_kapton_v153"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v182" vertex2="yoshimura_deployed_kapton_v180" vertex3="yoshimura_deployed_kapton_v148"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v183" vertex2="yoshimura_deployed_kapton_v149" vertex3="yoshimura_deployed_kapton_v181"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v182" vertex2="yoshimura_deployed_kapton_v152" vertex3="yoshimura_deployed_kapton_v184"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v183" vertex2="yoshimura_deployed_kapton_v185" vertex3="yoshimura_deployed_kapton_v153"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v182" vertex2="yoshimura_deployed_kapton_v184" vertex3="yoshimura_deployed_kapton_v180"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v183" vertex2="yoshimura_deployed_kapton_v181" vertex3="yoshimura_deployed_kapton_v185"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v152" vertex2="yoshimura_deployed_kapton_v156" vertex3="yoshimura_deployed_kapton_v186"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v153" vertex2="yoshimura_deployed_kapton_v187" vertex3="yoshimura_deployed_kapton_v157"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v186" vertex2="yoshimura_deployed_kapton_v184" vertex3="yoshimura_deployed_kapton_v152"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v187" vertex2="yoshimura_deployed_kapton_v153" vertex3="yoshimura_deployed_kapton_v185"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v186" vertex2="yoshimura_deployed_kapton_v156" vertex3="yoshimura_deployed_kapton_v188"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v187" vertex2="yoshimura_deployed_kapton_v189" vertex3="yoshimura_deployed_kapton_v157"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v186" vertex2="yoshimura_deployed_kapton_v188" vertex3="yoshimura_deployed_kapton_v184"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v187" vertex2="yoshimura_deployed_kapton_v185" vertex3="yoshimura_deployed_kapton_v189"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v156" vertex2="yoshimura_deployed_kapton_v160" vertex3="yoshimura_deployed_kapton_v190"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v157" vertex2="yoshimura_deployed_kapton_v191" vertex3="yoshimura_deployed_kapton_v161"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v190" vertex2="yoshimura_deployed_kapton_v188" vertex3="yoshimura_deployed_kapton_v156"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v191" vertex2="yoshimura_deployed_kapton_v157" vertex3="yoshimura_deployed_kapton_v189"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v190" vertex2="yoshimura_deployed_kapton_v160" vertex3="yoshimura_deployed_kapton_v192"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v191" vertex2="yoshimura_deployed_kapton_v193" vertex3="yoshimura_deployed_kapton_v161"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v190" vertex2="yoshimura_deployed_kapton_v192" vertex3="yoshimura_deployed_kapton_v188"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v191" vertex2="yoshimura_deployed_kapton_v189" vertex3="yoshimura_deployed_kapton_v193"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v160" vertex2="yoshimura_deployed_kapton_v164" vertex3="yoshimura_deployed_kapton_v194"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v161" vertex2="yoshimura_deployed_kapton_v195" vertex3="yoshimura_deployed_kapton_v165"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v194" vertex2="yoshimura_deployed_kapton_v192" vertex3="yoshimura_deployed_kapton_v160"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v195" vertex2="yoshimura_deployed_kapton_v161" vertex3="yoshimura_deployed_kapton_v193"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v194" vertex2="yoshimura_deployed_kapton_v164" vertex3="yoshimura_deployed_kapton_v196"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v195" vertex2="yoshimura_deployed_kapton_v197" vertex3="yoshimura_deployed_kapton_v165"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v194" vertex2="yoshimura_deployed_kapton_v196" vertex3="yoshimura_deployed_kapton_v192"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v195" vertex2="yoshimura_deployed_kapton_v193" vertex3="yoshimura_deployed_kapton_v197"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v164" vertex2="yoshimura_deployed_kapton_v168" vertex3="yoshimura_deployed_kapton_v198"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v165" vertex2="yoshimura_deployed_kapton_v199" vertex3="yoshimura_deployed_kapton_v169"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v198" vertex2="yoshimura_deployed_kapton_v196" vertex3="yoshimura_deployed_kapton_v164"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v199" vertex2="yoshimura_deployed_kapton_v165" vertex3="yoshimura_deployed_kapton_v197"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v198" vertex2="yoshimura_deployed_kapton_v168" vertex3="yoshimura_deployed_kapton_v200"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v199" vertex2="yoshimura_deployed_kapton_v201" vertex3="yoshimura_deployed_kapton_v169"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v198" vertex2="yoshimura_deployed_kapton_v200" vertex3="yoshimura_deployed_kapton_v196"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v199" vertex2="yoshimura_deployed_kapton_v197" vertex3="yoshimura_deployed_kapton_v201"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v168" vertex2="yoshimura_deployed_kapton_v172" vertex3="yoshimura_deployed_kapton_v202"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v169" vertex2="yoshimura_deployed_kapton_v203" vertex3="yoshimura_deployed_kapton_v173"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v202" vertex2="yoshimura_deployed_kapton_v200" vertex3="yoshimura_deployed_kapton_v168"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v203" vertex2="yoshimura_deployed_kapton_v169" vertex3="yoshimura_deployed_kapton_v201"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v202" vertex2="yoshimura_deployed_kapton_v172" vertex3="yoshimura_deployed_kapton_v204"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v203" vertex2="yoshimura_deployed_kapton_v205" vertex3="yoshimura_deployed_kapton_v173"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v202" vertex2="yoshimura_deployed_kapton_v204" vertex3="yoshimura_deployed_kapton_v200"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v203" vertex2="yoshimura_deployed_kapton_v201" vertex3="yoshimura_deployed_kapton_v205"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v172" vertex2="yoshimura_deployed_kapton_v146" vertex3="yoshimura_deployed_kapton_v206"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v173" vertex2="yoshimura_deployed_kapton_v207" vertex3="yoshimura_deployed_kapton_v147"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v206" vertex2="yoshimura_deployed_kapton_v204" vertex3="yoshimura_deployed_kapton_v172"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v207" vertex2="yoshimura_deployed_kapton_v173" vertex3="yoshimura_deployed_kapton_v205"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v206" vertex2="yoshimura_deployed_kapton_v146" vertex3="yoshimura_deployed_kapton_v178"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v207" vertex2="yoshimura_deployed_kapton_v179" vertex3="yoshimura_deployed_kapton_v147"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v206" vertex2="yoshimura_deployed_kapton_v178" vertex3="yoshimura_deployed_kapton_v204"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v207" vertex2="yoshimura_deployed_kapton_v205" vertex3="yoshimura_deployed_kapton_v179"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v3" vertex2="yoshimura_deployed_kapton_v5" vertex3="yoshimura_deployed_kapton_v1"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v3" vertex2="yoshimura_deployed_kapton_v1" vertex3="yoshimura_deployed_kapton_v0"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v5" vertex2="yoshimura_deployed_kapton_v13" vertex3="yoshimura_deployed_kapton_v10"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v5" vertex2="yoshimura_deployed_kapton_v10" vertex3="yoshimura_deployed_kapton_v1"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v13" vertex2="yoshimura_deployed_kapton_v19" vertex3="yoshimura_deployed_kapton_v16"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v13" vertex2="yoshimura_deployed_kapton_v16" vertex3="yoshimura_deployed_kapton_v10"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v19" vertex2="yoshimura_deployed_kapton_v25" vertex3="yoshimura_deployed_kapton_v22"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v19" vertex2="yoshimura_deployed_kapton_v22" vertex3="yoshimura_deployed_kapton_v16"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v25" vertex2="yoshimura_deployed_kapton_v31" vertex3="yoshimura_deployed_kapton_v28"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v25" vertex2="yoshimura_deployed_kapton_v28" vertex3="yoshimura_deployed_kapton_v22"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v31" vertex2="yoshimura_deployed_kapton_v37" vertex3="yoshimura_deployed_kapton_v34"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v31" vertex2="yoshimura_deployed_kapton_v34" vertex3="yoshimura_deployed_kapton_v28"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v37" vertex2="yoshimura_deployed_kapton_v43" vertex3="yoshimura_deployed_kapton_v40"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v37" vertex2="yoshimura_deployed_kapton_v40" vertex3="yoshimura_deployed_kapton_v34"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v43" vertex2="yoshimura_deployed_kapton_v3" vertex3="yoshimura_deployed_kapton_v0"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v43" vertex2="yoshimura_deployed_kapton_v0" vertex3="yoshimura_deployed_kapton_v40"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v181" vertex2="yoshimura_deployed_kapton_v179" vertex3="yoshimura_deployed_kapton_v178"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v181" vertex2="yoshimura_deployed_kapton_v178" vertex3="yoshimura_deployed_kapton_v180"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v185" vertex2="yoshimura_deployed_kapton_v181" vertex3="yoshimura_deployed_kapton_v180"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v185" vertex2="yoshimura_deployed_kapton_v180" vertex3="yoshimura_deployed_kapton_v184"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v189" vertex2="yoshimura_deployed_kapton_v185" vertex3="yoshimura_deployed_kapton_v184"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v189" vertex2="yoshimura_deployed_kapton_v184" vertex3="yoshimura_deployed_kapton_v188"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v193" vertex2="yoshimura_deployed_kapton_v189" vertex3="yoshimura_deployed_kapton_v188"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v193" vertex2="yoshimura_deployed_kapton_v188" vertex3="yoshimura_deployed_kapton_v192"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v197" vertex2="yoshimura_deployed_kapton_v193" vertex3="yoshimura_deployed_kapton_v192"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v197" vertex2="yoshimura_deployed_kapton_v192" vertex3="yoshimura_deployed_kapton_v196"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v201" vertex2="yoshimura_deployed_kapton_v197" vertex3="yoshimura_deployed_kapton_v196"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v201" vertex2="yoshimura_deployed_kapton_v196" vertex3="yoshimura_deployed_kapton_v200"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v205" vertex2="yoshimura_deployed_kapton_v201" vertex3="yoshimura_deployed_kapton_v200"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v205" vertex2="yoshimura_deployed_kapton_v200" vertex3="yoshimura_deployed_kapton_v204"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v179" vertex2="yoshimura_deployed_kapton_v205" vertex3="yoshimura_deployed_kapton_v204"/>
+      <triangular vertex1="yoshimura_deployed_kapton_v179" vertex2="yoshimura_deployed_kapton_v204" vertex3="yoshimura_deployed_kapton_v178"/>
+    </tessellated>
+  </solids>
+  <structure>
+    <volume name="yoshimura_deployed_kapton_volume">
+      <materialref ref="G4_KAPTON"/>
+      <solidref ref="yoshimura_deployed_kapton_solid"/>
+    </volume>
+  </structure>
+  <setup name="Default" version="1.0">
+    <world ref="yoshimura_deployed_kapton_volume"/>
+  </setup>
+</gdml>

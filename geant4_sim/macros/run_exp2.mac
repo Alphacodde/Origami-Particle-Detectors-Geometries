@@ -1,0 +1,10 @@
+/run/initialize
+/origami/run/tag exp2
+/origami/gun/mode isotropic4pi
+/origami/gun/vertexSmearMm 0
+/origami/gun/vertexZOffsetMm 0
+/control/execute macros/exp2_momenta/p0_5GeV.mac
+/control/execute macros/exp2_momenta/p1GeV.mac
+/control/execute macros/exp2_momenta/p2GeV.mac
+/control/execute macros/exp2_momenta/p5GeV.mac
+/control/execute macros/exp2_momenta/p10GeV.mac

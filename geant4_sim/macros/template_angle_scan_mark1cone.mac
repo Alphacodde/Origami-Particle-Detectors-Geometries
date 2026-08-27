@@ -1,0 +1,15 @@
+/origami/stlFile geometry/miura_deployed_silicon.gdml
+/origami/kaptonStlFile geometry/miura_deployed_kapton.gdml
+/origami/sensorThickness 0.300 mm
+/origami/substrateThickness 0.050 mm
+/origami/foldState 1.0
+/origami/gun/mode mark1cone
+/origami/gun/randomAngleMaxDeg 60
+/origami/gun/momentumGeV 5.0
+/origami/gun/gunZmm 400
+/origami/gun/diskRadiusMm 150
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/run/initialize
+/run/beamOn 500000
