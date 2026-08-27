@@ -1,13 +1,12 @@
 # Origami-Folded Sensor Geometries for Cylindrical Tracking Detectors: A Geant4 Comparison
 
-[![Paper](https://img.shields.io/badge/JINST-Submitted-blue.svg)](paper/main.pdf)
 [![Geant4](https://img.shields.io/badge/Geant4-10.7%2B-red.svg)](https://geant4.web.cern.ch/)
 [![ROOT](https://img.shields.io/badge/CERN_ROOT-6.24%2B-orange.svg)](https://root.cern/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-green.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Official source code, parametric geometry generators, analysis pipeline, and manuscript source for the study:  
-**"Origami-Folded Sensor Geometries for Cylindrical Tracking Detectors: A Geant4 Comparison"** (Kanishk Sharma, submitted to *JINST*).
+**"Origami-Folded Sensor Geometries for Cylindrical Tracking Detectors: A Geant4 Comparison"**
 
 ---
 
@@ -22,7 +21,7 @@ Official source code, parametric geometry generators, analysis pipeline, and man
 
 ## 📂 Raw Simulation Dataset (Google Drive)
 
-Due to file size limits (~10.7 GB total), the raw Geant4 ROOT output files are hosted on Google Drive:
+Due to file size limits ( 7GB+), the raw Geant4 ROOT output files are hosted on Google Drive:
 
 [![Google Drive Dataset](https://img.shields.io/badge/Google%20Drive-Download%20ROOT%20Ntuples%20(10.7%20GB)-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1ZbLm0H2FCLPQepytwLGCHj7_VS4sdF78?usp=sharing)
 
@@ -197,22 +196,6 @@ python geometry_generation/generate_all_geometries.py
 | **Fold Angle ($\theta$) Sweep** | `pipelines/run_everything_theta.ps1` | `fig5_theta_sweep` | Section 4.4 |
 | **Dead-Zone Mapping & Sweep** | `pipelines/deadzone_analysis.ps1` | `fig10_map`, `fig11_map`, `fig12_map`, `fig_deadzone_threshold_sweep` | Section 4.7 |
 | **Thin-Silicon ($50\ \mu\text{m}$) ITS3** | `pipelines/run_everything_50um.ps1` | `fig_its3_comparison_v2` | Section 4.8 |
-
----
-
-## 📖 Citation
-
-If you use this simulation framework, geometry generator, or dataset, please cite:
-
-```bibtex
-@article{sharma2025origami,
-  title   = {Origami-Folded Sensor Geometries for Cylindrical Tracking Detectors: A {Geant4} Comparison},
-  author  = {Sharma, Kanishk},
-  journal = {JINST},
-  year    = {2025},
-  note    = {submitted}
-}
-```
 
 ---
 
