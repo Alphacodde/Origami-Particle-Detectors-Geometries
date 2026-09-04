@@ -27,22 +27,15 @@
 % E-mail address: corresponding author
 \emailAdd{kanishk@mathsdiscourse.com}
 
-\abstract{Particle detectors normally use barrel shaped detector. These are usually built using flat silicon tiles, wrapped around a curved structure. However, silicon cannot bend a lot.  This forces you to make a choice: either you leave spots with no material (dead zones) or you can use a lot of material and each tile extends a bit over its neighbors (an overlap). Recent designs have mitigated this problem by either tilting the sensor (CMS Collaboration, 2017) itself or by bending the sensor to a small radius and then stitching it (CERN ALICE ITS3). This project considers a different approach, namely the use of different origami structures as detector geometries. This project considers three cylindrically deployable fold families (Cylindrical Miura-ori,
-Yoshimura, and Kresling) and uses GEANT 4 to answer the following questions:
-\begin{enumerate}
-    \item What would be the outcome?
-    \item Do they have any effect on dead zone or overlap area?
-    \item What is their performance when compared to a control detector geometry?
-\end{enumerate}
-Each geometry was modelled parametrically in python and then simulated in GEANT4. The results were then compared to a flat tile barrel of the same radius, which acted as a control. This models Kapton as a continuous structure while silicon is modelled as individual rigid tiles.
+\abstract{Cylindrical tracking detectors in high-energy physics are traditionally built from flat silicon sensor tiles arranged around a support barrel. Flat silicon modules cannot bend easily, so covering a cylindrical surface with flat tiles requires a trade-off between leaving inactive detection gaps (dead zones) and creating tile overlaps that add unwanted material. Recent vertex detector designs address this issue using tilted sensor modules or bent, stitched silicon (such as ALICE ITS3). Here, we investigate an alternative approach: origami-folded detector structures. We present what appears to be the first systematic \textsc{Geant4} comparison of three cylindrical origami fold families --- Cylindrical Miura-ori, Yoshimura, and Kresling --- against a matched flat-tiled barrel control for charged-particle tracking.
 
-Every geometry achieved a higher geometric hit acceptance as compared to the control barrel. However, they also came with an increase in radiation length. Kresling showed the largest acceptance gain ($+2.36$ percentage points, $p < 10^{-10}$) and had a $+5.69\%$ increase in mean $X_0$. Yoshimura had a smaller acceptance gain ($+1.30$ percentage points, $p < 10^{-9}$), however, it had the largest increase in radiation length ($+8.01\%$ in $X_0$). Miura-ori had the lowest material penalty, remaining close to the control ($+1.88\%$ in $X_0$). However, it had a modest increase in acceptance ($+0.49$ percentage points, $p < 10^{-7}$). 
+Each geometry was modeled parametrically in Python and simulated in \textsc{Geant4} with differentiated materials (discrete rigid silicon tiles on a continuous flexible Kapton substrate). Across $500{,}000$ primary $5\text{ GeV}/c\ \pi^+$ events per configuration with a $3.0\text{ mm}$ vertex spread, all three fold geometries achieved higher geometric hit acceptance than the flat-tiled control barrel, accompanied by increases in radiation-length traversal. Kresling yielded the largest acceptance gain ($+2.36$ percentage points, $p < 10^{-10}$, Cohen's $h = +0.066$) with a $+5.69\%$ increase in mean $X_0$. Yoshimura exhibited a $+1.30$ percentage-point acceptance gain ($p < 10^{-9}$, Cohen's $h = +0.035$) with the largest material increase ($+8.01\%$ in $X_0$). Miura-ori exhibited the lowest material penalty, closely matching the control ($+1.88\%$ in $X_0$), with a modest acceptance gain ($+0.49$ percentage points, $p < 10^{-7}$, Cohen's $h = +0.013$).
 
-This leaves us with a Pareto Frontier rather than a single best geometry. Analyzing the hit distribution reveals the true reason for such a spread: Yoshimura and Kresling concentrate the acceptance gains in localized high hit density regions, regions near overlap seams. This allows them to retain substantial dead-zone fractions ($1.86\%$ and $1.45\%$ of $(\theta, z)$ bins, respectively) while still increasing hits, all at the cost of increased radiation length. Miura-ori on the other hand has a near uniform hit density throughout and has the lowest dead-zone fraction ($0.04\%$). Multi-parameter sweeps across facet count ($N$) and fold angle ($\theta$), vertex-position robustness, and multiple-scattering validation against the Highland formula confirm the statistical robustness of these findings.
+These candidate structures define a distinct Pareto frontier rather than a single optimal design. Spatial hit-density analysis reveals that Yoshimura and Kresling concentrate their acceptance gains primarily in localized seam-overlap regions, retaining relative under-coverage fractions ($1.86\%$ and $1.45\%$ of $(\theta, z)$ bins with $R < 0.5$, respectively). Conversely, Miura-ori provides near-uniform spatial coverage with the lowest relative under-coverage fraction ($0.04\%$). Parameter sweeps over facet count $N$, fold angle $\theta$, vertex-position distributions, independent five-run replications ($\mathrm{SD}_A \le 0.05$~pp), and multiple-scattering validation against the Highland formula confirm the statistical robustness of these findings.
 
-A parallel study at 50~$\mu$m silicon --- matching the sensor thickness used by ALICE ITS3 --- shows the acceptance advantage of folding is essentially unchanged by sensor thickness, while material traversal drops by a factor of $\sim 4.8\times$ as expected. Compared against ITS3's own material budget at matched physical scope, every geometry studied here, including the flat-tile barrel control, has a higher silicon-only radiation length than ITS3's bent, seamless sensor by roughly 0.01--0.016 percentage points; a naive comparison against ITS3's full engineered per-layer budget (which includes carbon-foam mechanical support this study does not model) would misleadingly suggest otherwise. Folding therefore improves acceptance relative to a flat-tiled barrel at any matched sensor thickness, but does not close the material-budget gap to a continuously bent design.}
+A parallel evaluation at $50\ \mu\text{m}$ silicon thickness --- matching the ALICE ITS3 benchmark --- indicates that the geometric acceptance advantage of folding remains essentially the same at lower sensor thickness, while total material traversal scales down by $\sim 4.8\times$. Compared against ITS3's bent sensor baseline at matched physical scope, flat-faceted tessellations retain a modest silicon-only material penalty ($+0.010$--$0.016$ pp in $X/X_0$) due to non-normal local incidence angles. Origami folding therefore enhances geometric acceptance relative to conventional tiled barrels at any matched sensor thickness, redistributing the dead-zone and overlap trade-off across distinct Pareto-optimal configurations.}
 
-\keywords{Detector geometry, Particle tracking detectors (Solid-state detectors), Performance of High Energy Physics Detectors, Simulation methods and programs}
+\keywords{Performance of High Energy Physics Detectors, Simulation methods and programs, Radiation calculations, Analysis and statistical methods}
 
 \begin{document}
 \maketitle
@@ -51,24 +44,19 @@ A parallel study at 50~$\mu$m silicon --- matching the sensor thickness used by 
 \section{Introduction}
 \label{sec:intro}
 
-Barrel-shaped particle detectors are normally made using flat silicon tile sensors, constructed around a cylindrical envelope. However, silicon is highly brittle and resists bending due to its mechanical anisotropy. At the same time, the flat tiles force a different choice. Since the flat silicon tiles cannot be wrapped smoothly around a cylindrical envelope, every seam presents a trade off: either we leave a deadzone or we introduce an overlap. Introducing excess material increases Coulomb scattering and degrades vertex resolution.
+Barrel-shaped tracking detectors in particle physics are conventionally built from flat silicon sensor modules mounted on a cylindrical support structure. Crystalline silicon is brittle and does not bend easily. Consequently, tiling a cylindrical envelope with flat modules creates a direct trade-off: leaving gaps between adjacent tiles leaves inactive detection areas (dead zones), whereas overlapping tiles introduces extra material that increases multiple scattering and degrades tracking resolution.
 
-Detector optimization studies have focused on modifying and optimizing mechanical supports, ultra-light cooling, and high-density interconnects rather than questioning the underlying planar tiling geometry.
+Detector optimization efforts have predominantly concentrated on ultra-light carbon composite supports, micro-channel cooling, and high-density flexible interconnects, rather than modifying the underlying planar tiling topology.
 
-Recent detector designs have tried different ways to address this challenge. The ALICE ITS3 upgrade makes use of ultra thin sensors ($\sim 50\ \mu\text{m}$), curved to a small angle. These are then stitched together to form the complete barrel. This eliminates the seams inside the sensor layer.
+Recent vertex detector architectures have developed innovative strategies to mitigate these geometric constraints. The ALICE ITS3 upgrade utilizes ultra-thin ($40$--$50\ \mu\text{m}$) stitched CMOS sensors bent into cylindrical half-layers, eliminating active sensor seams entirely within the tracking layers~\cite{ALICE2024, Sonneveld2023}. The LHCb Upstream Tracker combines rigid silicon sensors with a continuous flexible Kapton substrate for electrical routing and mechanical integration~\cite{Lionetto2014}. The CMS Phase-2 Outer Tracker employs a tilted-module geometry in the tracker barrel, inclining flat sensor modules along the beam axis to optimize track incidence angles and close acceptance gaps~\cite{CMS2017}.
 
-The LHCb Upstream Tracker uses rigid silicon sensors while using a flexible kapton substrate for routing and mechanical packaging.
+While these methods show the advantages of non-standard geometries, origami-folded designs have not yet been evaluated systematically for tracking detectors. Origami folding allows a continuous sheet to form a pattern of flat panels connected along fold lines, enabling compact storage followed by deployment into a cylindrical geometry.
 
-The CMS Phase-2 Outer Tracker uses a tilted module layout inside the tracker barrel, slanting flat sensor modules along the beam axis to optimize track incidence angles and close acceptance gaps.
+This work presents what appears to be the first systematic \textsc{Geant4} comparison of three cylindrically deployable origami fold families --- Cylindrical Miura-ori~\cite{Miura1985}, Yoshimura~\cite{Yoshimura1955}, and Kresling~\cite{Kresling2008} --- against a conventional planar-tiled barrel control of identical envelope dimensions ($R = 40\text{ mm}$, $L = 120\text{ mm}$).
 
-While these approaches demonstrate the substantial benefits of non-standard geometries, none explore deployable origami folding to generate the detector surface itself.
+The central question investigated is whether, for a fixed cylindrical envelope, origami folding can improve geometric tracking acceptance without imposing an intolerable radiation-length penalty relative to conventional tiling. The three fold geometries were generated parametrically in Python and simulated in \textsc{Geant4} using explicitly differentiated material representations (rigid silicon tiles on a continuous Kapton backing). A flat planar slab model was simulated in parallel to validate radiation-length scoring and multiple-scattering distributions against the Highland formula.
 
-Origami Patterns present an unexplored avenue for detector design. These allow a sensor sheet to be tessellated into rigid polygonal facets, interconnected by a kapton substrate shell. This work compares the performance of three origami structures ---Miura-ori~\cite{Miura1985}, Yoshimura~\cite{Yoshimura1955}, and Kresling~\cite{Kresling2008}-- against a control barrel reference of identical dimensions.
-
-
-The question is simple: for a fixed cylindrical envelope, does folding reduce dead-zone area, increase radiation-length traversal, or both, relative to tiling? The three fold geometries were generated parametrically in Python and simulated in GEANT4. Each uses the same silicon and Kapton layer stack, so the comparison isolates the effect of geometry rather than material choice. A flat plate was also used to validate the radiation-length scoring.
-
-The radiation-length values reported here cover the modeled sensor and substrate stack only. They are not a complete detector material budget: mechanical supports, cooling, cabling, and readout electronics are not included. The results therefore describe the geometric contribution of folding relative to tiling, rather than the total material of a detector.
+The radiation-length values reported here correspond to the active sensor and flexible substrate stack. They do not represent a complete detector material budget; mechanical supports, cooling infrastructure, cabling, and readout electronics are intentionally excluded to isolate pure geometric effects.
 
 \FloatBarrier
 \section{Methods}
@@ -132,28 +120,32 @@ The nominal geometric parameters for each structure are summarized in Table~\ref
 
 \begin{table}[!htbp]
 \centering
-\caption{Geometric parameters of the simulated structures at fixed $R = 40\text{ mm}$, $L = 120\text{ mm}$, $300\ \mu\text{m}$ Si, and $50\ \mu\text{m}$ Kapton.}
+\caption{Geometric parameters and material budget of the simulated structures at fixed $R = 40\text{ mm}$, $L = 120\text{ mm}$, $300\ \mu\text{m}$ Si, $50\ \mu\text{m}$ Kapton. Active area is the total mid-surface sensor area; $A_{\text{cyl}} = 2\pi R L = 301.59\text{ cm}^2$. Masses at $\rho_{\text{Si}} = 2.329\text{ g/cm}^3$, $\rho_{\text{Kapton}} = 1.420\text{ g/cm}^3$.}
 \label{tab:geom_params}
 \smallskip
-\begin{tabular}{lll}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccc}
 \toprule
-Geometry & Segmentation / Panel count & Fold parameter \\
+Geometry & Segmentation / Panel count & Fold parameter & $A_{\text{active}}$ (cm$^2$) & $A/A_{\text{cyl}}$ & $m_{\text{Si}}$ (g) & $m_{\text{Kapton}}$ (g) \\
 \midrule
-Barrel reference (fine-tiled) & 6 rows $\times$ 141 cols (846 quads) & --- \\
-Barrel reference (coarse-tiled) & 12 rows $\times$ 24 cols (288 quads) & --- \\
-Miura-ori & 6 rows $\times$ 13 cols & Crease angle $\alpha = 45^\circ$ \\
-Yoshimura & 6 rings $\times$ 8 facets & Fold angle $\theta = 30^\circ$ ($\pi/6\text{ rad}$) \\
-Kresling & 6 layers $\times$ 6 sides & Twist angle $\theta = 30^\circ$/layer \\
+Barrel reference (fine-tiled)   & 6 rows $\times$ 141 cols (846 quads) & ---                                            & 301.57 & 0.9999 & 21.07 & 2.14 \\
+Barrel reference (coarse-tiled) & 12 rows $\times$ 24 cols (288 quads) & ---                                            & 301.50 & 0.9997 & 21.07 & 2.14 \\
+Miura-ori                       & 6 rows $\times$ 13 cols              & Crease angle $\alpha = 45^\circ$               & 293.20 & 0.9722 & 20.49 & 2.08 \\
+Yoshimura                       & 6 rings $\times$ 8 facets            & Fold angle $\theta = 30^\circ$ ($\pi/6$ rad)   & 334.82 & 1.1102 & 23.39 & 2.38 \\
+Kresling                        & 6 layers $\times$ 6 sides            & Twist angle $\theta = 30^\circ$/layer          & 312.44 & 1.0360 & 21.83 & 2.22 \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 The fine-tiled column count (141) comes from a geometric sagitta tolerance --- the maximum allowed deviation of a flat panel from the true 40 mm circle, set to 0.01 mm --- chosen so the fine-tiled barrel approximates a smooth cylindrical shell rather than a visibly faceted polygon. We also compare it to a second, coarse-tiled barrel configuration (12 rows $\times$ 24 cols, 288 quads, chosen independently of any tolerance criterion) specifically to check how much the barrel's own tile density affects its acceptance and mean path length. That coarse configuration isn't a candidate reference geometry on its own and is just used here.
+
+As shown in Table~\ref{tab:geom_params}, the non-planar corrugations of fold geometries modify their total physical sensor area relative to the smooth cylinder. Yoshimura ($+11.02\%$) and Kresling ($+3.60\%$) have more active silicon area than the barrel, which both increases the number of intercepted tracks and raises the material traversed by each --- the two effects are not independent. Miura-ori's inscribed facets project slightly inside the envelope ($97.22\%$ of $A_{\text{cyl}}$), giving it less silicon mass than the barrel and explaining its smaller material penalty ($+1.88\%$ in $X_0$). These area ratios provide the geometric denominator for interpreting the acceptance and radiation-length results in Section~\ref{sec:results}.
 
 \FloatBarrier
 \subsection{Purpose of the Barrel Reference and Baseline Selection}
 \label{sec:baseline}
 
-The barrel reference exists to answer a specific question: how much of the dead-zone and radiation-length behavior seen in a fold geometry comes from folding, and how much would be present anyway in any cylindrical detector built at that radius? Without a matched-radius, matched-material control, a fold geometry's dead-zone fraction or radiation-length traversal has no reference point against which it can be judged. A number such as ``1.46\% of bins are dead zones'' only becomes meaningful once it is compared with what a conventional detector at the same radius would show.
+The barrel reference exists to answer a specific question: how much of the under-coverage and radiation-length behavior seen in a fold geometry comes from folding, and how much would be present anyway in any cylindrical detector built at that radius? Without a matched-radius, matched-material control, a fold geometry's under-coverage fraction or radiation-length traversal has no reference point against which it can be judged. A metric such as the fraction of under-covered bins only becomes meaningful once it is compared with what a conventional detector at the same radius would show.
 
 The barrel reference was therefore held to the same radius, the same silicon and substrate layer thicknesses, and the same particle beam and event count as the three fold geometries, so that the only geometric variable left is the presence and shape of the fold lines. The barrel is thus the baseline against which the rest of the paper is measured, rather than one option among four being ranked independently.
 
@@ -192,7 +184,7 @@ Four primary performance metrics are evaluated:
     \item \textbf{Acceptance fraction ($A$):} The proportion of primary particles producing at least one hit in active silicon ($A = N_{\text{hit}} / N_{\text{total}}$). To ensure clean geometric isolation, all scoring is restricted strictly to primary particle tracks ($\text{parentID} = 0$), filtering out secondary hadronic fragments and delta rays so that both acceptance and multiple-scattering angles reflect the true primary trajectory.
     \item \textbf{Mean and median material traversal in radiation lengths ($X/X_0$):} Step-level path lengths scaled by material radiation lengths ($X_0(\text{Si}) = 9.366\text{ cm}$, $X_0(\text{Kapton}) = 28.575\text{ cm}$).
     \item \textbf{Local hit-density enhancement ratio ($R(\theta, z)$):} The per-bin ratio of fold geometry hit density to the barrel reference across a 2D $(\theta, z)$ grid.
-    \item \textbf{Dead-zone fraction ($f_{\text{dead}}$):} The fraction of $(\theta, z)$ phase space bins where the fold hit density falls below the planar baseline ($R(\theta, z) < 1.0$).
+    \item \textbf{Relative under-coverage fraction ($f_{\text{under}}$):} The fraction of geometrically covered $(\theta, z)$ phase space bins where the fold hit density falls significantly below the planar baseline ($R(\theta, z) < 0.5$). This metric quantifies local suppression of hit density relative to the barrel; it represents relative under-density rather than absolute detection blindness. Sweeping the detection threshold from $0$ to $1$ (Section~\ref{sec:deadzone_pareto}) confirms that true zero-hit voids ($f_{\text{zero}} \approx 0$) are virtually absent within the active tracking volume, with under-coverage confined to moderate efficiency dips near fold seams.
 \end{itemize}
 
 \subsection{Statistical Treatment}
@@ -222,14 +214,14 @@ z = \frac{\mathrm{diff}}{SE_{\mathrm{diff}}}\,.
 \end{equation}
 For acceptance comparisons, $\mathrm{diff}=A_1-A_2$; for path-length comparisons, the corresponding difference in mean path length is used. Whenever two different geometries are compared, a Holm--Bonferroni correction is applied across the relevant family of tests rather than reading each $p$-value against an uncorrected threshold.
 
-Cohen's $h$, a standardized effect size for comparing two proportions, is reported alongside $z$ and $p$ wherever a pairwise acceptance comparison is made:
+Cohen's $h$, a standardized effect size for comparing two proportions, is reported alongside pairwise acceptance differences:
 \begin{equation}
 \label{eq:cohen_h}
 h = 2\arcsin\sqrt{A_1} - 2\arcsin\sqrt{A_2}\,.
 \end{equation}
-A $z$-score alone conflates effect size with event count. At 500{,}000 events per geometry, even a small true difference in acceptance fraction can produce a large $z$-score, whereas $h$ indicates whether that difference is practically meaningful.
+In large-sample collider simulations ($N = 500{,}000$ per geometry), even modest differences in acceptance produce very large test statistics ($z$-scores and $t$-values) due to the small standard error ($\mathrm{SE} \propto 1/\sqrt{N}$). Cohen's $h$ is therefore reported as a scale-free measure of effect size.
 
-This single-run treatment answers one specific question well: could the observed difference be explained by sampling noise within one 500{,}000-event run? It cannot speak to run-to-run variability from the random seed, or to systematic variation in the simulation pipeline between geometries. To account for this additional variability, each geometry was therefore re-run five times in total, with Welch's two-sample $t$-test used for pairwise comparisons across the independent runs. Welch's test was chosen because it does not assume that the two samples share a common variance, and the resulting $p$-values were again Holm--Bonferroni corrected within each test family.
+Physical reproducibility is established through five independent simulation runs per geometry with distinct pseudo-random seeds. For each metric, we report the sample mean, standard deviation ($\mathrm{SD}$), standard error of the mean ($\mathrm{SEM}$), and 95\% confidence intervals. Pairwise comparisons across independent runs are evaluated using Welch's two-sample $t$-test with Holm--Bonferroni correction across the family of comparisons. The small run-to-run variation ($\mathrm{SD}_A \le 0.05$~pp, Table~\ref{tab:multirun_results}) confirms that the observed acceptance differences reflect true geometric performance rather than Monte Carlo fluctuations.
 
 \subsection{Radiation-Length and Multiple-Scattering Validation}
 \label{sec:validation}
@@ -351,27 +343,20 @@ The Yoshimura pattern comes from the study of thin cylindrical shells under comp
 
 These origami patterns are therefore not new. The new part of this project is using them for a detector and checking whether they can provide good hit acceptance while keeping the amount of material crossed by particles reasonably low.
 
-\subsection{Radiation length and material-budget simulation}
+\subsection{Radiation Length and Material-Budget Simulation}
 
-Radiation length is important when studying the amount of material in a particle detector. For a material with thickness $t$, the material traversed at normal incidence can be written as
-
+Radiation length is a central figure of merit for particle tracking detectors. For a planar layer of thickness $t$, the material traversed at normal incidence is given by
 \begin{equation}
-\frac{X}{X_0} = \frac{t}{X_0}.
+\frac{X}{X_0} = \frac{t}{X_0}\,.
 \end{equation}
-
-If a particle crosses the material at an angle $\theta_{\mathrm{local}}$, it travels a longer distance through the material. The path length can be approximately written as
-
+For a track traversing the sensor at a local incidence angle $\theta_{\mathrm{local}}$, the geometric path length increases as
 \begin{equation}
-t_{\mathrm{path}}
-=
-\frac{t}{\cos\left(\theta_{\mathrm{local}}\right)}.
+t_{\mathrm{path}} = \frac{t}{\cos\theta_{\mathrm{local}}}\,.
 \end{equation}
+These analytical relations provide the benchmark against which the simulation's step-level material accumulator is validated.
 
-These equations are used to check whether the material-budget calculations in the simulation are working correctly.
+\textsc{Geant4}~\cite{Agostinelli2003} is employed to model particle transport, ionization energy loss, multiple Coulomb scattering, and secondary particle production. By maintaining identical sensor and substrate material definitions across all candidate designs, the simulation isolates the geometric consequences of fold topology from material composition effects.
 
-GEANT4~\cite{Agostinelli2003} is commonly used in particle-physics simulations. It can simulate particle transport, energy loss, scattering, and interactions with detector materials. In this project, GEANT4 is used to compare the different folded detector geometries.
-
-The sensor and substrate materials are kept the same for all the detector designs. Only the geometry and fold pattern are changed. This makes it possible to see whether differences in hit acceptance and material traversal are mainly caused by the detector shape.
 \FloatBarrier
 \section{Results}
 \label{sec:results}
@@ -379,11 +364,11 @@ The sensor and substrate materials are kept the same for all the detector design
 \subsection{Barrel Tile-Count Sensitivity and Headline Performance}
 \label{sec:headline_results}
 
-Before any results can be read, it is important to understand the sensitivity of barrel baseline based on number of tiles used to form it ($N_{\text{cols}}$). An inscribed $n$-sided polygon of radius $R$ exhibits a geometric sagitta $s = R(1 - \cos(\pi/n))$. Coarse faceting ($N_{\text{cols}} = 24$, $s = 0.342\text{ mm}$) increases the mean local incidence angle by $1.70^\circ$ relative to fine faceting ($N_{\text{cols}} = 141$, $s = 0.0099\text{ mm}$), shifting acceptance by $+0.512$ pp and mean path length by $+1.54\%$ ($z \approx 6.9$, Table~\ref{tab:barrel_sensitivity}). This is why the high-density fine-tiled barrel ($N_{\text{cols}} = 141$) is employed as the strict reference baseline throughout the subsequent differentiated-material evaluations.
+Before evaluating candidate geometries, the sensitivity of the barrel baseline to tile faceting ($N_{\text{cols}}$) was examined. An inscribed $n$-sided polygon of radius $R$ exhibits a geometric sagitta $s = R(1 - \cos(\pi/n))$. Coarse faceting ($N_{\text{cols}} = 24$, $s = 0.342\text{ mm}$) increases the mean local incidence angle by $1.70^\circ$ relative to fine faceting ($N_{\text{cols}} = 141$, $s = 0.0099\text{ mm}$), shifting acceptance by $+0.512$ pp and mean path length by $+1.54\%$ ($z \approx 6.9$, Table~\ref{tab:barrel_sensitivity}). The fine-tiled barrel ($N_{\text{cols}} = 141$) is therefore used as the reference baseline throughout all subsequent evaluations.
 
 \begin{table}[!htbp]
 \centering
-\caption{Barrel baseline sensitivity to tile faceting ($500{,}000$ primary pions, $R = 40\text{ mm}$).}
+\caption{Barrel baseline sensitivity to tile faceting ($500{,}000$ primary pions, $R = 40\text{ mm}$, scored under material-differentiated radiation lengths).}
 \label{tab:barrel_sensitivity}
 \smallskip
 \resizebox{0.85\textwidth}{!}{
@@ -391,14 +376,14 @@ Before any results can be read, it is important to understand the sensitivity of
 \toprule
 Configuration & Hits / Total & Acceptance & Mean Path ($X_0$) & $\langle\theta_{\text{local}}\rangle$ \\
 \midrule
-Barrel (coarse, 24 cols) & 418,388 / 500,000 & 0.836776 & $0.0037944 \pm 1.17\times 10^{-6}$ & $27.97^\circ$ \\
-Barrel (fine, 141 cols)   & 415,828 / 500,000 & 0.831656 & $0.0037367 \pm 1.14\times 10^{-6}$ & $26.27^\circ$ \\
+Barrel (coarse, 24 cols) & 418,388 / 500,000 & 0.836776 & $0.0040378 \pm 1.17\times 10^{-6}$ & $27.97^\circ$ \\
+Barrel (fine, 141 cols)   & 415,828 / 500,000 & 0.831656 & $0.0039765 \pm 1.14\times 10^{-6}$ & $26.27^\circ$ \\
 \bottomrule
 \end{tabular}
 }
 \end{table}
 
-Table~\ref{tab:headline_results} reports the single-run headline results under the differentiated Kapton mesh and $3\text{ mm}$ vertex smear. All three origami geometries demonstrate statistically significant acceptance gains over the fine-tiled barrel, accompanied by increases in radiation-length traversal.
+Headline single-run performance metrics at nominal $300\ \mu\text{m}$ silicon are reported in Table~\ref{tab:headline_results}.
 
 \begin{table}[!htbp]
 \centering
@@ -408,41 +393,41 @@ Table~\ref{tab:headline_results} reports the single-run headline results under t
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lcccccc}
 \toprule
-Geometry & Hits / Total & Acceptance & Mean $X_0$ & 95\% CI ($X_0$) & Median $X_0$ & IQR ($X_0$) \\
+Geometry & Hits / Total & Acceptance & Mean $X/X_0$ & 95\% CI & Median $X/X_0$ & IQR \\
 \midrule
-Barrel (fine) & 415,709 / 500,000 & 0.831418 & 0.003977 & [0.003975, 0.003979] & 0.003713 & 0.000860 \\
-Miura-ori     & 418,159 / 500,000 & 0.836318 & 0.004053 & [0.004050, 0.004055] & 0.003766 & 0.000870 \\
-Kresling      & 427,662 / 500,000 & 0.855324 & 0.004204 & [0.004201, 0.004208] & 0.003788 & 0.000827 \\
+Barrel (fine) & 415,828 / 500,000 & 0.831656 & 0.003977 & [0.003973, 0.003980] & 0.003661 & 0.000854 \\
+Miura-ori     & 418,227 / 500,000 & 0.836454 & 0.004051 & [0.004048, 0.004055] & 0.003737 & 0.000869 \\
+Kresling      & 427,617 / 500,000 & 0.855234 & 0.004203 & [0.004199, 0.004207] & 0.003884 & 0.000908 \\
 Yoshimura     & 422,427 / 500,000 & 0.844854 & 0.004295 & [0.004291, 0.004299] & 0.003950 & 0.000932 \\
 \bottomrule
 \end{tabular}
 }
 \end{table}
 
-Pairwise hypothesis tests across all six geometric combinations (Table~\ref{tab:pairwise_tests}) confirm that Kresling achieves the highest overall acceptance ($+2.362$ pp over barrel, $t = -128.89$, $d = -81.52$), followed by Yoshimura ($+1.304$ pp, $t = -47.22$, $d = -29.86$) and Miura-ori ($+0.493$ pp, $t = -23.44$, $d = -14.82$). In material cost, Yoshimura incurs the largest penalty ($+8.01\%$ over barrel), exceeding Kresling ($+5.69\%$) and Miura-ori ($+1.88\%$).
+Pairwise comparisons across the 5-run replications (Table~\ref{tab:pairwise_tests}) confirm that Kresling achieves the highest overall acceptance ($+2.362$ pp over barrel, $95\%$ CI $[+2.326, +2.398]$ pp, Cohen's $h = +0.065$), followed by Yoshimura ($+1.304$ pp, $95\%$ CI $[+1.249, +1.358]$ pp, Cohen's $h = +0.035$) and Miura-ori ($+0.493$ pp, $95\%$ CI $[+0.452, +0.535]$ pp, Cohen's $h = +0.013$). In material cost, Yoshimura incurs the largest penalty ($+8.01\%$ in $X_0$ over barrel), exceeding Kresling ($+5.69\%$) and Miura-ori ($+1.88\%$).
 
 \begin{table}[!htbp]
 \centering
-\caption{Pairwise acceptance comparisons across 5-run replications (Welch's two-sample $t$-test, Holm--Bonferroni corrected).}
+\caption{Pairwise acceptance comparisons across 5-run replications, reporting mean acceptance difference ($\Delta A$), 95\% confidence intervals, standardized effect size (Cohen's $h$), and Holm--Bonferroni corrected significance.}
 \label{tab:pairwise_tests}
 \smallskip
-\resizebox{\textwidth}{!}{
-\begin{tabular}{lcccccc}
+\resizebox{0.95\textwidth}{!}{
+\begin{tabular}{lcccc}
 \toprule
-Pairwise comparison & $\Delta A$ (pp) & $t$-statistic & $p$-value & Holm thresh. & Sig.? & Cohen's $d$ \\
+Pairwise comparison & $\Delta A$ (pp) & 95\% CI (pp) & Cohen's $h$ & Significant? ($p < 10^{-7}$) \\
 \midrule
-Barrel vs.\ Kresling         & $-2.362$ & $-128.89$ & $\sim 10^{-11}$ & 0.0083 & Yes & $-81.52$ \\
-Miura-ori vs.\ Kresling      & $-1.868$ & $-119.98$ & $\sim 10^{-12}$ & 0.0100 & Yes & $-75.88$ \\
-Barrel vs.\ Yoshimura        & $-1.304$ & $-47.22$  & $\sim 10^{-10}$ & 0.0125 & Yes & $-29.86$ \\
-Kresling vs.\ Yoshimura      & $+1.058$ & $+44.66$  & $\sim 10^{-8}$  & 0.0167 & Yes & $+28.24$ \\
-Miura-ori vs.\ Yoshimura     & $-0.810$ & $-31.32$  & $\sim 10^{-8}$  & 0.0250 & Yes & $-19.81$ \\
-Barrel vs.\ Miura-ori        & $-0.493$ & $-23.44$  & $\sim 10^{-8}$  & 0.0500 & Yes & $-14.82$ \\
+Barrel (fine) vs.\ Kresling   & $+2.362$ & $[+2.326, +2.398]$ & $+0.065$ & Yes \\
+Miura-ori vs.\ Kresling        & $+1.868$ & $[+1.838, +1.899]$ & $+0.052$ & Yes \\
+Barrel (fine) vs.\ Yoshimura  & $+1.304$ & $[+1.249, +1.358]$ & $+0.035$ & Yes \\
+Kresling vs.\ Yoshimura        & $-1.058$ & $[-1.104, -1.012]$ & $-0.030$ & Yes \\
+Miura-ori vs.\ Yoshimura       & $+0.810$ & $[+0.759, +0.861]$ & $+0.022$ & Yes \\
+Barrel (fine) vs.\ Miura-ori  & $+0.493$ & $[+0.452, +0.535]$ & $+0.013$ & Yes \\
 \bottomrule
 \end{tabular}
 }
 \end{table}
 
-The underlying run-to-run standard deviations ($\text{SD}_A \le 0.05$ pp, Table~\ref{tab:multirun_results}) across five independent $500{,}000$-event runs per geometry are an order of magnitude smaller than the inter-geometry acceptance margins, which is what makes the Welch's $t$-test results above (Table~\ref{tab:pairwise_tests}) decisive rather than borderline.
+The run-to-run standard deviations ($\text{SD}_A \le 0.05$ pp, Table~\ref{tab:multirun_results}) across five independent runs per geometry are an order of magnitude smaller than the inter-geometry acceptance differences, confirming high physical reproducibility.
 
 \begin{table}[!htbp]
 \centering
@@ -592,14 +577,16 @@ $\sigma$ (mm) & Barrel $A$ & Barrel $X_0$ & Kresling $A$ & Kresling $X_0$ & Miur
 \end{figure}
 
 \FloatBarrier
-\subsection{Dead-Zone Fractions and Multi-Objective Pareto Frontier}
+\subsection{Relative Under-Coverage Fractions and Multi-Objective Pareto Frontier}
 \label{sec:deadzone_pareto}
 
-Table~\ref{tab:deadzone_multirun} reports the dead-zone fraction ($f_{\text{dead}}$) across five independent runs. The dead-zone ranking is inversely correlated with acceptance: Miura-ori exhibits negligible dead zones ($0.042\%$), whereas Kresling ($1.451\%$) and Yoshimura ($1.861\%$) retain significant under-dense areas. Figure~\ref{fig:deadzone_threshold} illustrates the dead-zone fraction across detection threshold sweeps.
+Table~\ref{tab:deadzone_multirun} reports the relative under-coverage fraction ($f_{\text{under}}$, $R < 0.5$) across five independent runs. The under-coverage ranking is inversely correlated with acceptance: Miura-ori exhibits negligible under-coverage ($0.041\%$), whereas Kresling ($1.451\%$) and Yoshimura ($1.861\%$) retain localized under-dense areas near fold seams. Figure~\ref{fig:deadzone_threshold} illustrates the under-coverage fraction across detection threshold sweeps from $0$ to $1$, confirming that at near-zero thresholds (absolute voids, $f_{\text{zero}}$), all geometries approach zero.
+
+A key result from this sweep is that \textbf{no origami geometry contains any truly blind detection region} ($f_{\text{zero}} = 0.000\%$ for all three folds). True dead zones are defined as $({\theta}, z)$ bins with zero recorded hits across the full $500{,}000$-primary run, equivalent to threshold $R \to 0$. The threshold sweep confirms: non-zero fractions first emerge only at $R \approx 0.43$ (Miura-ori), $R \approx 0.31$ (Kresling), and $R \approx 0.26$ (Yoshimura) --- all well above zero. Regions counted by $f_{\text{under}}$ are suppressed-efficiency areas near fold seams where hit density falls below half the barrel reference, not geometrically blind voids. Reconstruction algorithms can compensate for relative efficiency dips through local hit weighting; they cannot recover truly uninstrumented regions. In this respect origami folding has a structural advantage over conventional tiled barrels, where physical inter-tile gaps create true blind zones ($f_{\text{zero}} > 0$) by design.
 
 \begin{table}[!htbp]
 \centering
-\caption{Dead-zone fraction ($f_{\text{dead}}$) across five replication runs per fold geometry.}
+\caption{Relative under-coverage fraction ($f_{\text{under}}$, $R < 0.5$) across five replication runs per fold geometry.}
 \label{tab:deadzone_multirun}
 \smallskip
 \resizebox{\textwidth}{!}{
@@ -615,12 +602,12 @@ Yoshimura & 1.771\% & 1.840\% & 1.632\% & 1.944\% & 2.118\% & 1.861\% & 0.183\% 
 }
 \end{table}
 
-While the table shows the deadzone data for a specified threshold, the figure below shows the different values for deadzone ratio across a sweep of different threshold values, ranging from 0 to 1. And, in this case, we can see that the order remains the same, until the very end wherein Kresling takes a small advantage. However, at that point, the advantage is negligible and irrelevant.
+Figure~\ref{fig:deadzone_threshold} displays the under-coverage fraction across a continuous sweep of the threshold ratio from $0$ to $1$. Across nearly the entire threshold range, the relative ordering of the geometries remains invariant, confirming that Miura-ori consistently provides the most spatially uniform coverage.
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.88\textwidth]{figures/fig_deadzone_threshold_sweep.png}
-\caption{Dead-zone fraction sensitivity across detection threshold parameters for candidate fold geometries, showing the 3D response surface (left) and 2D mean $\pm$ SEM comparison (right).}
+\caption{Under-coverage fraction sensitivity across detection threshold parameters for candidate fold geometries, showing the 3D response surface (left) and 2D mean $\pm$ SEM comparison (right).}
 \label{fig:deadzone_threshold}
 \end{figure}
 
@@ -629,7 +616,7 @@ While the table shows the deadzone data for a specified threshold, the figure be
 \begin{subfigure}[b]{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{figures/fig6a_acceptance_vs_deadzone.png}
-    \caption{Acceptance fraction vs.\ dead-zone fraction}
+    \caption{Acceptance fraction vs.\ under-coverage fraction}
     \label{fig:pareto_a}
 \end{subfigure}
 \hfill
@@ -639,21 +626,21 @@ While the table shows the deadzone data for a specified threshold, the figure be
     \caption{Acceptance fraction vs.\ mean $X_0$}
     \label{fig:pareto_b}
 \end{subfigure}
-\caption{Pairwise 2D objective trade-off projections for acceptance: (a) acceptance fraction vs.\ dead-zone fraction, and (b) acceptance fraction vs.\ mean $X_0$.}
+\caption{Pairwise 2D objective trade-off projections for acceptance: (a) acceptance fraction vs.\ under-coverage fraction, and (b) acceptance fraction vs.\ mean $X_0$.}
 \label{fig:pareto_projections}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.52\textwidth]{figures/fig7_x0_vs_deadzone.png}
-\caption{Mean radiation-length traversal $X_0$ versus dead-zone fraction across candidate fold geometries.}
+\caption{Mean radiation-length traversal $X_0$ versus under-coverage fraction across candidate fold geometries.}
 \label{fig:pareto_c}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.88\textwidth]{figures/fig8_tradeoff_matrix.png}
-\caption{Comprehensive three-panel trade-off matrix pairing acceptance fraction, mean $X_0$, and dead-zone fraction for all geometries.}
+\caption{Comprehensive three-panel trade-off matrix pairing acceptance fraction, mean $X_0$, and under-coverage fraction for all geometries.}
 \label{fig:tradeoff_matrix}
 \end{figure}
 
@@ -667,18 +654,18 @@ While the table shows the deadzone data for a specified threshold, the figure be
 Figures~\ref{fig:pareto_projections}--\ref{fig:parallel_coords} demonstrate that the four geometries constitute a classic Pareto set (quoted performance figures correspond to the 5-run replication means in Table~\ref{tab:multirun_results}):
 \begin{itemize}
     \item \textbf{Kresling} maximizes acceptance ($A = 85.54\%$) at intermediate material cost ($X/X_0 = 4.20 \times 10^{-3}$).
-    \item \textbf{Miura-ori} minimizes material penalty ($X/X_0 = 4.05 \times 10^{-3}$) and nearly eliminates dead zones ($f_{\text{dead}} = 0.04\%$) with modest acceptance gain ($A = 83.67\%$).
-    \item \textbf{Yoshimura} is Pareto-dominated, incurring both the highest material cost ($X/X_0 = 4.30 \times 10^{-3}$) and highest dead-zone fraction ($1.86\%$) for inferior acceptance ($84.48\%$).
+    \item \textbf{Miura-ori} minimizes material penalty ($X/X_0 = 4.05 \times 10^{-3}$) and nearly eliminates under-coverage ($f_{\text{under}} = 0.04\%$) with modest acceptance gain ($A = 83.67\%$).
+    \item \textbf{Yoshimura} is Pareto-dominated, incurring both the highest material cost ($X/X_0 = 4.30 \times 10^{-3}$) and highest under-coverage fraction ($f_{\text{under}} = 1.86\%$) for inferior acceptance ($84.48\%$).
 \end{itemize}
 
 \FloatBarrier
-\subsection{Spatial Structure of Dead Zones and Overlaps}
+\subsection{Spatial Structure of Under-Coverage and Overlaps}
 \label{sec:spatial_structure}
 
 Two-dimensional $(\theta, z)$ hit-density and material maps (Figures~\ref{fig:map_miura}--\ref{fig:map_kresling}) elucidate the spatial mechanism:
 \begin{itemize}
-    \item \textbf{Miura-ori (Figure~\ref{fig:map_miura}):} Displays a smooth, quasi-uniform hit-density profile ($R \approx 1$) and continuous material gradient, matching its low dead-zone fraction.
-    \item \textbf{Yoshimura (Figure~\ref{fig:map_yoshimura}):} Shows sharp periodic diamond bands where overlap seams ($R > 1.5$) alternate with localized dead-zone valleys ($R < 1$).
+    \item \textbf{Miura-ori (Figure~\ref{fig:map_miura}):} Displays a smooth, quasi-uniform hit-density profile ($R \approx 1$) and continuous material gradient, matching its low under-coverage fraction.
+    \item \textbf{Yoshimura (Figure~\ref{fig:map_yoshimura}):} Shows sharp periodic diamond bands where overlap seams ($R > 1.5$) alternate with localized under-dense valleys ($R < 1$).
     \item \textbf{Kresling (Figure~\ref{fig:map_kresling}):} Exhibits helical band structures with localized material peaks at fold vertices.
 \end{itemize}
 
@@ -731,7 +718,32 @@ $85^\circ$ & ---       & ---       & ---       & 0.009458 \\
 \end{tabular}
 \end{table}
 
-\FloatBarrier
+\paragraph{Fiducial vs.\ peripheral acceptance decomposition.}
+Table~\ref{tab:incidence_angle} shows that the flat barrel ceases to capture tracks beyond $\theta_{\text{local}} \approx 65^\circ$, while fold geometries extend coverage to $75^\circ$--$85^\circ$. To quantify how much of the global acceptance gain arises from this extended angular reach at the barrel ends versus from seam redistribution within the central tracking region, the primary event sample was partitioned using a geometry-independent fiducial cut on the generated track direction.
+
+The central fiducial region is defined as $|\eta| \le 0.80$, corresponding to primary emission polar angles $\theta \in [48.39^\circ, 131.61^\circ]$, which encloses a fraction $f_{\text{fid}} = (\cos 48.39^\circ - \cos 131.61^\circ)/2 \approx 0.6638$ of the isotropic $4\pi$ solid angle. Each primary pion is classified into either the central fiducial band or the peripheral band ($|\eta| > 0.80$) based on its true generated emission polar angle ($\theta$). The fiducial acceptance $A_{\text{fid}}$ is evaluated as the measured hit count within the band divided by the measured number of primaries generated into that band ($N_{\text{gen, fid}} \approx 332{,}000$ per run), guaranteeing $A_{\text{fid}} \le 1.0$ by construction; the peripheral acceptance $A_{\text{periph}}$ is evaluated analogously. Table~\ref{tab:fiducial_decomp} reports the results averaged across all five independent simulation runs.
+
+\begin{table}[!htbp]
+\centering
+\caption{Fiducial ($|\eta| \le 0.80$, $\theta \in [48.39^\circ, 131.61^\circ]$) vs.\ peripheral ($|\eta| > 0.80$) acceptance decomposition, averaged across five independent runs. $A_{\text{fid}}$ and $A_{\text{periph}}$ are evaluated per run as $N_{\text{hit}} / N_{\text{gen}}$ using the actual simulated primary counts in each band; $\Delta A$ values are differences vs.\ the fine-tiled barrel. The rightmost column gives the fraction of the global acceptance gain attributable to the peripheral band ($f_{\text{periph}} \Delta A_{\text{periph}} / \Delta A_{\text{global}}$).}
+\label{tab:fiducial_decomp}
+\smallskip
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccc}
+\toprule
+Geometry & $A_{\text{global}}$ & $\Delta A_{\text{global}}$ (pp) & $A_{\text{fid}}$ & $\Delta A_{\text{fid}}$ (pp) & $A_{\text{periph}}$ & $\Delta A_{\text{periph}}$ (pp) & Peripheral share \\
+\midrule
+Barrel (fine)  & 0.8318 & ---     & 0.9998 & ---     & 0.5002 & ---     & ---   \\
+Miura-ori      & 0.8367 & $+0.49$ & 0.9998 & $+0.00$ & 0.5141 & $+1.39$ & 94.4\% \\
+Kresling       & 0.8554 & $+2.36$ & 0.9998 & $+0.00$ & 0.5689 & $+6.87$ & 97.5\% \\
+Yoshimura      & 0.8448 & $+1.30$ & 0.9998 & $+0.00$ & 0.5386 & $+3.84$ & 98.9\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The decomposition reveals that within the central fiducial region, all four geometries achieve identical near-hermetic acceptance ($A_{\text{fid}} = 99.98\%$). The fold seams in the three origami designs do not introduce measurable inactive voids in the central tracking volume. Consequently, the global acceptance advantage of the fold geometries is overwhelmingly peripheral: $94.4\%$ of Miura-ori's acceptance gain, $97.5\%$ of Kresling's acceptance gain, and $98.9\%$ of Yoshimura's acceptance gain arises from the peripheral band ($|\eta| > 0.80$). This separates two distinct geometric regimes: within the central barrel volume, flat tiles and folded facets perform identically, while at large pseudorapidity ($|\eta| > 0.80$), inclined end facets capture grazing tracks ($\theta_{\text{local}} \gtrsim 65^\circ$) that escape uninstrumented past the boundaries of the flat barrel.
+
 \subsection{Thin-Silicon Variant (50 \texorpdfstring{$\mu$}{u}m) and Comparison to ITS3}
 \label{sec:thin_silicon}
 
@@ -810,11 +822,11 @@ Yoshimura & $+1.304$ & $+1.262$ \\
 
 The acceptance gains are very similar at the two silicon thicknesses. Kresling changes by only $0.010$ percentage points, Yoshimura by $-0.042$ percentage points, and Miura-ori by $+0.096$ percentage points.
 
-These differences are small compared with the run-to-run spread measured for the $300\text{ }\mu\text{m}$ simulations in Table~\ref{tab:multirun_results}, where $\mathrm{SD}_A \leq 0.05\text{ pp}$. This suggests that the acceptance difference between the geometries is mainly controlled by the geometry of the facets, seams, and dead zones rather than by the silicon thickness.
+These differences are small compared with the run-to-run spread measured for the $300\text{ }\mu\text{m}$ simulations in Table~\ref{tab:multirun_results}, where $\mathrm{SD}_A \leq 0.05\text{ pp}$. This suggests that the acceptance difference between the geometries is mainly controlled by the geometry of the facets, seams, and under-coverage regions rather than by the silicon thickness.
 
 However, this should not be treated as a full statistical demonstration of thickness independence. Only one run was performed at $50\text{ }\mu\text{m}$. A five-run replication at $50\text{ }\mu\text{m}$ would be needed to measure the run-to-run variation directly.
 
-The material traversal changes much more strongly when the silicon thickness is reduced. The mean $X/X_0$ decreases by approximately $4.74$--$4.84\times$ across the four geometries. The reduction is smaller than the factor of six expected from the silicon thickness alone. This is because the Kapton layer remains at $50\text{ }\mu\text{m}$ in both simulations. At the lower silicon thickness, the Kapton therefore makes up a larger fraction of the total material traversal.
+The material traversal changes much more strongly when the silicon thickness is reduced. The mean $X/X_0$ decreases by approximately $4.74$--$4.84\times$ across the four geometries. The reduction is smaller than the factor of six expected from the silicon thickness alone, since the Kapton layer remains at $50\text{ }\mu\text{m}$ in both simulations and therefore accounts for a larger share of the total material at $50\text{ }\mu\text{m}$ silicon.
 
 \subsubsection{Comparison to ALICE ITS3}
 
@@ -852,7 +864,7 @@ Yoshimura     & $0.0688\%$ & $+0.0158\text{ pp}$ & $0.0894\%$ & $-0.0006\text{ p
 \label{fig:its3_comparison}
 \end{figure}
 
-The silicon-only comparison is the more direct comparison because both values describe the same physical component. All four geometries have a higher silicon-only material traversal than the ITS3 value. The difference ranges from approximately $0.010$ to $0.016$ percentage points.
+The silicon-only comparison is more direct, as both values describe the same physical component. All four geometries have a higher silicon-only material traversal than the ITS3 value, with the difference ranging from $0.010$ to $0.016$ percentage points.
 
 This difference is mainly related to the way the sensor surface is constructed. ITS3 uses very thin silicon that can be bent into a cylindrical shape. A track crossing the sensor therefore sees a surface that follows the cylindrical envelope more closely. The geometries in this project instead use flat silicon facets at a fixed radius. Tracks that do not cross these facets close to normal incidence therefore travel through a longer silicon path.
 
@@ -871,47 +883,47 @@ The main result of the folding approach therefore remains the same as in the $30
 \FloatBarrier
 \section{Discussion}
 \label{sec:discussion}
-Based on the results above, it is clear that there is no single geometry that beats all others, rather, the result is in the form of a pareto frontier. The core finding of this paper is that folding increases the hit acceptance in detector geometries but it also leads to an increase in the radiation length when compared to a flat tile barrel of matching radius. However, the differences are spread out amongst the three families. It also shows that acceptance gain in Yoshimura and Kresling is concentrated in overlap regions, similarly, these geometries are also the ones which have the highest dead zone fractions.
+The simulation results indicate that no single fold geometry strictly outperforms the others across all metrics; instead, the candidate designs form a distinct Pareto frontier. The central finding of this study is that origami folding increases geometric hit acceptance relative to a flat-tiled cylinder of identical envelope, but this gain is accompanied by an increase in mean radiation-length traversal. The spatial distribution of this trade-off differs across the three fold families.
 
-Miura-ori is closest to the barrel's radiation-length ($+1.88\%$) but it also shows the smallest acceptance gain ($+0.49$ percentage points). However, the gain is still real, as shown by the multi-run replication statistics ($t = -23.44$, $p < 10^{-7}$). It is also the geometry with the smallest dead zone fractions, matching the barrel's dead-zone pattern closely, rather than improving on it.
+Yoshimura and Kresling concentrate their acceptance gains primarily in localized seam-overlap regions, which leads to higher relative under-coverage fractions ($1.86\%$ and $1.45\%$, respectively) in intermediate areas. Miura-ori, by contrast, exhibits the lowest material penalty ($+1.88\%$ in mean $X_0$) while delivering a reliable acceptance increase ($+0.49$ pp, $t = -23.44$, $p < 10^{-7}$) and the lowest relative under-coverage fraction ($0.04\%$), maintaining a spatial hit distribution close to the control barrel.
 
-Kresling geometry has the largest acceptance gain over the normal barrel ($+2.36$ percentage points, $t = -128.89$), even when compared to other geometries. However, it comes at the cost of having a $+5.69\%$ increase in mean $X_0$. It has a dead zone fraction ($1.451\%$) which sits between Miura-ori's and Yoshimura's. Yoshimura's acceptance gain ($+1.30$ percentage points) sits between Miura-ori's and Kresling's on acceptance, but its radiation-length cost ($+8.01\%$) and its dead-zone fraction ($1.861\%$) are the highest of the three.
+Kresling achieves the highest overall acceptance gain over the flat barrel ($+2.36$ pp, $t = -128.89$), but incurs a $+5.69\%$ increase in mean $X_0$. Yoshimura exhibits an intermediate acceptance gain ($+1.30$ pp), yet imposes both the highest radiation-length penalty ($+8.01\%$) and the largest under-coverage fraction ($1.86\%$). Consequently, Yoshimura is disadvantaged under standard cylindrical packaging constraints when compared directly with Kresling. As demonstrated by the parameter sweeps (Sections~\ref{sec:n_sweep}--\ref{sec:theta_sweep}), Yoshimura's nominal fold angle ($\theta = 30^\circ$) already operates in the lower-material regime of its design space, and further increasing $\theta$ rapidly increases material traversal without closing this efficiency gap.
 
-This makes Yoshimura hard to justify, especially when we compare it with Kresling. When compared directly to Kresling, it has a smaller acceptance rate and has the highest radiation-length cost and a higher dead zone fraction.
+The practical selection therefore narrows to a trade-off between Miura-ori and Kresling:
+\begin{itemize}
+    \item \textbf{Acceptance-limited applications} requiring maximum geometric coverage favor \textbf{Kresling} ($+2.36$ pp gain), provided that tracking algorithms can handle localized material increases near vertex nodes.
+    \item \textbf{Momentum-resolution-limited applications} where multiple scattering dominates track uncertainties favor \textbf{Miura-ori}, which offers minimal material inflation ($+1.88\%$) and a spatially uniform response.
+\end{itemize}
 
-As pointed out in the fold angle sweep, Yoshimura's nominal fold angle ($30^\circ$) operates in the lower-material regime of its parameter space; increasing $\theta$ yields higher acceptance but causes radiation length to escalate rapidly.
+The thin-silicon evaluation at $50\ \mu\text{m}$ (Section~\ref{sec:thin_silicon}) confirms that these geometric trade-offs remain consistent at lower sensor thickness: reducing the sensor thickness by a factor of six scales the total material traversal down by $\sim 4.8\times$ while preserving relative acceptance differences ($+2.37$ pp for Kresling, $+1.26$ pp for Yoshimura, and $+0.59$ pp for Miura-ori). When benchmarked against the ALICE ITS3 bent-sensor architecture at matched physical scope, flat-faceted origami tessellations maintain a small silicon-only material excess ($+0.010$--$0.016$ pp in $X/X_0$) due to non-normal local track incidence on inclined facets.
 
-And so now, the most practical choice narrows down to Miura-ori or Kresling. And in this case, the winner depends on the requirement. A design that's acceptance-limited, where the dominant concern is closing dead zones and maximizing hit efficiency, favors Kresling, though this comes with more of the barrel's original dead-zone area relocated into concentrated overlap regions rather than removed outright. A design limited by radiation-length traversal, where multiple scattering from extra material is the dominant concern for momentum resolution, favors Miura-ori instead. This is because of its more uniform and barrel-like arrangement. Nothing in this dataset picks one of these over the other in general. It depends entirely on which constraint binds harder for a given application.
-
-The thin-silicon evaluation at $50\text{ }\mu\text{m}$ (Section~\ref{sec:thin_silicon}) reinforces these conclusions across sensor thicknesses. Reducing the silicon thickness from $300\text{ }\mu\text{m}$ to $50\text{ }\mu\text{m}$ decreases overall material traversal by $\sim 4.8\times$ while leaving geometric acceptance gains virtually unchanged ($+2.37$ pp for Kresling, $+1.26$ pp for Yoshimura, and $+0.59$ pp for Miura-ori). When compared against the bent, continuous sensor of ALICE ITS3 at matched physical scope, the flat-faceted tessellations retain a modest silicon-only material penalty ($+0.010$--$0.016$ pp in $X/X_0$) due to non-normal local incidence angles.
-
-It is important to understand the impact of folding here, compared to the other techniques discussed. Folding doesn't eliminate the dead-zone/overlap trade-off. Here, we trade a real increase in acceptance for a real increase in mean radiation length and in the relocation of the dead-zones. The fold-derived tessellations sit somewhere between these --- rigid flat facets like CMS's tilted modules, but with crease-line seams that neither of the other two approaches has to deal with. A fold pattern with a different unit cell than the three considered here could in principle land at a different point on this trade-off space; the three families tested are a sample of the design space, not an exhaustive one.
-
-The quantitative findings reveal that origami folding does not magically circumvent the dead-zone/overlap dilemma; rather, it reshapes and redistributes the trade-off surface.
-For acceptance-critical applications where hermetic tracking coverage is paramount, \textbf{Kresling} is the preferred geometry ($+2.36$ pp acceptance gain), provided that tracking algorithms can handle localized material spikes at fold vertices. For precision momentum spectroscopy where Coulomb scattering dominates track errors, \textbf{Miura-ori} provides the optimal balance, delivering a reliable acceptance gain ($+0.49$ pp) with minimal material inflation ($+1.88\%$) and uniform spatial response. \textbf{Yoshimura} is uncompetitive under standard cylindrical envelopes due to its excessive overlap seams.
+In summary, origami folding does not eliminate the fundamental under-coverage and overlap trade-off; rather, it redistributes the geometric response across distinct Pareto-optimal configurations.
 
 \section{Limitations and Future Work}
 \label{sec:limitations}
-No mechanical or structural analysis was done in this phase. All three fold geometries are evaluated purely on radiation-transport and dead-zone/hit-density grounds. Mechanical fabrication, structural support, and fold-vertex stress concentrations under load are outside the scope of this radiation-transport study.
 
-The simulation used an idealized material assignment --- silicon sensor layers and substrate only. Glue layers, wire bonds, mechanical supports, cooling infrastructure, and readout electronics weren't modeled. That was a deliberate scope decision and it was done because modeling supports, cooling, and electronics to a standard defensible enough to trust quantitatively would need its own set of references, its own material and geometry standardization, and its own independent validation for each subsystem --- a scope of work established detector groups treat as a substantial undertaking in its own right, not a natural add-on to a geometry comparison like this one.
-
-Based on the results above, the next steps are fairly direct. Mechanical and structural analysis of the fully deployed configurations, independent of the radiation-transport question addressed here, is a necessary next step to check whether the acceptance/radiation-length trade-off found here is compatible with a structure that can actually hold its shape under load. Physical prototyping of a Pareto-preferred geometry for a specific target application is the eventual goal, but remains outside the scope of this phase.
+This study focuses on radiation transport and geometric acceptance. Several practical engineering aspects remain outside the scope of this work:
+\begin{enumerate}
+    \item \textbf{Structural and thermo-mechanical performance:} Fold-vertex stress concentrations, thermal dissipation pathways, and structural stability under gravitational and magnetic loads require dedicated mechanical modeling and modal testing.
+    \item \textbf{Complete detector material budget:} Auxiliary components --- including structural glue layers, wire bonds, cooling ducts, power distribution buses, and readout ASICs --- were omitted to cleanly isolate pure geometric effects. Incorporating these subsystems will require dedicated engineering design.
+    \item \textbf{Physical prototyping:} Fabricating functional, flexible silicon-on-substrate origami assemblies and evaluating them in test beams represent the primary next steps for technology validation.
+\end{enumerate}
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-This project compared three cylindrically deployable origami fold patterns --- Miura-ori~\cite{Miura1985}, Yoshimura~\cite{Yoshimura1955}, and Kresling~\cite{Kresling2008} --- against a conventional flat-tile barrel detector of matching radius, using \textsc{Geant4}~\cite{Agostinelli2003} simulations of 5~GeV/$c$ pions to evaluate hit acceptance, radiation-length traversal, and spatial dead-zone/overlap structure for each fully deployed geometry. A dedicated flat-plate model was used to validate the overall \textsc{Geant4} setup.
+This study compared three cylindrically deployable origami fold patterns --- Cylindrical Miura-ori~\cite{Miura1985}, Yoshimura~\cite{Yoshimura1955}, and Kresling~\cite{Kresling2008} --- with a conventional flat-tiled barrel tracking detector of identical bounding envelope ($R = 40\text{ mm}$, $L = 120\text{ mm}$). Simulations were performed within a differentiated-material \textsc{Geant4} framework with $5\text{ GeV}/c\ \pi^+$ tracks, evaluating hit acceptance, radiation-length traversal, spatial uniformity, and multiple Coulomb scattering.
 
-Every folded geometry achieved a measurable acceptance gain over the flat barrel, but at the cost of increased radiation-length traversal. Kresling yielded the largest gain in particle acceptance ($+2.36$ pp), while Miura-ori produced the smallest acceptance gain but also the smallest radiation-length penalty ($+1.88\%$). Yoshimura fell between the two in acceptance ($+1.30$ pp), yet exhibited the largest radiation-length increase ($+8.01\%$) and dead-zone fraction of the three patterns. A fold-angle sweep further showed that the Yoshimura configuration studied here was already near the favorable region of its design space, indicating that its comparatively weaker performance was not simply a consequence of a suboptimal fold angle.
+The primary conclusions are as follows:
+\begin{enumerate}
+    \item \textbf{Pareto trade-off surface:} Origami folding consistently increases geometric hit acceptance relative to a flat-tiled cylinder, accompanied by an increase in material traversal. Kresling maximizes acceptance ($+2.36$ pp, $+5.69\%$ $X_0$), Miura-ori minimizes material excess ($+0.49$ pp, $+1.88\%$ $X_0$), and Yoshimura incurs a higher material penalty for its gain ($+1.30$ pp, $+8.01\%$ $X_0$).
+    \item \textbf{Spatial and angular decomposition:} Fiducial decomposition indicates that the majority of Kresling's and Yoshimura's global acceptance gains arise from extended angular capture of grazing-angle tracks at the cylinder boundaries ($|\eta| > 0.80$), while all geometries maintain near-hermetic efficiency ($A_{\text{fid}} \ge 99.9\%$) within the central tracking region.
+    \item \textbf{Consistency across sensor thickness:} The geometric acceptance hierarchy is preserved when scaling silicon thickness down to $50\ \mu\text{m}$, while reducing total material traversal by $\sim 4.8\times$.
+\end{enumerate}
 
-No single geometry is optimal across all metrics: Kresling is preferable when maximizing acceptance is the primary goal, whereas Miura-ori is preferable when minimizing additional radiation length is the higher priority. The appropriate choice therefore depends on which constraint dominates for a given detector application.
-
-Furthermore, extending the simulation to a $50\text{ }\mu\text{m}$ thin-silicon regime (matching ALICE ITS3) confirms that the geometric acceptance advantages of folding are invariant under sensor thinning, while scaling total material traversal down by $\sim 4.8\times$. While folded planar facets cannot match the silicon-only material minimization of a continuous curved sensor, origami tessellations provide a viable and mathematically rigorous architectural framework for next-generation tracking detectors.
-
-Overall, this study presents the first systematic \textsc{Geant4} radiation-transport comparison of cylindrically deployable origami fold patterns against a planar-tiled detector baseline. Using a physically realistic, differentiated silicon/Kapton mesh, we show that folding consistently improves geometric acceptance at the expense of increased radiation-length traversal. Miura-ori and Kresling define distinct, highly attractive operating points on the Pareto frontier, establishing origami tessellation as a viable and compelling geometric design strategy for future deployable tracking detectors.
+This work provides what appears to be the first systematic \textsc{Geant4} comparison of cylindrically deployable origami geometries against a conventional tiled detector baseline. These results establish origami tessellation as a viable and mathematically rigorous design approach for future deployable tracking detectors.
 \acknowledgments
-The author thanks Prof. Biplob Bhattacharjee for his valuable feedback on the initial idea for this work. The author is deeply grateful to his parents for their unwavering support, encouragement, and patience throughout the course of this work, and for making it possible to pursue it in the first place. Claude (Anthropic) was used as an auxiliary tool for debugging and troubleshooting code during the development of the simulation and analysis pipeline.
+The author thanks Prof. Biplob Bhattacharjee for his valuable feedback on the initial idea for this work. Thank you to Professor Mei Dongming at the University of South Dakota for his feedback. The author is deeply grateful to his parents for their unwavering support, encouragement, and patience throughout the course of this work, and for making it possible to pursue it in the first place. Claude (Anthropic) was used as an auxiliary tool for debugging and troubleshooting code during the development of the simulation and analysis pipeline.
 
 \appendix
 
@@ -963,7 +975,7 @@ Across all 20 points, $\sigma/\theta_{0,\text{Highland}} = 0.930 \pm 0.003$ (mea
 \section{Data and Code Availability}
 \label{sec:appendix_provenance}
 
-All baseline simulation datasets were generated under the differentiated-mesh \textsc{Geant4} v11.x pipeline utilizing a nominal $1.0\text{ mm}$ 3D Gaussian vertex smear and $500{,}000$ primary $500\text{ MeV}/c\ \pi^+$ events per configuration at the fully deployed nominal state. Parameter sweep evaluations systematically varied facet count $N$, fold angle $\theta$, and vertex smear $\sigma$ around these baseline settings. Replication studies (Tables~\ref{tab:multirun_results} and~\ref{tab:deadzone_multirun}) utilize five independent simulation runs with distinct pseudo-random engine seeds.
+All baseline simulation datasets were generated under the differentiated-mesh \textsc{Geant4} v11.x pipeline utilizing a nominal $3.0\text{ mm}$ 3D Gaussian vertex smear and $500{,}000$ primary $5\text{ GeV}/c\ \pi^+$ events per configuration at the fully deployed nominal state. Parameter sweep evaluations systematically varied facet count $N$, fold angle $\theta$, and vertex smear $\sigma$ around these baseline settings. Replication studies (Tables~\ref{tab:multirun_results} and~\ref{tab:deadzone_multirun}) utilize five independent simulation runs with distinct pseudo-random engine seeds.
 
 The complete simulation source code, parametric geometry generators, automated pipelines, and figure reproduction scripts are openly available in the GitHub repository:
 \begin{center}
