@@ -50,9 +50,7 @@ Detector optimization efforts have predominantly concentrated on ultra-light car
 
 Recent vertex detector architectures have developed innovative strategies to mitigate these geometric constraints. The ALICE ITS3 upgrade utilizes ultra-thin ($40$--$50\ \mu\text{m}$) stitched CMOS sensors bent into cylindrical half-layers, eliminating active sensor seams entirely within the tracking layers~\cite{ALICE2024, Sonneveld2023}. The LHCb Upstream Tracker combines rigid silicon sensors with a continuous flexible Kapton substrate for electrical routing and mechanical integration~\cite{Lionetto2014}. The CMS Phase-2 Outer Tracker employs a tilted-module geometry in the tracker barrel, inclining flat sensor modules along the beam axis to optimize track incidence angles and close acceptance gaps~\cite{CMS2017}.
 
-While these methods show the advantages of non-standard geometries, origami-folded designs have not yet been evaluated systematically for tracking detectors. Origami folding allows a continuous sheet to form a pattern of flat panels connected along fold lines, enabling compact storage followed by deployment into a cylindrical geometry.
-
-This work presents what appears to be the first systematic \textsc{Geant4} comparison of three cylindrically deployable origami fold families --- Cylindrical Miura-ori~\cite{Miura1985}, Yoshimura~\cite{Yoshimura1955}, and Kresling~\cite{Kresling2008} --- against a conventional planar-tiled barrel control of identical envelope dimensions ($R = 40\text{ mm}$, $L = 120\text{ mm}$).
+While these methods show the advantages of non-standard geometries, origami-folded designs have not yet been evaluated systematically for tracking detectors. This work presents what appears to be the first systematic \textsc{Geant4} comparison of three cylindrically deployable origami fold families --- Cylindrical Miura-ori~\cite{Miura1985}, Yoshimura~\cite{Yoshimura1955}, and Kresling~\cite{Kresling2008} --- against a conventional planar-tiled barrel control of identical envelope dimensions ($R = 40\text{ mm}$, $L = 120\text{ mm}$).
 
 The central question investigated is whether, for a fixed cylindrical envelope, origami folding can improve geometric tracking acceptance without imposing an intolerable radiation-length penalty relative to conventional tiling. The three fold geometries were generated parametrically in Python and simulated in \textsc{Geant4} using explicitly differentiated material representations (rigid silicon tiles on a continuous Kapton backing). A flat planar slab model was simulated in parallel to validate radiation-length scoring and multiple-scattering distributions against the Highland formula.
 
@@ -333,13 +331,15 @@ The CMS Phase-2 Outer Tracker uses another method. Its detector modules are tilt
 
 As far as the author knows, these existing detector projects have not directly compared origami-style folded detector geometries with a tiled detector of the same radius using full particle-transport simulation. This is the main area that this project tries to study.
 
-\subsection{Origami fold patterns as deployable structures}
+\subsection{The selected Origami fold patterns}
 
 The fold patterns used in this project are based on existing ideas from origami and deployable structures. These patterns were originally developed for applications such as space structures and thin shells, rather than particle detectors.
 
 Miura-ori is a well-known origami pattern that was developed for folding and deploying large sheets and membranes~\cite{Miura1985}. One of its main advantages is that the sheet can change from a flat shape to a folded or deployed shape while the individual sections remain mostly rigid. This makes it useful when a large change in shape is needed without bending the whole material.
 
-The Yoshimura pattern comes from the study of thin cylindrical shells under compression. It has a diamond-like folding pattern and was later used as a deliberate folding structure~\cite{Yoshimura1955}. Kresling is another fold pattern that produces both rotation and shortening when it is compressed. It can also have different stable folded and deployed states~\cite{Kresling2008}.
+The Yoshimura pattern comes from the study of thin cylindrical shells under compression. It has a diamond-like folding pattern and was later used as a deliberate folding structure~\cite{Yoshimura1955}. 
+
+Kresling is another fold pattern that produces both rotation and shortening when it is compressed. It can also have different stable folded and deployed states~\cite{Kresling2008}.
 
 These origami patterns are therefore not new. The new part of this project is using them for a detector and checking whether they can provide good hit acceptance while keeping the amount of material crossed by particles reasonably low.
 
@@ -921,9 +921,9 @@ The primary conclusions are as follows:
     \item \textbf{Consistency across sensor thickness:} The geometric acceptance hierarchy is preserved when scaling silicon thickness down to $50\ \mu\text{m}$, while reducing total material traversal by $\sim 4.8\times$.
 \end{enumerate}
 
-This work provides what appears to be the first systematic \textsc{Geant4} comparison of cylindrically deployable origami geometries against a conventional tiled detector baseline. These results establish origami tessellation as a viable and mathematically rigorous design approach for future deployable tracking detectors.
+This work provides what appears to be the first systematic \textsc{Geant4} comparison of cylindrically deployable origami geometries against a conventional tiled detector baseline. These results establish origami tessellation as a viable and mathematically rigorous design approach for future tracking detectors.
 \acknowledgments
-The author thanks Prof. Biplob Bhattacharjee for his valuable feedback on the initial idea for this work. Thank you to Professor Mei Dongming at the University of South Dakota for his feedback. The author is deeply grateful to his parents for their unwavering support, encouragement, and patience throughout the course of this work, and for making it possible to pursue it in the first place. Claude (Anthropic) was used as an auxiliary tool for debugging and troubleshooting code during the development of the simulation and analysis pipeline.
+The author thanks Prof. Biplob Bhattacharjee for his valuable feedback on the initial idea for this work. Thank you to Professor Mei Dongming at the University of South Dakota for his detailed feedback. The author is deeply grateful to his parents for their unwavering support, encouragement, and patience throughout the course of this work, and for making it possible to pursue it in the first place. Claude (Anthropic) was used as an auxiliary tool for debugging and troubleshooting code during the development of the simulation and analysis pipeline.
 
 \appendix
 
